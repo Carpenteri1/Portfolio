@@ -1,17 +1,18 @@
 .top-row{
-    background-color: lavender;
-    border-bottom: 1px solid grey;
+    background-color: #1b1b1b;
+    border-bottom: 1px solid #b29600;
     padding: 0.6em;
 }
 .top-row > #top-title{
     margin-left: 2em ;
+    color:white;
 }
 #routeList > a{
     margin-left: 2em;
     text-decoration: none;
-    color:black;
+    color:white;
 }
 #routeList > a:hover{
-    color:blue !important;
+    color:#62B1F6;
 
 }

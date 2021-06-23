@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
     selector:'contact-component',
     templateUrl:'contactpage.component.html',
-    styles:[]
+    styleUrls:['../../../../node_modules/bootstrap/dist/css/bootstrap.min.css']
 })
 
 export class ContactPageComponent{

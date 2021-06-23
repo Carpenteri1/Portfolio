@@ -10,7 +10,7 @@ import { Component, OnInit } from "@angular/core";
 
 
 export class CarouselComponent implements OnInit{
-    
+
     index:number = 0;
     titleContent = [".Net Developer","Frontend Developer","Backend Developer","Angular Developer"];
     textContet = ["Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -20,7 +20,7 @@ export class CarouselComponent implements OnInit{
     currentTitleMessage = this.titleContent[0];
     currentTextMessage = this.textContet[0];
     carouselTime(){
-        setInterval(() => this.setMessage(), 4000);
+        setInterval(() => this.setMessage(), 6000);
     }
     setMessage(){
         if(this.index < 4){

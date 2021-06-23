@@ -16,3 +16,13 @@
     color:#62B1F6;
 
 }
+
+#routeTitle > a{
+    margin-left: 2em;
+    text-decoration: none;
+    color:white;
+}
+#routeTitle > a:hover{
+    color:#62B1F6;
+
+}

@@ -4,3 +4,23 @@
     background-position:bottom; /* Center the image */
     background-size: cover;
 }
+
+.card-shadow {
+    box-shadow: 0 4px 6px -6px gray;
+    transition: all 400ms linear;
+    /*transition-delay: 0s;*/
+}
+.card-shadow:hover{
+    box-shadow: 0px 1px 9px 0px gray;
+    
+}
+.cardOne{
+    transition: all 500ms ease-in-out;
+    transition-delay: 0.4s;
+}
+.cardOne :hover{
+    background-image: url('../../../assets/images/IMG_20210623_175459.jpg');
+    background-size: cover;
+    background-position: center;
+}
+

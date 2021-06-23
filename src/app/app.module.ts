@@ -9,6 +9,7 @@ import { PortfolioComponent } from './pagecomponents/portfoliopage/portfoliopage
 import {StartPageComponent} from './pagecomponents/startpage/startpage.component'
 import {FormsModule} from '@angular/forms';
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CarouselComponent } from './component/carouselcomponent/carousel.compon
   imports: [
     BrowserModule,  
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

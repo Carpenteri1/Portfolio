@@ -1,11 +1,97 @@
 
+<div class="top-image-about">
+    <div class="container text-white" style="text-align: left;width: 30%;">
+        <div style="height:3em;"></div>
+        <h1>Systemutvecklare inom .Net</h1>
+        <p>
+            För två år sedan bestämde jag mig för att följa min dröm.<br><br>
+            Tidigare har kodandet alltid varit en stor hobby, men jag visste att en dag ville jag jobba med detta, men vart jag skulle börja.<br>
+            Jag har alltid haft ett stort intresse för spel, datorer, it och teknik.<br><br>
+            Allt väldigt oskydligt när jag börja med linux, efter detta kom jag in ganska snabbt på webbutveckling och java utveckling.
+            Och slutade med en utbildning som systemutvecklare inom .Net.<br><br>
+            Mitt driv kommer från nyfikenhet, kreativitet och skapandet. Och om jag en dag får som jag vill, så har jag gott fullstack.
+        </p>
+    </div>   
+</div>
 
-<embed src="https://carpenteri1.github.io/Portfolio/assets/files/niclas_timle.pdf" style="overflow:none;height: 80em;width: 100%;" type="application/pdf" />
-<!--
-        <embed src="../../../assets/files/niclas_timle.pdf" style="overflow:none;height: 80em;width: 100%;" type="application/pdf" />   
-<embed src="{{pdfSrc}}" style="overflow:none;height: 80em;width: 100%;" type="application/pdf" />
+<div class="container mt-4 text-center" style="width: 35%;">
+    <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
+        <div class="row">
+            <h2>Kunskaper</h2>
+            <div *ngIf = "isShow2">
+            <ul style="text-align: left;">
+                <li>.Net core / .Net Framework</li>
+                <li>C# / Java / Typescript / Javascript</li>
+                <li>Jquery / Angular</li>
+                <li>Entity Framework / Dapper</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul></div>
+            <fa-icon (click)=toggleDisplay(2) [icon]="arrowDown"></fa-icon>
+        </div>
+    </div>
+    
+    <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
+        <div class="row">
+            <h2>Erfarenhet</h2>
+            <div style="height: 1em;"></div>
+            <div class="mt-4" *ngIf = "isShow3"><h3>Campus Varberg</h3>
+                <br>
+                <p style="text-align: left;">Min examen, innefattade ett arbete för Campus Varberg.<br>
+                    Det ville uppdatera sitt nuvarande bokningssystem som idag har vissa begränsningar.
+                    Bland annat så kan lärare idag bara boka rum och då enbart klassrum. 
+                    <br><br><br>
+                    Campus ville då ge möjligheten för elever att kunna boka grupprum, kunna se antal platser kvar i ett grupprum, samt
+                    kunna ge förslag om vad som skulle saknas i klassrumet. 
+                    <br><br>
+                    Allt började med ett möte med Campus Varberg där vi tillsammans gick igenom vad campus var utefter och jag fick möjligheten att ställa frågor.
+                    Vi hade även kontakt under projektet och försökte vara så öppen det gick med framstegen och hur det såg ut. 
+                    Allt detta skulle avslutas med en redovisning inför klassen samt campus varberg. <br><br> 
+                    Projektets frontend är skrivet med .net, angular, typescript för att få sida SPA. Backend är skrivet med net core, mysql och entity framework.
+                    Backend är även skriven som en restful api och skickar data till frontend.
+                </p>
+                <div style="height: 3em;"></div>
+                <h3 class="mb-4">André med vänner</h3>  
+                <p style="text-align: left">
+                    Fick möjligheten att jobba hos andre med vänner i 7 månader.<br> Ett ställe jag trivdes väldigt bra på och fick ta stort eget ansvar över mina projekt,
+                    Net core och MysSql hade stor focus där. Mina projekt innefattade ett eget skrivet kundanpassat CMS och en frontend knutet till CMS'et. 
+                    <br><br> Målet med projekten var att besökare av sidan skulle kunna skriva upp sig på olika golfevent, och i stället för att sitta inne och ha möten så tyckte 
+                    kunden det var spännande att man i stället träffades på golfbanor runt om i sverige för att knyta kontakter och ha kul.
+                    <br><br> I CMS'et använde jag mig av identity framework, authO2 standard och hashade lösenord för säkerhet i databasen.
+                    Kunden ville ha möjligheten att skapa nya undersidor som privata eller publika, likaså  privata och unika golf event. 
+                    <br><br>
+                    Det skulle även finnas en möjlihet att kunna ändra text och bilder, mail funktioner då besökare skulle kunna skriva upp sig på golf eventen och få svars mail
+                    och mer information. 
+                    <br><br>
+                    Frontend clienten, är skrivet med net core, mvc och tar i mot data från cms. Layout är skrivet med bootstrap. Funktioner är skrivet i C#, javascript samt jquery.
+                    Undersidor och eventsidor använder i stort sätt bara en mall och hämtar unik data baserat på sidans id eller event id.
+                    Dbcontext och entity framework va också nått jag använde mig mycket av.
 
-    <embed url="https://carpenteri1.github.io/Portfolio/assets/files/niclas_timle.pdf" style="overflow:none;height: 80em;width: 100%;" type="application/pdf" />
-
-### testad <embed src="../../../assets/files/niclas_timle.pdf" style="overflow:none;height: 80em;width: 100%;" type="application/pdf" />
--->
+                </p>
+                <div style="height: 3em;"></div>
+            </div>
+            <fa-icon (click)=toggleDisplay(3) [icon]="arrowDown"></fa-icon>
+        </div>
+    </div>
+    <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
+        <div class="row">
+            <h2>Utbildning</h2>
+            <div *ngIf = "isShow4">This is a div which toggles.</div>
+            <fa-icon (click)=toggleDisplay(4) [icon]="arrowDown"></fa-icon>
+        </div>
+    </div>
+    <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
+        <div class="row">
+            <h2>CV</h2>
+            <div *ngIf = "isShow4">This is a div which toggles.</div>
+            <fa-icon (click)=toggleDisplay(4) [icon]="arrowDown"></fa-icon>
+        </div>
+    </div>
+</div>

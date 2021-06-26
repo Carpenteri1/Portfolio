@@ -6,3 +6,10 @@
   .example {
     -ms-overflow-style: none;
   }
+
+  .top-image-about{
+    background-image: url("../../../assets/images/me.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 24em !important;
+  }

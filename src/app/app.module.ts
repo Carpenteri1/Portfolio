@@ -9,6 +9,8 @@ import { PortfolioComponent } from './pagecomponents/portfoliopage/portfoliopage
 import {StartPageComponent} from './pagecomponents/startpage/startpage.component'
 import {FormsModule} from '@angular/forms';
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { CarouselComponent } from './component/carouselcomponent/carousel.compon
     BrowserModule,  
     AppRoutingModule,
     FormsModule,
+    FontAwesomeModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

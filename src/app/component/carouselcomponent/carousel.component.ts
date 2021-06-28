@@ -12,22 +12,30 @@ import { Component, OnInit } from "@angular/core";
 export class CarouselComponent implements OnInit{
 
     index:number = 0;
-    titleContent = [".Net Developer","Lorem Ipsum","Cillum Dolore","Excepteur Sint"];
-    textContet = ["Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    "Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",]
+    titleContent = 
+    [
+        ".Net Utvecklare",
+        "Angular",
+        "Structured Query Language"
+    ];
+    textContet = 
+    [
+        "Kunskap inom både .Net core och .Net framework. Restfulla apier, Blazor, MVC, C#, Javascript, Jquery och Ajax requests."+'\n'+"Har jobbat i flera projekt mot apier, även byggt egna apier.",
+    "Jobbat mycket inom Typescript med anguler, mot restfulla apier",
+    "Basic SQL / T-SQl. Stored procedure, functions and triggers med MySQL och Microsofts SQL Server Managment Studio.",
+    ]
+   
     currentTitleMessage = this.titleContent[0];
     currentTextMessage = this.textContet[0];
     carouselTime(){
         setInterval(() => this.setMessage(), 5000);
     }
     setMessage(){
-        if(this.index < 4){
+        if(this.index < 3){
             this.currentTitleMessage = this.titleContent[this.index];
             this.currentTextMessage = this.textContet[this.index];
         }
-        if(this.index === 4){
+        if(this.index === 3){
             this.index = 0;
             this.currentTitleMessage = this.titleContent[this.index];
             this.currentTextMessage = this.textContet[this.index];

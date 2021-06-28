@@ -12,7 +12,7 @@ export class AboutPageComponent {
   public isShow2 = false;
   public isShow3 = false;
   public isShow4 = false;
-
+  public isShow5 = false;
   toggleDisplay(id:any) {
     if(id===1){
       this.isShow1 = !this.isShow1;
@@ -25,6 +25,9 @@ export class AboutPageComponent {
     }
     if(id===4){
       this.isShow4 = !this.isShow4;
+    }
+    if(id===5){
+      this.isShow5 = !this.isShow5;
     }
   }
 }

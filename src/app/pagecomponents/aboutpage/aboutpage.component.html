@@ -1,14 +1,14 @@
 
 <div class="top-image-about">
     <div class="container text-white" style="text-align: left;width: 30%;">
-        <div style="height:3em;"></div>
+        <div style="height:1em;"></div>
         <h1>Systemutvecklare inom .Net</h1>
-        <p>
-            För två år sedan bestämde jag mig för att följa min dröm.<br><br>
+        <p style="font-size: 1.1em;">
+            För två år sedan bestämde jag mig för att följa min dröm.<br>
             Tidigare har kodandet alltid varit en stor hobby, men jag visste att en dag ville jag jobba med detta, men vart jag skulle börja.<br>
             Jag har alltid haft ett stort intresse för spel, datorer, it och teknik.<br><br>
-            Allt väldigt oskydligt när jag börja med linux, efter detta kom jag in ganska snabbt på webbutveckling och java utveckling.
-            Och slutade med en utbildning som systemutvecklare inom .Net.<br><br>
+            Allt väldigt oskydligt när jag börja med linux, efter detta kom jag in ganska snabbt på webbutveckling och java utveckling.<br>
+            Och slutade med en utbildning som systemutvecklare inom .Net.
             Mitt driv kommer från nyfikenhet, kreativitet och skapandet. Och om jag en dag får som jag vill, så har jag gott fullstack.
         </p>
     </div>   
@@ -18,22 +18,24 @@
     <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
         <div class="row">
             <h2>Kunskaper</h2>
-            <div *ngIf = "isShow2">
-            <ul style="text-align: left;">
-                <li>.Net core / .Net Framework</li>
-                <li>C# / Java / Typescript / Javascript</li>
-                <li>Jquery / Angular</li>
-                <li>Entity Framework / Dapper</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul></div>
+        <div *ngIf = "!isShow2">
+            <h3 style="font-weight:600;" class="mt-4">Två år</h3>
+            <div class="row mt-4 mb-4">
+                <div class="w-50"> 
+                    <p style="text-align: left;">.Net</p>
+                    <div class="background">
+                        <div class="progress" style="width:100%;">100%</div>
+                    </div>
+                </div>
+                <div class="w-50"> 
+                    <p style="text-align: left;">C#</p> 
+                    <div class="background">
+                        <div class="progress" style="width:100%;">100%</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
             <fa-icon (click)=toggleDisplay(2) [icon]="arrowDown"></fa-icon>
         </div>
     </div>
@@ -42,9 +44,11 @@
         <div class="row">
             <h2>Erfarenhet</h2>
             <div style="height: 1em;"></div>
-            <div class="mt-4" *ngIf = "isShow3"><h3>Campus Varberg</h3>
+            <div class="mt-4"  style="text-align: left;" *ngIf = "isShow3">
+                <h3 style="font-weight:600;">Campus Varberg</h3>
                 <br>
-                <p style="text-align: left;">Min examen, innefattade ett arbete för Campus Varberg.<br>
+                <h5 style="color:grey">Maj 2021 – Juni 2021 - Varberg</h5>
+                <p>Min examen, innefattade ett arbete för Campus Varberg.<br>
                     Det ville uppdatera sitt nuvarande bokningssystem som idag har vissa begränsningar.
                     Bland annat så kan lärare idag bara boka rum och då enbart klassrum. 
                     <br><br><br>
@@ -58,8 +62,9 @@
                     Backend är även skriven som en restful api och skickar data till frontend.
                 </p>
                 <div style="height: 3em;"></div>
-                <h3 class="mb-4">André med vänner</h3>  
-                <p style="text-align: left">
+                <h3 class="mb-4" style="font-weight:600;">André med vänner</h3>  
+                <h5 style="color:grey">Nov 2020 – Maj 2021 - Varberg</h5>
+                <p>
                     Fick möjligheten att jobba hos andre med vänner i 7 månader.<br> Ett ställe jag trivdes väldigt bra på och fick ta stort eget ansvar över mina projekt,
                     Net core och MysSql hade stor focus där. Mina projekt innefattade ett eget skrivet kundanpassat CMS och en frontend knutet till CMS'et. 
                     <br><br> Målet med projekten var att besökare av sidan skulle kunna skriva upp sig på olika golfevent, och i stället för att sitta inne och ha möten så tyckte 
@@ -83,15 +88,59 @@
     <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
         <div class="row">
             <h2>Utbildning</h2>
-            <div *ngIf = "isShow4">This is a div which toggles.</div>
+            <div *ngIf = "isShow4"  style="text-align: left;">
+                <h3 class="mt-4" style="font-weight:600;">Grunder i AI</h3>
+                <br>
+                <h5 style="color:grey">Juni 2021 – Nuvarande - Linköpings universitet</h5>
+                    <p>
+                        Vad är AI, vad innebär detta och hur kan vi använda det.
+                        Även kodning mot AI och förståelse i hur det kan användas.
+                        Utbildning är flexibel och hindras inte av att jag jobbar heltid.
+                    </p>
+                <h3 class="mt-4 " style="font-weight:600;">Systemutvecklare .Net</h3>
+                <br>
+                <h5 style="color:grey">Agusti 2019 – Juni 2021 - Campus Varberg</h5>
+                <p>Yrkesutbilding med fokus på .NET. Stort fokus på hemsidor och bygga system<br> 
+                    för detta.<br><br>
+                    Fick lära oss allt från Blazor, MVC, APIer, PostMan, C#, Javascript, Jquery, Css, Html, <br>
+                    Agilt arbetsätt, Devops principer, testning av kod, ISQTB principer, Angular, SQL/T-SQL, Dapper, Entity Framework,
+                    .Net Core, .Net framework, AspNet, AdoNet och mycket annat.<br><br>
+                    Vi hade nästan ett års LIA där vi även fick lära oss hur allt detta skulle appliceras i en verklig arbetsmiljö.  
+                    Samt en examen som skulle simulera en verklig arbetsmiljö. En riktigt spännande och rolig utbildning.
+                </p>
+                <h3 class="mt-4" style="text-align: left;font-weight:600;">Java utveckling</h3>
+                <br>
+                <h5 style="text-align: left;color: grey;">Juni 2015 – Aug 2015 - Luleås Tekniska Högskola</h5>
+                <p style="text-align: left;">
+                    Mer avancerad inriktning på Java. Jobbade med bland annat polymorphism mer fokus på objektorienterad programmering, Jframe med swing.
+                    Bland annat skulle man skriva ett program där det fanns vargar, får och gräs. Det skapades ett visst antal gräs tussar, <br> <br> 
+                    hade fåren ätit tussarna och två får krocka kunde det skapas ett nytt får. Vargarna kunde äta fåren och då skapades nya vargar. Målet var att skapa ett
+                    slags ekosystem och förstå JFrame med swing.
+                </p>
+                <h3 class="mt-4" style="text-align: left;font-weight:600;">Java utveckling</h3>
+                <br>
+                <h5 style="text-align: left;color:grey;">Juni 2013 – Aug 2013 - Högskolan Gävle</h5>
+                <p style="text-align: left;">
+                    Baskurs i programmering med java. Att förstå grunder i programmering.
+                    Vad är klasser, metoder, varibler och hur man använder dessa.
+                    Samt skriva ett enkelt konsol program.
+                </p>
+                <h3 class="mt-4" style="text-align: left;font-weight:600;">Webbutveckling</h3>
+                <br>
+                <h5 style="text-align: left;color:grey;">Juni 2013 – Aug 2013 - Blekingen Tekniska Högskola</h5>
+                <p style="text-align: left;">
+                 Baskurs i css, javascript och html. Kursen gick igenom hur man bygger en hemsida.
+                 Samt avslutades med att bygga en enkel hemsida.
+                </p>
+            </div>
             <fa-icon (click)=toggleDisplay(4) [icon]="arrowDown"></fa-icon>
         </div>
     </div>
     <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
         <div class="row">
             <h2>CV</h2>
-            <div *ngIf = "isShow4">This is a div which toggles.</div>
-            <fa-icon (click)=toggleDisplay(4) [icon]="arrowDown"></fa-icon>
+            <div *ngIf = "isShow5">This is a div which toggles.</div>
+            <fa-icon (click)=toggleDisplay(5) [icon]="arrowDown"></fa-icon>
         </div>
     </div>
 </div>

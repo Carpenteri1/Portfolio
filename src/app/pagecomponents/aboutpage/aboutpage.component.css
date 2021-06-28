@@ -13,3 +13,16 @@
     background-position:center;
     height: 26em !important;
   }
+p{
+    font-size: 1.2em;
+  }
+
+.background{
+  background-color: lightgrey;
+  border-radius: 60px;
+}
+.progress{
+  background-color: cornflowerblue;
+  border-radius: 60px;
+  height:24px;
+}

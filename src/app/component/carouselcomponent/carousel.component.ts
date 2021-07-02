@@ -20,8 +20,8 @@ export class CarouselComponent implements OnInit{
     ];
     textContet = 
     [
-        "Kunskap inom både .Net core och .Net framework. Restfulla apier, Blazor, MVC, C#, Javascript, Jquery och Ajax requests."+'\n'+"Har jobbat i flera projekt mot apier, även byggt egna apier.",
-    "Jobbat mycket inom Typescript med anguler, mot restfulla apier",
+    "Kunskap inom både .Net core och .Net framework. Restfulla apier, Blazor, MVC, C#, Javascript, Jquery och Ajax requests."+'\n'+"Har jobbat i flera projekt mot apier, även byggt egna apier.",
+    "Med Typescript och Javascript, under flera projekt. Bland annat för campus varberg. Även jobbat mot restfulla apier inom .net med fler. ",
     "Basic SQL / T-SQl. Stored procedure, functions and triggers med MySQL och Microsofts SQL Server Managment Studio.",
     ]
    

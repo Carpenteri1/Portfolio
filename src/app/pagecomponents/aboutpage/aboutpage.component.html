@@ -18,21 +18,47 @@
     <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
         <div class="row">
             <h2>Kunskaper</h2>
-        <div *ngIf = "!isShow2">
-            <h3 style="font-weight:600;" class="mt-4">Två år</h3>
-            <div class="row mt-4 mb-4">
-                <div class="w-50"> 
+        <div *ngIf = "  isShow2">
+            <div class="row mt-4 mb-4" style="margin-right: 2em;">
+                <div style="width: 10%;"></div>
+                <div style="width: 40%;"> 
                     <p style="text-align: left;">.Net</p>
                     <div class="background">
-                        <div class="progress" style="width:100%;">100%</div>
+                        <div class="progress text-center" style="width:90%;"><p style="margin-left: 5em;">90%</p></div>
+                    </div>
+                    <p style="text-align: left;">Java</p> 
+                    <div class="background">
+                        <div class="progress" style="width:65%;"><p style="margin-left: 5em;">65%</p></div>
+                    </div>
+                    <p style="text-align: left;">CSS</p> 
+                    <div class="background">
+                        <div class="progress" style="width:100%;"><p style="margin-left: 5em;">100%</p></div>
+                    </div>
+                    <p style="text-align: left;">Bootstrap</p> 
+                    <div class="background">
+                        <div class="progress" style="width:100%;"><p style="margin-left: 5em;">100%</p></div>
                     </div>
                 </div>
-                <div class="w-50"> 
+                <div style="width: 10%;"></div>
+                <div style="width: 40%;"> 
                     <p style="text-align: left;">C#</p> 
                     <div class="background">
-                        <div class="progress" style="width:100%;">100%</div>
+                        <div class="progress" style="width:90%;"><p style="margin-left: 5em;">90%</p></div>
+                    </div>
+                    <p style="text-align: left;">Javascript</p> 
+                    <div class="background">
+                        <div class="progress" style="width:100%;"><p style="margin-left: 5em;">100%</p></div>
+                    </div>
+                    <p style="text-align: left;">Typescript</p> 
+                    <div class="background">
+                        <div class="progress" style="width:65%;"><p style="margin-left: 5em;">65%</p></div>
+                    </div>
+                    <p style="text-align: left;">HTML</p> 
+                    <div class="background">
+                        <div class="progress" style="width:100%;"><p style="margin-left: 5em;">100%</p></div>
                     </div>
                 </div>
+                <div style="width: 10%;"></div>
             </div>
             
         </div>
@@ -134,13 +160,6 @@
                 </p>
             </div>
             <fa-icon (click)=toggleDisplay(4) [icon]="arrowDown"></fa-icon>
-        </div>
-    </div>
-    <div class="shadow-lg w-100 p-4 mw-100 mb-4 mt-4" style="margin:auto;">
-        <div class="row">
-            <h2>CV</h2>
-            <div *ngIf = "isShow5">This is a div which toggles.</div>
-            <fa-icon (click)=toggleDisplay(5) [icon]="arrowDown"></fa-icon>
         </div>
     </div>
 </div>

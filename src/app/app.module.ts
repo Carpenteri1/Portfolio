@@ -11,6 +11,7 @@ import {FormsModule} from '@angular/forms';
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from './component/footercomponent/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CommonModule } from '@angular/common';
     PortfolioComponent,
     HeaderComponent,
     PageContentComponent,
-    CarouselComponent
+    CarouselComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,  

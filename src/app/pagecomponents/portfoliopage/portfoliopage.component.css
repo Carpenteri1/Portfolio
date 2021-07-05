@@ -2,7 +2,8 @@
 
 }
 .card{
-    height: 30em;
+    height: 30em; 
+    border-radius: 25px;
 }
 .container p{
     text-align: left;

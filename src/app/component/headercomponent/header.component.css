@@ -1,11 +1,19 @@
-.top-row{
-    background-color: #1b1b1b;
-    border-bottom: 1px solid #b29600;
-    padding: 0.6em;
+.container{ 
+    width: 82em;
 }
-.top-row > #top-title{
-    margin-left: 2em ;
-    color:white;
+
+.header-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.coloumn-right{
+    text-align: right !important;
+}
+.coloumn-left{
+    text-align: left !important;
+}
+h3{
+    margin-left: -2em !important;
 }
 #routeList > a{
     margin-left: 2em;
@@ -25,4 +33,8 @@
 #routeTitle > a:hover{
     color:#62B1F6;
 
+}
+@media(max-width: 575px) {
+   
+    
 }

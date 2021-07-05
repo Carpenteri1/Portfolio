@@ -1,8 +1,4 @@
-#CampusBookingConcept{
-
-}
 .card{
-    height: 30em; 
     border-radius: 25px;
 }
 .container p{
@@ -26,4 +22,11 @@ a {
 .card-shadow:hover{
     box-shadow: 0px 1px 9px 0px gray;
     
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: auto auto auto auto;
+
 }

@@ -1,14 +1,13 @@
 .card{
     border-radius: 25px;
+    font-size: 0.9em;
 }
 .container p{
     text-align: left;
-    padding-left:2em;
-    padding-top: 1em; 
+    padding: 0.5em;
+
 }
-.card-footer{
-    margin-top: -2em;
-}
+
 a {
     color:black;
     height: 1em;
@@ -28,5 +27,41 @@ a {
     display: inline-grid;
     grid-gap: 30px 30px;
     grid-template-columns: auto auto auto auto;
+}
 
+.footer 
+{
+    bottom: 0;
+    margin-top: 12em;
+}
+
+
+
+@media (max-width:1400px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+        
+    }
+
+}
+@media (max-width:991px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    
+    }
+}
+@media (max-width:767px) {
+    .grid-container {
+        grid-template-columns: auto;
+
+    }
+    .container{
+        width: 28em;
+    }
+}
+@media (max-width:575px) {
+    .grid-container {
+        grid-template-columns: auto;
+        margin-left: auto;
+    }
 }

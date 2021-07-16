@@ -1,18 +1,18 @@
-<div class="container mt-4 mb-4">
+<div class="container mt-4 mb-4 ">
   <div class="grid-container">
       <div class="card card-shadow" id="CampusBookingConcept" (mouseover)="cardOneShowElemet = true" (mouseleave)="cardOneShowElemet = false">
-        <img class="card-img-top" src="assets/images/campusLogo.png" alt="Card image cap">
+        <img class="card-img-top" src="assets/images/campusLogo.png" height="145" alt="Card image cap">
         <div class="card-body" >
           <h5 class="card-title text-center">Campus Booking Concept</h5>
           <p class="card-text">
-            Mitt examensarbete. <br>Ett uppdaterat bokningskoncept till Campus Varberg.<br><br>
-            Idag kan bara lärare boka rum och campus vill ge möjligheten till elever att boka ett grupprum.<br>
-            Man vill även låta eleverna ge feedback om t.ex. verktyg som borde finnas i grupprumet.
+            Examensarbete. <br><br>Bokningskoncept till Campus Varberg.<br>
+            Campus vill uppdatera sitt nuvarande bokningsystem med mera features,
+            så som att låta elever boka grupprum och ge feedback. Detta är frontend.
           </p>
        
         </div>
-        <div class="card-footer" style="text-align:right;" *ngIf="cardOneShowElemet">
-          <a href="https://github.com/Carpenteri1/CampusBookingConcept"  height="145" target="_blank"><fa-icon [icon]="githubIcon"></fa-icon></a>
+        <div class="card-footer" style="text-align:right;" *ngIf="cardOneShowElemet"> 
+          <a href="https://github.com/Carpenteri1/CampusBookingConcept" target="_blank"><fa-icon [icon]="githubIcon"></fa-icon></a>
         </div>
       </div>
       <div class="card card-shadow" id="CampusBookingAPI" (mouseover)="cardTwoShowElemet = true" (mouseleave)="cardTwoShowElemet = false">
@@ -20,11 +20,9 @@
         <div class="card-body" >
           <h5 class="card-title text-center">Campus Booking API</h5>
           <p class="card-text">
-            Mitt examensarbete. <br>Ett uppdaterat bokningskoncept till Campus Varberg.<br>
-            Backend och API delen för projektet CampusBookingConcept. <br>
-            Det går att post, put, get data till och från API'n.
-            Detta är inte campus offecialla api utan en egen skriven, <br>
-            för att visa mock data och funktioner det ville implementera.
+            Examensarbete. <br><br>Bokningskoncept till Campus Varberg.<br>
+            Campus vill uppdatera sitt nuvarande bokningsystem med mera features,
+            så som att låta elever boka grupprum och ge feedback. Detta är backend.
           </p>
         </div>
         <div class="card-footer" style="text-align:right;" *ngIf="cardTwoShowElemet">
@@ -36,11 +34,9 @@
         <div class="card-body">
           <h5 class="card-title text-center">Weather App</h5>
           <p class="card-text">
-            Private projekt. <br> Innehåller en consol version och en MVC version.<br>
+            Private projekt. <br><br>
             Hämtar data från openweathers API, kan även visa vädret över dagen eller 4 dagar framåt.
-            Consol versionen är i stort sätt färdigställ,<br> MVC versionen saknar frontend och vissa funktioner.<br>
-            Tanken är att färdigställa webbprojektet snarast.
-
+            Consol versionen är färdigställd, MVC versionen saknar frontend och vissa funktioner.
           </p>
         </div>
         <div class="card-footer" style="text-align:right;" *ngIf="cardThreeShowElemet">
@@ -53,13 +49,10 @@
         </div>
         <div class="card-body">
           <h5 class="card-title text-center">Mer Än Bara Golf</h5>
-          <p class="card-text">
-            Ett projekt jag gjorde för andre med vänner.<br>
-            Detta var under min LIA som var på 7 månade. <br><br>
-            Fick ta stort eget ansvar över projektets<br>
-            planering, applicering och uppladdning.<br>
-            Finns även ett CMS / Admin projekt som kan visas vid förfrågan.<br><br>
-            Kunden är idag nöjd och projektet ligger live.
+          <p class="card-text mb-4">
+            LIA projekt.<br><br>
+            Kunden ville kunna skapa event och knyta nya och gamla kontakter via golf.
+            Mer än bara golf är den lösningen. 
           </p>
         </div> 
         <div class="card-footer" style="text-align:right;" *ngIf="cardFourShowElemet">
@@ -166,4 +159,7 @@
         </div>
       </div>
   </div>
+</div>
+<div class="footer">
+  <footer-component></footer-component> 
 </div>

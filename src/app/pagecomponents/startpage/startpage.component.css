@@ -1,6 +1,6 @@
 .top-image{
     background-image: url('../../../assets/images/Untitled.jpg');
-    height: 42em;
+    height: 38em;
     background-position:bottom; /* Center the image */
     background-size: cover;
 }
@@ -19,7 +19,20 @@
     border-radius: 0px !important;
     
 }
-.cardOne{
-    transition: all 500ms ease-in-out;
-    transition-delay: 0.4s;
+.gridLayout{
+    display: grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: auto auto auto;
+}
+.footer 
+{   
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+}
+@media(max-width:991px){
+    .gridLayout{
+        grid-template-columns: auto;
+    } 
 }

@@ -1,6 +1,4 @@
-.container{ 
-    width: 82em;
-}
+
 
 .header-container{
     display: grid;
@@ -33,8 +31,4 @@ h3{
 #routeTitle > a:hover{
     color:#62B1F6;
 
-}
-@media(max-width: 575px) {
-   
-    
 }

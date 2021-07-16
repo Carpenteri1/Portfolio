@@ -1,9 +1,8 @@
 import { Component } from "@angular/core";
-
 @Component({
 selector:'referenser-component',
 templateUrl:'referenserpage.component.html',
-styleUrls:['../../../../node_modules/bootstrap/dist/css/bootstrap.min.css']
+styleUrls:['../../../../node_modules/bootstrap/dist/css/bootstrap.min.css','referenserpage.component.css']
 
 })
 

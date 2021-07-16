@@ -12,6 +12,7 @@ import { CarouselComponent } from './component/carouselcomponent/carousel.compon
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './component/footercomponent/footer.component';
+import { ReferenserPageComponent } from './pagecomponents/referenserpage/referenserpage.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './component/footercomponent/footer.component';
     HeaderComponent,
     PageContentComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    ReferenserPageComponent
   ],
   imports: [
     BrowserModule,  

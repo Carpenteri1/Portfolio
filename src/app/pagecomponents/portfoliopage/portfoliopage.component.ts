@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub,faAngular } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 @Component({
     selector:'',
@@ -22,4 +22,5 @@ cardTenShowElemet = false;
    showButton:boolean = false;
    githubIcon = faGithub;
    linkIcon = faLink;
+    angularIcon = faAngular;
 }

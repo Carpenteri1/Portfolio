@@ -20,7 +20,7 @@
     
 }
 .gridLayout{
-    height:100em;
+    margin-top: 5em;
     display: grid;
     grid-gap: 30px 30px;
     grid-template-columns: auto auto auto;
@@ -28,12 +28,14 @@
 .footer 
 {   
     bottom: 0;
-    position: fixed;
+    margin-top: 5em;
+    position: relative;
     width: 100%;
     max-width: 100%;
 }
 @media(max-width:991px){
-    .gridLayout{
+    .gridLayout
+    {
         grid-template-columns: auto;
     } 
 }

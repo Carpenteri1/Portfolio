@@ -1,37 +1,34 @@
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #1b1b1b;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 30px;
     border: none;
     cursor: pointer;
   }
  
   .dropdown-content {
-    display: none;
+    width: 12em;
+    margin-left: -11em;
+    margin-top: -4em;
+    background-color: #1b1b1b;
+    color:white;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    border-radius: 0px 0px 25px 25px;
   }
   
   .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
+  .dropdown-content:hover .dropdown-content{  
+        display: none;
+    } 
   .header-container-phone:hover .dropdown-content {
     display: block;
-  }
-  
-  .header-container-phone:hover .dropbtn {
-    background-color: #3e8e41;
   }
 
 
@@ -78,8 +75,33 @@ h3{
     .header-container-phone{
         position: relative;
         display: inline-block;
+        margin-left: 90%;
     } 
-    #routeList > a{
-        color:black;
-    }
+}
+@media(max-width:420px){
+    
+    .header-container-phone{
+        margin-left: 85%;
+    } 
+}
+
+@media(max-width:340px){
+    
+    .header-container-phone{
+        margin-left: 80%;
+    } 
+}
+
+@media(max-width:250px){
+    
+    .header-container-phone{
+        margin-left: 70%;
+    } 
+}
+
+@media(max-width:180px){
+    
+    .header-container-phone{
+        margin-left: 65%;
+    } 
 }

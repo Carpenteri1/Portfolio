@@ -24,7 +24,24 @@
     }
 }
 
+@media(max-width:600px),
+(max-height:400px)
+{
+    .container{
+        margin-top: 4em;
+        height: 65vh ;
+    }
+}
 
+
+@media(max-width:400px),
+(max-height:500px)
+{
+    .container{
+        margin-top: 4em;
+        height: 200vh;
+    }
+}
 
 @media (max-width:435px) {
     .grid-container {
@@ -34,24 +51,6 @@
     .container{
         width: 13.5em;        
     }
-    .footer 
-    {   
-        position: relative;
-    }
 }
 
-@media (max-height:600px) {
-    .container{      
-        margin-bottom: 4em;
-    }
-    .footer 
-    {   
-        position: relative;
-    }
-}
 
-@media (max-height:500px) {
-    .container{      
-        margin-top: -2em;
-    }
-}

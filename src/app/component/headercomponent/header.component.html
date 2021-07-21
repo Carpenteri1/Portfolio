@@ -5,7 +5,7 @@
           <a routerLink="">Hem</a>
         </h3>
     </div>
-    <div class="coloumn-right">
+    <div class="coloumn-right mt-2">
       <div class="mt-2" id="routeList">
         <a routerLink="/Portfolio">Portfolio</a>
         <a routerLink="/References">Referenser</a>
@@ -15,14 +15,20 @@
     </div>
   </div>
   <div class="header-container-phone">
+    <div class="coloumn-left p-2">
+      <h3  id="routeTitle" style="text-align: left;">
+        <a routerLink="">Hem</a>
+      </h3>
+  </div>
+  <div class="coloumn-right">
     <button class="dropbtn"><fa-icon [icon]="menuIcon"></fa-icon></button>
-    <div class="dropdown-content"  id="routeList"> 
-      <a routerLink="">Hem</a>
+    <div class="dropdown-content"> 
       <a routerLink="/Portfolio">Portfolio</a>
       <a routerLink="/References">Referenser</a>
       <a routerLink="/About">Mer om mig</a>
       <a routerLink="/Contact">Kontakta</a>
     </div>
+  </div>
   </div>
 </div>
 

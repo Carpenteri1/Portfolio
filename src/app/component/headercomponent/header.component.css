@@ -2,25 +2,23 @@
 .dropbtn {
     background-color: #1b1b1b;
     color: white;
-    padding: 16px;
     font-size: 30px;
     border: none;
     cursor: pointer;
   }
  
   .dropdown-content {
-    width: 12em;
-    margin-left: -11em;
-    margin-top: -4em;
     background-color: #1b1b1b;
     color:white;
     position: absolute;
+    z-index: 1; 
     border-radius: 0px 0px 25px 25px;
   }
   
   .dropdown-content a {
     color: white;
     padding: 12px 16px;
+    text-align: left;
     text-decoration: none;
     display: block;
   }
@@ -72,31 +70,36 @@ h3{
     .header-container-desktop{
         display: none;
     }
-    .header-container-phone{
+    .coloumn-right{
+        margin-left: 50%;
+    }
+    .dropdown-content {
         position: relative;
-        display: inline-block;
-        margin-left: 90%;
+      
+    }
+    .header-container-phone{
+        display: grid;
+        grid-template-columns:auto auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
     } 
+
 }
 @media(max-width:420px){
     
-    .header-container-phone{
-        margin-left: 85%;
-    } 
+
 }
 
 @media(max-width:340px){
     
-    .header-container-phone{
-        margin-left: 80%;
-    } 
+
 }
 
 @media(max-width:250px){
     
-    .header-container-phone{
-        margin-left: 70%;
-    } 
+ 
 }
 
 @media(max-width:180px){

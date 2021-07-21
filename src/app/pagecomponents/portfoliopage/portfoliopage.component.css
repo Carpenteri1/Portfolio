@@ -29,14 +29,6 @@ a {
     grid-template-columns: auto auto auto auto;
 }
 
-.footer 
-{
-    bottom: 0;
-    margin-top: 12em;
-}
-
-
-
 @media (max-width:1400px) {
     .grid-container {
         grid-template-columns: auto auto auto;

@@ -1,0 +1,13 @@
+
+.header{
+    background-color: #1b1b1b;
+    border-bottom: 1px solid #b29600;    
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .header{
+        padding:1.5em;
+    }
+    
+}

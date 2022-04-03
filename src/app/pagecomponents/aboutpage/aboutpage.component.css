@@ -8,10 +8,14 @@
   }
 
   .top-image-about{
-   /* background-image: url("../../../assets/images/me.jpg");*/
+    background-image: url("../../../assets/images/me.jpg");
     background-size: cover;
     background-position:center;
     height: 26em !important;
+  }
+
+  .container{
+    margin-top: 3em;
   }
 p{
     font-size: 1.2em;

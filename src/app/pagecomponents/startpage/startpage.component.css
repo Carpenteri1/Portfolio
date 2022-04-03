@@ -20,7 +20,7 @@
     
 }
 .gridLayout{
-    margin-top: 5em;
+    margin-top: 6em;
     display: grid;
     grid-gap: 30px 30px;
     grid-template-columns: auto auto auto;

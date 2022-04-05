@@ -1,5 +1,5 @@
 .top-image{
-    background-image: url('../../../assets/images/Untitled.jpg');
+    background-image: url('/assets/images/Untitled.jpg');
     height: 38em;
     background-position:bottom; /* Center the image */
     background-size: cover;

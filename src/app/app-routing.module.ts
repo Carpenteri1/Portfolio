@@ -5,13 +5,15 @@ import { ContactPageComponent } from './pagecomponents//contactpage/contactpage.
 import { PortfolioComponent } from './pagecomponents/portfoliopage/portfoliopage.component';
 import { ReferenserPageComponent } from './pagecomponents/referenserpage/referenserpage.component';
 import { StartPageComponent } from './pagecomponents/startpage/startpage.component';
+import { TestPageComponent } from './pagecomponents/testpage/testpage.component'
 const routes: Routes = 
 [
   { path: "", component: StartPageComponent },
   { path: "About", component: AboutPageComponent },
   { path: "Portfolio", component: PortfolioComponent},
   { path: "Contact", component: ContactPageComponent},
-  { path: "References", component: ReferenserPageComponent}
+  { path: "References", component: ReferenserPageComponent},
+  { path: "TestPage", component: TestPageComponent},
 ];
 
 @NgModule({

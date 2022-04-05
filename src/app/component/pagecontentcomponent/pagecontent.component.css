@@ -1,8 +1,12 @@
 
 .header{
     background-color: #1b1b1b;
-    border-bottom: 1px solid #b29600;    
+    border-bottom: 1.5px solid #b29600;    
     width: 100%;
+}
+.footer{
+    border-bottom: 1.5px solid #b29600;    
+    border-top: 20px solid #b29600;    
 }
 
 @media (max-width:600px) {

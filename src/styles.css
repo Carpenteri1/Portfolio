@@ -1,26 +1,3 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .pagedata{
-    display: block;
-    background-color: #202124;
-    min-height: 80%;
-    min-height: 80vh;
-  }
-
-body, html, app-root {
-    height: 100%;
-    height: 100vh;  
-}
-body {
-    margin-bottom: 100px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+html,body{
+  background-color: #252525;
 }

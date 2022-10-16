@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,27 +9,25 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { HeaderComponent } from './component/headercomponent/header.component';
-import { PageContentComponent } from './component/pagecontentcomponent/pagecontent.component';
+import { FooterComponent } from './component/footercomponent/footer.component';
 import { PortfolioComponent } from './pagecomponents/portfoliopage/portfoliopage.component';
 import { StartPageComponent} from './pagecomponents/startpage/startpage.component'
 import { AboutPageComponent } from './pagecomponents/aboutpage/aboutpage.component';
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
-import { FooterComponent } from './component/footercomponent/footer.component';
 import { ReferenserPageComponent } from './pagecomponents/referenserpage/referenserpage.component';
 import { TestPageComponent } from './pagecomponents/testpage/testpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
     StartPageComponent,
     AboutPageComponent,
     PortfolioComponent,
-    HeaderComponent,
-    PageContentComponent,
     CarouselComponent,
-    FooterComponent,
     ReferenserPageComponent,
-    TestPageComponent
+    TestPageComponent,
   ],
   imports: [
     BrowserModule,  

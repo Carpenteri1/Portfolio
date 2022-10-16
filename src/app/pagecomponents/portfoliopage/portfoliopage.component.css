@@ -1,16 +1,28 @@
 .card{
-    border-radius: 25px;
+   border-radius: 25px;
     font-size: 0.9em;
+    padding: 0.2em;
 }
 .container p{
     text-align: left;
     padding: 0.5em;
+}
 
+.card-img-top{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mer-an-golf-background
+{
+    background-color: black;
+    height: 145px;
+    padding: 3em;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .container{
     padding-top: 2em;
-    padding-bottom: 12em;
+    padding-bottom: 2em;
 }
 
 a {
@@ -21,7 +33,7 @@ a {
 .card-shadow {
     box-shadow: 0 4px 6px -6px gray;
     transition: all 400ms linear;
-    /*transition-delay: 0s;*/
+    /*transition-delay: 0s;*/ 
 }
 .card-shadow:hover{
     box-shadow: 0px 1px 9px 0px gray;
@@ -47,6 +59,7 @@ a {
     
     }
 }
+
 @media (max-width:450px) {
     .grid-container {
         grid-template-columns: auto;
@@ -54,12 +67,6 @@ a {
     }
     .container {
         width: 24em;
-    }
-}
-
-@media (max-width:400px) {
-    .container {
-        width: 22em;
     }
 }
 

@@ -1,0 +1,38 @@
+html, body{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black !important;
+}
+
+p,h1,h2,h3,h4,h5 {
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+color: #2E3445 !important;
+}
+
+header, footer{
+background-color: #2E3445 !important;
+}
+
+.spacer{
+background-color:red 12px Im !important;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/*c for custom*/
+.spacer-sm-no-line {
+  margin-top: 8vw!important;
+  margin-bottom: 8vw!important;
+  border:2px solid black;
+}
+.spacer-high-line{
+  margin: auto;
+  border:2px solid #2b3238!important;
+  width: 25%;
+  margin-top: 24vw!important;
+  margin-bottom: 5vw!important;
+}

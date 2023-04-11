@@ -1,0 +1,15 @@
+
+.container-fluid{
+    padding-top: 2em;
+    align-content: center;
+    background-color: #252525;
+    border-top: 1.5px solid #b29600;
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: lightblue;
+}

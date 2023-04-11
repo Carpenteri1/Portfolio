@@ -1,0 +1,28 @@
+h1, h5{
+  color: aliceblue;
+}
+/*
+.progress {
+  height: 2em;
+  margin: 2.5em;
+  border-radius: 5px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  height: 100%;
+}
+
+.progress-bar-text {
+  width: 100%;
+  text-align: center;
+}*/.progress-wrapper {
+  display: flex;
+ 
+
+  height: 100%;
+}

@@ -11,7 +11,7 @@ import { HeaderComponent } from './component/headercomponent/header.component';
 import { FooterComponent } from './component/footercomponent/footer.component';
 import { StartPageComponent} from './pagecomponents/startpage/startpage.component'
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FontAwesomeModule,
     CommonModule,
     NgbModule,
-    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

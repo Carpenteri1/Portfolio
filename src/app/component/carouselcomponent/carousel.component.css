@@ -1,28 +1,17 @@
-h1, h5{
-  color: aliceblue;
-}
-/*
-.progress {
-  height: 2em;
-  margin: 2.5em;
-  border-radius: 5px;
-  color: aliceblue;
-  text-align: center;
+.setspace {
+  padding: 1em;
 }
 
-.progress-bar {
-  display: flex;
-  align-items: center;
-  background-color: red;
-  height: 100%;
+:host ::ng-deep mat-progress-bar {
+  height: 1.5em;
 }
 
-.progress-bar-text {
-  width: 100%;
-  text-align: center;
-}*/.progress-wrapper {
-  display: flex;
- 
+:host ::ng-deep mat-progress-bar .mdc-linear-progress__bar-inner {
+  border-top-width: 1.5em;
+}
 
-  height: 100%;
+.progress-bar-title{
+  margin-top: -1.5em;
+  z-index:1;
+  position: relative;
 }

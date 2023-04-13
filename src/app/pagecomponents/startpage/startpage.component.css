@@ -2,13 +2,14 @@ html, body{
   margin: 0px;
   height: 100%;
   width: 100%;
-  background-color: black !important;
+  color:white;
+  background-color: #2E3445;
 }
 
 p,h1,h2,h3,h4,h5 {
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
-color: #2E3445 !important;
+color: white !important;
 }
 
 header, footer{

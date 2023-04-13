@@ -5,6 +5,10 @@ html, body{
   color:white;
   background-color: #2E3445;
 }
+.title{
+  font-size: 10em;
+
+}
 
 p,h1,h2,h3,h4,h5 {
 font-family: 'Courier New', Courier, monospace;

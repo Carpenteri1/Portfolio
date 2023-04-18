@@ -22,65 +22,31 @@ h5 {
   font-weight: bold;
   color: white !important;
 }
-
 header,
 footer {
   background-color: #2E3445 !important;
 }
 
-.spacer {
-  background-color: red 12px Im !important;
-}
-
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
-
-/*c for custom*/
-.spacer-sm-no-line {
-  margin-top: 8vw !important;
-  margin-bottom: 8vw !important;
-  border: 2px solid black;
-}
-
-.spacer-high-line {
-  margin: auto;
-  border: 2px solid #2b3238 !important;
-  width: 25%;
-  margin-top: 24vw !important;
-  margin-bottom: 5vw !important;
-}
-
-p,
-h1 {
-  color: white;
-}
-
-
 .full-page {
   height: 100vh;
-  border: 2px solid red;
 }
-
 
 .scroll-dots-container {
   position: fixed;
-  top: 0;
-  right: 0;
   display: flex;
   flex-direction: column;
+  margin-top: 42vh;
+  width: 4%;
+  right: 0;
 }
 
 .scroll-dot {
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
-  background-color: #ccc;
-  cursor: pointer;
-}
-
-.scroll-dot.active {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
   background-color: #000;
+  border-color: #000; 
 }
 
 .center {
@@ -88,4 +54,8 @@ h1 {
   height: 100vh;
   border: 3px solid green;
   padding: 10px;
+}
+
+.container{
+  margin-top: 15vh;
 }

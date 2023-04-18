@@ -1,43 +1,61 @@
-html, body{
+html,
+body {
   margin: 0px;
   height: 100%;
   width: 100%;
-  color:white;
+  color: white;
   background-color: #2E3445;
+  overflow: hidden;
 }
-.title{
+
+.title {
   font-size: 10em;
-
 }
 
-p,h1,h2,h3,h4,h5 {
-font-family: 'Courier New', Courier, monospace;
-font-weight: bold;
-color: white !important;
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: white !important;
+}
+header,
+footer {
+  background-color: #2E3445 !important;
 }
 
-header, footer{
-background-color: #2E3445 !important;
+.full-page {
+  height: 100vh;
 }
 
-.spacer{
-background-color:red 12px Im !important;
+.scroll-dots-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin-top: 42vh;
+  width: 4%;
+  right: 0;
 }
 
-.selector-for-some-widget {
-  box-sizing: content-box;
+.scroll-dot {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #000;
+  border-color: #000; 
 }
 
-/*c for custom*/
-.spacer-sm-no-line {
-  margin-top: 8vw!important;
-  margin-bottom: 8vw!important;
-  border:2px solid black;
-}
-.spacer-high-line{
+.center {
   margin: auto;
-  border:2px solid #2b3238!important;
-  width: 25%;
-  margin-top: 24vw!important;
-  margin-bottom: 5vw!important;
+  height: 100vh;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.container{
+  margin-top: 15vh;
 }

@@ -10,6 +10,7 @@ import { FooterComponent } from './component/footercomponent/footer.component';
 import { StartPageComponent} from './pagecomponents/startpage/startpage.component'
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { TypewriterComponent } from './component/typewritercomponent/typewriter.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     FooterComponent,
     StartPageComponent,
     CarouselComponent,
+    TypewriterComponent
   ],
   imports: [
     BrowserModule,  
@@ -25,7 +27,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     FormsModule,
     FontAwesomeModule,
     CommonModule,
-    MatProgressBarModule
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

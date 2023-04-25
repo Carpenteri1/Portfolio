@@ -1,5 +1,6 @@
 <div class="setspace" *ngFor="let item of currentListOfSKills">
-    <mat-progress-bar color="accent" mode="determinate" value="{{item.level}}"> 
-    </mat-progress-bar>
-    <p class="progress-bar-title text-center"> {{item.name}} {{item.level}} %</p>
+    <p class="text-center">{{item.name}} {{item.level}}</p>
+    <div class="progress">
+        <div class="progress-bar" style="padding-top: 4em;width:{{item.level}}%;"></div>
+    </div>
 </div>

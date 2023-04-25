@@ -29,6 +29,7 @@ footer {
 
 .full-page {
   height: 100vh;
+  border-color: #b29600;border-style: solid;
 }
 
 .scroll-dots-container {
@@ -42,20 +43,9 @@ footer {
 
 .scroll-dot {
   margin-top: 20px;
-  width: 30px;
-  height: 30px;
+  width: 1vh;
+  height: 2vh;
   border-radius: 100%;
-  background-color: #000;
-  border-color: #000; 
-}
-
-.center {
-  margin: auto;
-  height: 100vh;
-  border: 3px solid green;
-  padding: 10px;
-}
-
-.container{
-  margin-top: 15vh;
+  background-color: white;
+  border-color: white; 
 }

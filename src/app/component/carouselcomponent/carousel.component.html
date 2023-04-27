@@ -1,6 +1,16 @@
-<div class="setspace" *ngFor="let item of currentListOfSKills">
-    <p class="text-center">{{item.name}} {{item.level}}</p>
-    <div class="progress">
-        <div class="progress-bar" style="padding-top: 4em;width:{{item.level}}%;"></div>
+
+<div class="container">
+    <div class="setspace text-center" *ngFor="let item of currentListOfSKills">
+        <div class="row">
+            <div class="col-2" style="text-align: right;">
+            <p>{{item.name}}:</p>
+            </div>
+            <div class="col-9 pt-1">
+                <div class="progress">
+                    <div class="progress-bar" style="background-color: #b29600;width:{{item.level}}%;"></div> 
+                 </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
     </div>
 </div>

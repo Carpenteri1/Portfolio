@@ -1,9 +1,9 @@
 
 <div class="container">
-    <div class="setspace text-center" *ngFor="let item of currentListOfSKills">
+    <div class="setspace" *ngFor="let item of currentListOfSKills">
         <div class="row">
             <div class="col-2" style="text-align: right;">
-            <p>{{item.name}}:</p>
+            <p>{{item.name}} {{item.level}}%:</p>
             </div>
             <div class="col-9 pt-1">
                 <div class="progress">

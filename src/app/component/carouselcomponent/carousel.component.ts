@@ -11,11 +11,13 @@ import { Component, OnInit } from "@angular/core";
 export class CarouselComponent implements OnInit {
 
     skillList1: Skill[] = [
-        { name: ".Net", level: 80 },
+        { name: ".Net Core", level: 80 },
+        { name: ".Net Framework", level: 60 },
         { name: "Asp.Net", level: 80 },
-        { name: "Xamarin", level: 60 },
-        { name: "Entity Framework", level: 50 },
-        { name: "Dapper", level: 60 },
+        { name: "Xamarin", level: 70 },
+        { name: "Angular", level: 50 },
+        { name: "Entity FW", level: 50 },
+        { name: "Dapper", level: 50 },
         { name: "SQL/T-SQL", level: 60 },
         { name: "Docker", level: 45 },
         { name: "Kubernetes", level: 10 },
@@ -25,6 +27,7 @@ export class CarouselComponent implements OnInit {
         { name: "Html", level: 80 },
         { name: "CSS/Boostrap", level: 60 },
         { name: "C#", level: 100 },
+        { name: "Java", level: 40 },
         { name: "Javascript", level: 50 },
         { name: "Typescript", level: 40 },
         { name: "XML", level: 75 },
@@ -34,9 +37,13 @@ export class CarouselComponent implements OnInit {
     ];
 
     skillList3: Skill[] = [
-        { name: "npm", level: 50 },
+        { name: "NPM", level: 50 },
         { name: "Git", level: 80 },
-        { name: "Angular", level: 60 },
+        { name: "Linux", level: 70 },
+        { name: "Mysql", level: 50 },
+        { name: "MSSQL", level: 70 },
+        { name: "Yatch", level: 50 },
+        { name: "Rancher", level: 30 },
     ];
 
     listOfSkills: Skill[][] = [

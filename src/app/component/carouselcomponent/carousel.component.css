@@ -1,17 +1,3 @@
 .setspace {
-  padding: 1em;
-}
-
-:host ::ng-deep mat-progress-bar {
-  height: 1.5em;
-}
-
-:host ::ng-deep mat-progress-bar .mdc-linear-progress__bar-inner {
-  border-top-width: 1.5em;
-}
-
-.progress-bar-title{
-  margin-top: -1.5em;
-  z-index:1;
-  position: relative;
+  padding: 0.5em;
 }

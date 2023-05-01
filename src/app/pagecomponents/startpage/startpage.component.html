@@ -1,72 +1,94 @@
   <div class="row">
-      <div class="full-page" style="width: 100%;background-color: brown;" #sectionOne>
+      <div class="full-page d-flex justify-content-center align-items-center" #sectionOne>
        <typewriter></typewriter>
     </div>
-      <div class="full-page" style="background-color: blueviolet;" #sectionTwo>
+      <div class="full-page d-flex justify-content-center align-items-center"  style="background-color: #313d4b;" #sectionTwo>
         <div class="container">
         <div class="row">
           <carousel-component></carousel-component>
         </div>
       </div>
     </div>
-      <div class="full-page" style="background-color: aqua;" #sectionThree>
+      <div class="full-page d-flex justify-content-center align-items-center" #sectionThree>
+        <div class="container">
+          <div class="row">
+            <p>
+              As a .NET developer with almost 3 years of experience, I have worked on several projects with significant
+              responsibility in the development process.<br><br>
+  
+              One of my most significant achievements was working on a website for a customer of Andre med vänner. My
+              colleague,
+              a UX designer, and I collaborated on developing the website, including creating a custom CMS. The CMS
+              allowed
+              the
+              customer to log in with a crypted password and have the ability to change text, images, layout, and add or
+              remove
+              webpages. The CMS project was then connected to the main page, making it easy for the customer to manage
+              their
+              website.<br><br>
+  
+              I have also worked on several projects for Techstep, where I was responsible for developing apps in Xamarin
+              and
+              Android for big names in the industris of public transport, courier and mail,transport and logistics.
+              Been on both backend and frontend development, but my focus has mostly been on frontend development. My
+              duties
+              included
+              developing functions, layouts, looking at error logs, bug fixing, handling different events with Docker and
+              Rancher, and delivering excellent solutions to our customers. My team and I also maintained close contact
+              with
+              customers and planned workflows using Scrum and Agile methodologies.<br><br>
+  
+              I am proud of my work on one of our clients in logistics, they gave me complete responsibility for
+              developing a solution
+              that
+              allowed customers to track pallets with materials by scanning barcodes and RFID tags using their phones. The
+              solution connected to a back-office database, enabling users to track all the relevant data.<br><br>
+  
+              As a passionate and driven developer, I enjoy creating solutions using cutting-edge technology. While my
+              main
+              focus is .NET development, I am always keen to explore new technologies and frameworks as long as they
+              relate to
+              my work with .NET. I look forward to bringing my skills and experience to new challenges and opportunities
+              in
+              the future.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="full-page d-flex justify-content-center align-items-center" style="background-color: #313d4b;" #sectionFour>
         <div class="container">
         <div class="row">
-          <p>
-            As a .NET developer with almost 3 years of experience, I have worked on several projects with significant
-            responsibility in the development process. My technical skills include knowledge of dotnet core and
-            framework,
-            C#,
-            REST-API, SQL, T-SQL, JavaScript, HTML, CSS, Blazer, MVC, Xamarin, Java, and Android.<br><br>
-
-            One of my most significant achievements was working on a website for a customer of Andre med vänner. My
-            colleague,
-            a UX designer, and I collaborated on developing the website, including creating a custom CMS. The CMS
-            allowed
-            the
-            customer to log in with a crypted password and have the ability to change text, images, layout, and add or
-            remove
-            webpages. The CMS project was then connected to the main page, making it easy for the customer to manage
-            their
-            website.<br><br>
-
-            I have also worked on several projects for Techstep, where I was responsible for developing apps in Xamarin
-            and
-            Android for big names in the industris of public transport, courier and mail,transport and logistics.
-            Been on both backend and frontend development, but my focus has mostly been on frontend development. My
-            duties
-            included
-            developing functions, layouts, looking at error logs, bug fixing, handling different events with Docker and
-            Rancher, and delivering excellent solutions to our customers. My team and I also maintained close contact
-            with
-            customers and planned workflows using Scrum and Agile methodologies.<br><br>
-
-            I am proud of my work on one of our clients in logistics, they gave me complete responsibility for
-            developing a solution
-            that
-            allowed customers to track pallets with materials by scanning barcodes and RFID tags using their phones. The
-            solution connected to a back-office database, enabling users to track all the relevant data.<br><br>
-
-            As a passionate and driven developer, I enjoy creating solutions using cutting-edge technology. While my
-            main
-            focus is .NET development, I am always keen to explore new technologies and frameworks as long as they
-            relate to
-            my work with .NET. I look forward to bringing my skills and experience to new challenges and opportunities
-            in
-            the future.
-          </p>
         </div>
       </div>
       </div>
-      <div #sectionFour>
-        <div class="container">
-          <div class="row"></div>
-        </div>
+      <div #sectionFive>
+        <footer-component></footer-component>
       </div>
       <div class="scroll-dots-container">
-        <button (click)="scroll(sectionOne)" class="scroll-dot"></button>
-        <button (click)="scroll(sectionTwo)" class="scroll-dot"></button>
-        <button (click)="scroll(sectionThree)" class="scroll-dot"></button>
-        <button (click)="scroll(sectionFour)" class="scroll-dot"></button>
-    </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" (click)="scroll(sectionOne)" class="form-check-input" name="optradio" checked>
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" (click)="scroll(sectionTwo)" class="form-check-input" name="optradio">
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" (click)="scroll(sectionThree)" class="form-check-input" name="optradio">
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" (click)="scroll(sectionFour)" class="form-check-input" name="optradio">
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" (click)="scroll(sectionFive)" class="form-check-input" name="optradio">
+          </label>
+        </div>
+      </div>
   </div>

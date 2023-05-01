@@ -12,6 +12,11 @@ body {
   font-size: 10em;
 }
 
+typewriter{
+  width: 100%;
+  height: 50%;
+}
+
 p,
 h1,
 h2,
@@ -28,7 +33,8 @@ footer {
 
 .full-page {
   height: 100vh;
-  border-color: #b29600;border-style: solid;
+  border-color: #b29600;
+  border-style: solid;
 }
 
 .scroll-dots-container {

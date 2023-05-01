@@ -1,5 +1,5 @@
-import { Component, NgModule } from "@angular/core";
-import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { Component } from "@angular/core";
+
 @Component({
     selector:'footer-component',
     templateUrl:'footer.component.html',
@@ -11,6 +11,5 @@ import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 })
 
 export class FooterComponent{
-  linkedIn = faLinkedin;
-  github = faGithubSquare;
+
 }

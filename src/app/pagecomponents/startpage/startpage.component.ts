@@ -32,6 +32,8 @@ export class StartPageComponent {
     if (deltaY > 0) {
       // Scrolling down
       if (this.sectionOne.nativeElement.getBoundingClientRect().bottom > 0) {
+        //TODO grabb element input and set it to checked, 
+        //Also remove the checked for input one
         this.scrollTo(this.sectionTwo);
       } else if (this.sectionTwo.nativeElement.getBoundingClientRect().bottom > 0) {
         this.scrollTo(this.sectionThree);

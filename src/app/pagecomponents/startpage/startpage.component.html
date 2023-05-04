@@ -1,4 +1,4 @@
-  <div class="row">
+  <div class="row" (wheel)="onScroll($event)">
       <div class="full-page d-flex justify-content-center align-items-center" #sectionOne>
        <typewriter></typewriter>
     </div>
@@ -67,27 +67,27 @@
       <div class="scroll-dots-container">
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" (click)="scroll(sectionOne)" class="form-check-input" name="optradio" checked>
+            <input type="radio" (click)="clickScroll(sectionOne)" class="form-check-input" name="optradio" id="sectionOneInput" checked>
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" (click)="scroll(sectionTwo)" class="form-check-input" name="optradio">
+            <input type="radio" (click)="clickScroll(sectionTwo)" class="form-check-input" name="optradio" id="sectionTwoInput">
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" (click)="scroll(sectionThree)" class="form-check-input" name="optradio">
+            <input type="radio" (click)="clickScroll(sectionThree)" class="form-check-input" name="optradio" id="sectionThreeInput">
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" (click)="scroll(sectionFour)" class="form-check-input" name="optradio">
+            <input type="radio" (click)="clickScroll(sectionFour)" class="form-check-input" name="optradio" id="sectionFourInput">
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input type="radio" (click)="scroll(sectionFive)" class="form-check-input" name="optradio">
+            <input type="radio" (click)="clickScroll(sectionFive)" class="form-check-input" name="optradio" id="sectionFiveInput">
           </label>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
     styleUrls:
     [
       'footer.component.css',
-      '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+      '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css'
     ]
 })
 

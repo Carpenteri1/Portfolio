@@ -10,6 +10,7 @@ import { FooterComponent } from './component/footercomponent/footer.component';
 import { StartPageComponent} from './pagecomponents/startpage/startpage.component'
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
 import { TypewriterComponent } from './component/typewritercomponent/typewriter.component';
+import { AboutMeComponent } from './component/aboutmecomponent/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TypewriterComponent } from './component/typewritercomponent/typewriter.
     FooterComponent,
     StartPageComponent,
     CarouselComponent,
-    TypewriterComponent
+    TypewriterComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,  

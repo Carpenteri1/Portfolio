@@ -1,0 +1,28 @@
+.card{
+  margin-right: 1rem;
+}
+.card-img-top{
+  height: 180px;
+  width: 100%;
+}
+.card-title{
+  color:black !important;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 4%;
+}
+.card-body{
+  padding: 0%;
+}
+.card-text{
+  padding: auto;
+  color:black !important;
+  font-size: small;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 4%;
+}
+.card-footer{
+  font-size: x-small;
+  text-align: right;
+}

@@ -26,3 +26,11 @@
   font-size: x-small;
   text-align: right;
 }
+button > i {
+  color:#b29600;
+  font-size:40px;
+}
+button:active {
+  border-style: outset !important;
+}
+

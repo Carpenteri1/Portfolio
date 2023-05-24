@@ -10,7 +10,7 @@ import { FooterComponent } from './component/footercomponent/footer.component';
 import { StartPageComponent} from './pagecomponents/startpage/startpage.component'
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
 import { TypewriterComponent } from './component/typewritercomponent/typewriter.component';
-import { AboutMeComponent } from './component/aboutmecomponent/aboutme.component';
+import { CardLayoutComponent } from './component/cardlayoutcomponent/cardlayout.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { AboutMeComponent } from './component/aboutmecomponent/aboutme.component
     StartPageComponent,
     CarouselComponent,
     TypewriterComponent,
-    AboutMeComponent
+    CardLayoutComponent
   ],
   imports: [
     BrowserModule,  

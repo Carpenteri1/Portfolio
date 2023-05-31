@@ -83,7 +83,7 @@ export class StartPageComponent {
         this.setInputToChecked(
         elementIdOne,
         elementIdTwo);
-      },350);
+      },300);
   }
   scrollTo(element: ElementRef) {
       element.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });

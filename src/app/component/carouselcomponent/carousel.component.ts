@@ -1,12 +1,23 @@
 import { Component, OnInit } from "@angular/core";
+import { transition, style, animate, trigger } from '@angular/animations';
 
 @Component({
     selector: 'carousel-component',
     templateUrl: 'carousel.component.html',
     styleUrls: ['carousel.component.css'],
+    animations: 
+    [    
+        trigger('fade', [
+            transition(':enter', [
+                style({ opacity: 0 }),
+                animate(3000, style({ opacity: 1 }))
+            ]),
+            transition(':leave', [
+                style({ opacity: 1 }),
+            ])
+        ])     
+    ]
 })
-
-
 
 export class CarouselComponent implements OnInit {
 
@@ -69,6 +80,7 @@ export class CarouselComponent implements OnInit {
     ngOnInit() {
         this.carouselTime();
     }
+    
 }
 interface Skill {
     name: string;

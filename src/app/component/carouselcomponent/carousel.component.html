@@ -1,6 +1,6 @@
 
 <div class="container">
-    <div class="setspace" *ngFor="let item of currentListOfSKills">
+    <div class="setspace" *ngFor="let item of currentListOfSKills" @fade>
         <div class="row">
             <div class="col-2" style="text-align: right;">
             <p>{{item.name}} {{item.level}}%:</p>

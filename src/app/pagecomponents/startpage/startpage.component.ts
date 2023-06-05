@@ -1,17 +1,10 @@
 import { ViewEncapsulation, Component, ElementRef, ViewChild } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'startpage-component',
   encapsulation: ViewEncapsulation.None,
   templateUrl: 'startpage.component.html',
-  styleUrls: ['startpage.component.css'],
-  animations: [
-    trigger('fadeInOut', [
-      state('void', style({ opacity: 0 })),
-      transition('void <=> *', animate(500)),
-    ]),
-  ],
+  styleUrls: ['startpage.component.css']
 })
 export class StartPageComponent {
 

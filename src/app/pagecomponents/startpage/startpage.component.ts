@@ -8,7 +8,6 @@ import { ViewEncapsulation, Component, ElementRef, ViewChild } from '@angular/co
 })
 export class StartPageComponent {
 
-  scrollCompleted : boolean = true;
   private readonly sectionOneInput: string = "sectionOneInput";
   private readonly sectionTwoInput: string = "sectionTwoInput";
   private readonly sectionThreeInput: string = "sectionThreeInput";

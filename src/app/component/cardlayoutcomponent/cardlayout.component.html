@@ -1,50 +1,32 @@
 <div class="container">
   <div class="row">
     <div class="col-1 d-flex justify-content-center align-items-center">
-      <button class="btn"><i class="bi bi-arrow-left"></i></button>
+      <button class="btn" (click)="navigate('left')"><i class="bi bi-arrow-left"></i></button>
     </div>
     <div class="col-10">
-      <div class="card-group">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-group" [hidden]="currentCardIndex == 0" >
+        <div class="card" *ngFor="let card of cardGroupOne; let i = index">
+          <img class="card-img-top" src={{card.image}} alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <h5 class="card-title">{{card.title}}</h5>
+            <p class="card-text">{{card.text}}</p>
           </div>
-          <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+          <div class="card-footer"><small class="text-muted">{{card.lastUpdated}}</small></div>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+      </div>
+      <div class="card-group" [hidden]="currentCardIndex == 1" >
+        <div class="card" *ngFor="let card of cardGroupTwo; let i = index">
+          <img class="card-img-top" src={{card.image}} alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <h5 class="card-title">{{card.title}}</h5>
+            <p class="card-text">{{card.text}}</p>
           </div>
-          <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+          <div class="card-footer"><small class="text-muted">{{card.lastUpdated}}</small></div>
         </div>
       </div>
     </div>
     <div class="col-1 d-flex justify-content-center align-items-center">
-      <button class="btn"><i class="bi bi-arrow-right"></i></button>
+      <button class="btn" (click)="navigate('right')"><i class="bi bi-arrow-right"></i></button>
     </div>
   </div>
 </div>

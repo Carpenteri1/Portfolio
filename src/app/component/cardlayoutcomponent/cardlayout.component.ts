@@ -5,17 +5,6 @@ import { trigger, style, transition, animate } from '@angular/animations';
     selector: 'cardlayout-component',
     templateUrl: 'cardlayout.component.html',
     styleUrls: ['cardlayout.component.css'],
-    animations: [
-        trigger('slideInOut', [
-          transition(':enter', [
-            style({ transform: 'translateX(-100%)' }),
-            animate('300ms ease-in', style({ transform: 'translateX(0%)' }))
-          ]),
-          transition(':leave', [
-            animate('300ms ease-in', style({ transform: 'translateX(100%)' }))
-          ])
-        ])
-      ]
 })
 
 export class CardLayoutComponent implements OnInit {

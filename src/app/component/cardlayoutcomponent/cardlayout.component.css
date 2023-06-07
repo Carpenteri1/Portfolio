@@ -1,5 +1,7 @@
 .card{
   margin-right: 1rem;
+  transition: transform 300ms ease-in;
+
 }
 .card-img-top{
   height: 180px;

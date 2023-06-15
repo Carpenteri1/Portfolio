@@ -1,9 +1,6 @@
 .card-title{
   padding-bottom: 1em;
 }
-h5{
-  color: #2E3445;
-}
 
 .shadow-custom:hover{
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .25), 0 3px 11px 8px rgba(0, 0, 0, .55) !important;

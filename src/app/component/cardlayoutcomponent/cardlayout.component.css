@@ -1,6 +1,21 @@
+.card-title{
+  padding-bottom: 1em;
+}
+
+.shadow-custom:hover{
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .25), 0 3px 11px 8px rgba(0, 0, 0, .55) !important;
+}
+
 .card{
   margin-right: 1rem;
+  height: 15em;
+  padding: 1.5em;
+  background-color: #b3b3b3;
 }
+.card:hover{
+  height: 15.1em !important;
+}
+
 .card-img-top{
   height: 180px;
   width: 100%;

@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { transition, style, animate, trigger } from '@angular/animations';
-
+import { ISkill } from "src/app/Interfaces/ISkill";
 @Component({
     selector: 'carousel-component',
     templateUrl: 'carousel.component.html',
@@ -21,7 +21,7 @@ import { transition, style, animate, trigger } from '@angular/animations';
 
 export class CarouselComponent implements OnInit {
 
-    skillList1: Skill[] = [
+    skillList1: ISkill[] = [
         { name: ".Net Core", level: 80 },
         { name: ".Net Framework", level: 60 },
         { name: "Asp.Net", level: 80 },
@@ -34,7 +34,7 @@ export class CarouselComponent implements OnInit {
         { name: "Kubernetes", level: 10 },
     ];
 
-    skillList2: Skill[] = [
+    skillList2: ISkill[] = [
         { name: "Html", level: 80 },
         { name: "CSS/Boostrap", level: 60 },
         { name: "C#", level: 100 },
@@ -47,7 +47,7 @@ export class CarouselComponent implements OnInit {
         { name: "RestFul API", level: 75 },
     ];
 
-    skillList3: Skill[] = [
+    skillList3: ISkill[] = [
         { name: "NPM", level: 50 },
         { name: "Git", level: 80 },
         { name: "Linux", level: 70 },
@@ -57,14 +57,14 @@ export class CarouselComponent implements OnInit {
         { name: "Rancher", level: 30 },
     ];
 
-    listOfSkills: Skill[][] = [
+    listOfSkills: ISkill[][] = [
         this.skillList1,
         this.skillList2,
         this.skillList3
     ];
 
     index: number = 0;
-    currentListOfSKills: Skill[] = this.listOfSkills[this.index];
+    currentListOfSKills: ISkill[] = this.listOfSkills[this.index];
     
     carouselTime() {
         setInterval(() => this.setMessage(), 5000);
@@ -81,8 +81,4 @@ export class CarouselComponent implements OnInit {
         this.carouselTime();
     }
     
-}
-interface Skill {
-    name: string;
-    level: number;
 }

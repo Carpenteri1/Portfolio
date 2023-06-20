@@ -54,3 +54,9 @@ footer {
   background-color: white;
   border-color: white; 
 }
+
+@media only screen and (max-height: 720px) {
+  #sectionOne{
+      padding: -10em !important;
+  }
+}

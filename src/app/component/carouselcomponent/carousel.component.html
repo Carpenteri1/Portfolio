@@ -1,16 +1,16 @@
 
-<div class="container">
+<div class="container-fluid">
     <div class="setspace" *ngFor="let item of currentListOfSKills" @fade>
         <div class="row">
-            <div class="col-2" style="text-align: right;">
+            <div class="col-xl-2 col-sm-3 col-xs-4" style="text-align: right;">
             <p>{{item.name}} {{item.level}}%:</p>
             </div>
-            <div class="col-9 pt-1">
+            <div class="col-xl-9 col-sm-9 col-xs-8 pt-1">
                 <div class="progress">
                     <div class="progress-bar" style="background-color: #b29600 ;width:{{item.level}}%;"></div> 
                  </div>
             </div>
-            <div class="col-1"></div>
+            <div class="col-xl-1"></div>
         </div>
     </div>
 </div>

@@ -9,8 +9,8 @@ export class TypewriterComponent implements OnInit {
   titleOne = '';
   titleTwo = '';
   textValue = "";
-  private readonly delayTitles = 0;//180;
-  private readonly delayText = 0;//60;
+  private readonly delayTitles = 180;
+  private readonly delayText = 60;
 
   ngOnInit() {
     this.TypeTitleOne("Welcome...",0)

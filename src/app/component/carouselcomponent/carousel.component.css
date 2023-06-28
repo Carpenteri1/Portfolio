@@ -2,6 +2,40 @@
   padding: 0.5em;
 }
 
+@media only screen and (max-height: 340px)
+{
+
+  .col-xl-2, 
+  .col-sm-4,
+  .col-xs-4 p{
+    z-index: 1;
+    height: 1em;
+    color:black !important;
+    }
+    .progress{
+      z-index: 0;
+    }
+}
+
+@media only screen and (max-height: 240px)
+{
+  .col-xl-2, 
+  .col-sm-4,
+  .col-xs-4 p{
+    height: 0.7em;
+    font-size: 0.8em;
+    margin-bottom: 0.5em !important;
+  }
+  .col-xl-9, 
+  .col-sm-8,
+  .col-xs-8{
+    bottom: 1em;
+  }
+  .progress{
+    height: 0.8em !important;
+  }
+}
+
 @media only screen and (max-width: 835px),
 screen and (max-height: 520px) {
     .setspace{
@@ -31,13 +65,12 @@ screen and (max-height: 655px) {
 
 }
 
-@media only screen and (min-heigth: 420px ){
+@media only screen and (min-height: 420px ){
   .setspace{
     padding:0;
   }
   .progress{
     height: 2em !important;
-    border:2px solid red !important;
   }
 }
 

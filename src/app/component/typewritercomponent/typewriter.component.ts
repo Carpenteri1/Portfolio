@@ -9,8 +9,8 @@ export class TypewriterComponent implements OnInit {
   titleOne = '';
   titleTwo = '';
   textValue = "";
-  private readonly delayTitles = 0;//180;
-  private readonly delayText = 0;//60;
+  private readonly delayTitles = 180;
+  private readonly delayText = 60;
 
   ngOnInit() {
     this.TypeTitleOne("Welcome...",0)
@@ -18,24 +18,12 @@ export class TypewriterComponent implements OnInit {
 
   private TypeTitleOne(titleValue : string, fromIndex : number) 
   {
-    this.titleOne = titleValue; //+= titleValue[fromIndex];
-
-
-    //TODO remove this only for fixing css
-    this.titleTwo = "I'm Niclas";
-    this.textValue = "Software engineer based in Varberg, Sweden. " + 
-    "\n I describe myself as a passionate .NET developer, \n" +
-    "always keen to explore new technologies and frameworks to help me stay at the forefront. \n" +
-    "I have experience in developing both robust and scalable applications for small business and enterprises." 
-    //TODO remove this, only for fixing css
-
-    /*
-   
+    this.titleOne += titleValue[fromIndex];
     fromIndex++;
 
     if (fromIndex < titleValue.length)
       setTimeout(() => this.TypeTitleOne(titleValue,fromIndex), this.delayTitles);
-    else this.TypeTitleTwo("I'm Niclas",0);*/
+    else this.TypeTitleTwo("I'm Niclas",0);
   }
 
   private TypeTitleTwo(titleValue : string, fromIndex : number) {

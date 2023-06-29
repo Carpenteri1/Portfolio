@@ -1,13 +1,55 @@
+.titleTwo{
+    padding-left: 0.8em !important;
+}
+.infotext{
+    padding-left: 1.8em !important;
+}
 
-@media only screen and (max-height: 900px),
-screen and (max-witdh: 1190px) {
+@media only screen and (max-height: 950px) 
+and (max-width: 1190px) {
     .container{
-        padding: 0%;
-        margin-top: -6em;
+        align-content: center;
+    }
+    .title{
+        font-size:7em;
+    }
+
+    .title{
+        font-size:6em;
+        padding-left: 0.3em !important;
+    }
+    .titleTwo{
+        font-size: 2.5em;   
+
+    }
+    .infotext{
+        font-size: 1.2em; 
+        padding-left: 1.6em !important;
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-height: 1100px) 
+and (max-width: 1250px),
+only screen and (max-width: 995px) {
+    .container{
+        width: 80%;
+    }
+    .title{
+        font-size:6em;
+    }
+}
+/*
+@media only screen and (max-width: 995px){
+    .container{
+        width: 80%;
+    }
+    .title{
+        font-size:6em !important;
+    }
+}*/
+
+/*
+@media only screen and(max-heigth) and (max-width: 1080px) {
     .title{
         font-size:8em;
     }
@@ -17,12 +59,15 @@ screen and (max-witdh: 1190px) {
 {
     .title{
         font-size:6em;
+        padding-left: 0.3em !important;
     }
     .titleTwo{
         font-size: 2.5em;   
+
     }
     .infotext{
         font-size: 1.2em; 
+        padding-left: 1.6em !important;
     }
     .container{
         margin-top: -4em;
@@ -49,9 +94,11 @@ screen and (max-witdh: 360px) {
     .container{
         margin-top: -4em;
     }
+    .title{
+        padding-left: 0.em !important;
+    }
     .titleTwo{
         margin-top: -1em;   
-        margin-left: -0.2em;
     }
     .infotext{
         margin-top: -1em;   
@@ -67,29 +114,105 @@ screen and (max-witdh: 360px) {
 
 @media only screen and (max-width: 335px) {
     .title{
-        margin-top: -2em;
+        margin-top: -1em;
         font-size:2.2em;
     }
     .titleTwo{
         font-size: 1.6em;  
-        margin-top: -1.4em;
-        margin-left: -0.2em; 
+        margin-top: -2em;
        }
     .infotext{
-        margin-top: -1.4em;
+        margin-top: -3em;
     }
 }
 
-@media only screen and (max-height: 550px),
-screen and (max-witdh: 235px) {
+@media only screen and (max-height: 550px) 
+and (max-witdh: 270px) {
     .title{
-        font-size: 1.8em;  
+        margin-top: 0.1em;
+        font-size: 1.6em;  
+        padding-left: 0.7em !important;
     }
     .titleTwo{
-      font-size: 1.2em;  
+      font-size: 1em;  
+      margin-top: -2.5em;
+      padding-left: 1.2em !important;
     }
     .infotext{
-        font-size: 0.8em;  
+        font-size: 0.7em;  
+        margin-top: -4.5em;
     }
 }
 
+@media only screen and (max-height: 300px) {
+    .title{
+        margin-bottom: -1.4em;
+        font-size: 1.5em;  
+    }
+    .titleTwo
+    {
+        margin-top: -1em;   
+        font-size: 1em;  
+    }
+    .infotext
+    {
+        font-size: 0.6em;  
+    }
+}
+
+@media only screen and (max-height: 250px),
+screen and (max-witdh: 250px) { 
+    .title{
+        margin-bottom: -1.7em;
+        font-size: 1.4em;  
+    }
+    .titleTwo
+    {
+        font-size: 0.8em;  
+    }
+    .infotext
+    {
+        margin-top: -5em;   
+    }
+}
+
+@media only screen and (max-height: 215px)
+ {
+    .title
+    {
+        color:red !important;
+        font-size: 1.3em; 
+        margin-top: -10em;
+    }
+    .titleTwo
+    {
+        font-size: 0.8em;
+        margin-top: -3.5em;
+    }
+ 
+    .infotext
+    {
+        margin-top: -6em;
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 215px)
+{
+    .title
+    {
+        font-size: 1.3em; 
+        margin-top: -0.2em;
+    }
+    .titleTwo
+    {
+        font-size: 0.8em;
+        margin-top: -3.5em;
+    }
+ 
+    .infotext
+    {
+        margin-top: -6em;
+        font-size: 0.5em;
+    }
+}*/

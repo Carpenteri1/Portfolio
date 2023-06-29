@@ -30,7 +30,8 @@ and (max-width: 1190px) {
 
 @media only screen and (max-height: 1100px) 
 and (max-width: 1250px),
-only screen and (max-width: 995px) {
+only screen and (max-width: 995px)
+ {
     .container{
         width: 80%;
     }
@@ -38,6 +39,18 @@ only screen and (max-width: 995px) {
         font-size:6em;
     }
 }
+@media only screen and (max-height: 950px) 
+and (max-width: 770px),
+only screen and (max-width: 750px) 
+{
+    .container{
+        width: 75%;
+    }
+    .title{
+        font-size:5em;
+    }
+}
+
 /*
 @media only screen and (max-width: 995px){
     .container{

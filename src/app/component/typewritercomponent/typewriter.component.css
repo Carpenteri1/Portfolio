@@ -11,11 +11,11 @@ and (max-width: 1190px) {
         align-content: center;
     }
     .title{
-        font-size:7em;
+        font-size:7em !important;
     }
 
     .title{
-        font-size:6em;
+        font-size:6em !important;
         padding-left: 0.3em !important;
     }
     .titleTwo{
@@ -28,34 +28,92 @@ and (max-width: 1190px) {
     }
 }
 
+@media only screen and (max-height: 720px) 
+and (max-width: 650px),
+only screen and (max-width: 1030px)
+ {
+    .container{
+        width: 70% !important;
+    }
+    .title{
+        font-size:3em !important;
+    }
+    .titleTwo{
+      
+        font-size: 1.8em !important; 
+        margin-top: -1.2em;  
+
+    }
+    .infotext{
+        font-size: 0.9em !important; 
+        margin-top: -2.4em;  
+    }
+}
+
 @media only screen and (max-height: 1100px) 
 and (max-width: 1250px),
 only screen and (max-width: 995px)
  {
     .container{
-        width: 80%;
+        width: 80% !important;
     }
     .title{
-        font-size:6em;
+        font-size:6em !important;
     }
 }
+
 @media only screen and (max-height: 950px) 
 and (max-width: 770px),
-only screen and (max-width: 750px)
+only screen and (max-width: 750px),
+only screen and (max-width: 650px),
+only screen and (max-height: 650px) 
 {
     .container{
-        width: 75%;
+        width: 75% !important;
+        margin-top: -7em;
     }
     .title{
-        font-size:5em;
+        margin-top: 0.5;
+        padding-left: 0.3em !important;
+        font-size:4.5em !important;
+        margin-bottom: -0.5em;
+        }
+    .titleTwo{
+        margin-bottom: -0.6em;
     }
 }
-@media only screen and (max-height: 900px) 
-and (max-width: 675px) {
+
+@media only screen and (max-height: 720px) 
+and (max-width: 600px) {
     .title{
-        font-size:4.5em;
+        font-size:2.5em !important;
+        padding-left: 0.4em !important;
+        margin-top: 0.5em;  
+    }
+    .titleTwo{
+        font-size:1.4em !important;
     }
     .container{
         margin-top: -7em;
     }
 }
+
+@media only screen and (max-height: 550px) 
+and (max-width: 500px) {
+    .title{
+        font-size:1.8em !important;
+        padding-left: 0.8em !important;
+    }
+    .titleTwo{
+        font-size:1em !important;
+        padding-left: 1.4em !important;
+    }
+    .infotext{
+        font-size: 0.6em !important;
+        padding-left: 2.5em !important;
+    }
+    .container{
+        margin-top: -7em;
+    }
+}
+

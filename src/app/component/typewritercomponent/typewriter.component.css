@@ -13,7 +13,6 @@ and (max-width: 1190px) {
     .title{
         font-size:7em !important;
     }
-
     .title{
         font-size:6em !important;
         padding-left: 0.3em !important;
@@ -30,24 +29,26 @@ and (max-width: 1190px) {
 
 @media only screen and (max-height: 720px) 
 and (max-width: 650px),
-only screen and (max-width: 1030px)
+only screen and (max-width: 1030px),
+only screen and (max-height: 550px)
  {
     .container{
         width: 70% !important;
     }
     .title{
         font-size:3em !important;
+        padding-left: 0.5em !important;
     }
     .titleTwo{
-      
         font-size: 1.8em !important; 
-        margin-top: -1.2em;  
-
+        margin-top: -1em;          
+        padding-left: 1em !important;
     }
     .infotext{
-        font-size: 0.9em !important; 
-        margin-top: -2.4em;  
-    }
+        font-size: 1em !important; 
+        margin-top: -1.8em;  
+        padding-left: 2.2em !important;
+        }
 }
 
 @media only screen and (max-height: 1100px) 
@@ -58,14 +59,14 @@ only screen and (max-width: 995px)
         width: 80% !important;
     }
     .title{
+        padding-left: 0.2em !important;
         font-size:6em !important;
     }
 }
 
-@media only screen and (max-height: 950px) 
+@media only screen and (max-height: 2000px) 
 and (max-width: 770px),
 only screen and (max-width: 750px),
-only screen and (max-width: 650px),
 only screen and (max-height: 650px) 
 {
     .container{
@@ -74,8 +75,8 @@ only screen and (max-height: 650px)
     }
     .title{
         margin-top: 0.5;
-        padding-left: 0.3em !important;
-        font-size:4.5em !important;
+        padding-left: 0.4em !important;
+        font-size:3.5em !important;
         margin-bottom: -0.5em;
         }
     .titleTwo{
@@ -87,18 +88,22 @@ only screen and (max-height: 650px)
 and (max-width: 600px) {
     .title{
         font-size:2.5em !important;
-        padding-left: 0.4em !important;
+        padding-left:0.5em !important;
         margin-top: 0.5em;  
     }
     .titleTwo{
         font-size:1.4em !important;
+        padding-left:1em !important;
+    }
+    .infotext{
+        font-size: 0.7em !important;
     }
     .container{
         margin-top: -7em;
     }
 }
 
-@media only screen and (max-height: 550px) 
+@media only screen and (max-height: 575px) 
 and (max-width: 500px) {
     .title{
         font-size:1.8em !important;
@@ -112,8 +117,28 @@ and (max-width: 500px) {
         font-size: 0.6em !important;
         padding-left: 2.5em !important;
     }
+}
+
+@media only screen and (max-height: 500px) 
+and (max-width: 500px) {
+    .title{
+        font-size:1em !important;
+        padding-left: 0.8em !important;
+        margin-top: 0em;
+    }
+    .titleTwo{
+        font-size:1em !important;
+        margin-bottom: 0em ;
+        padding-left: 1.4em !important;
+    }
+    .infotext{
+        font-size: 0.6em !important;
+        margin-bottom: 0em ;
+        padding-left: 2.5em !important;
+    }
     .container{
-        margin-top: -7em;
+        border:2px solid red;
+        margin-top: -10em !important;
     }
 }
 

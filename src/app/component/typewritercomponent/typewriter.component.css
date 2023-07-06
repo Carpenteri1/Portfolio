@@ -206,7 +206,7 @@ and (min-width: 1080px)
     }
     .infotext{
         font-size: 1.2em;
-        margin-top: -0.5em;
+        margin-top: 0.5em;
         margin-bottom: 0em;
         padding-left: 2.5em;
         margin-left: -0.2em;
@@ -237,6 +237,7 @@ and (min-width: 1080px)
     .title{
         font-size:2.5em;
         margin-top: -1.5em ;
+        margin-left:0em;
     }
     .titleTwo{
         font-size:1.4em;
@@ -245,10 +246,6 @@ and (min-width: 1080px)
     .infotext{
         font-size: 0.8em;
         margin-left: -0.2em;
-    }
-
-    .container{
-        border:2px solid blue;
     }
 }
 

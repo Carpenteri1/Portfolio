@@ -1,4 +1,4 @@
-html,
+
 body {
   margin: 0px;
   height: 100%;
@@ -36,6 +36,7 @@ footer {
   width: 100%;
   border-top: solid 2px #b29600;
   border-bottom: solid 2px #b29600;
+  box-sizing: border-box;
 }
 
 .scroll-dots-container {

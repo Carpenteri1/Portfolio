@@ -33,8 +33,9 @@ footer {
 
 .full-page {
   height: 100vh;
-  border-color: #b29600;
-  border-style: solid;
+  width: 100%;
+  border-top: solid 2px #b29600;
+  border-bottom: solid 2px #b29600;
 }
 
 .scroll-dots-container {

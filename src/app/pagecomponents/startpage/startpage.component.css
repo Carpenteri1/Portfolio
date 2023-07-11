@@ -1,4 +1,4 @@
-
+html,
 body {
   margin: 0px;
   height: 100%;
@@ -32,10 +32,9 @@ footer {
 }
 
 .full-page {
-  height: 100vh;
-  width: 100%;
+  height: 99vh;
+  width: match-parent;
   border-top: solid 2px #b29600;
-  border-bottom: solid 2px #b29600;
   box-sizing: border-box;
 }
 

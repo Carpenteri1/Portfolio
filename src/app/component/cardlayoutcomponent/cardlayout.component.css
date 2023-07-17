@@ -1,6 +1,13 @@
 .card-title{
   padding-bottom: 1em;
 }
+.bi-arrow-left{
+  margin-right: -1.5em;
+}
+
+.bi-arrow-right{
+  margin-left: -1.5em;
+}
 
 .shadow-custom:hover{
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .25), 0 3px 11px 8px rgba(0, 0, 0, .55) !important;
@@ -49,3 +56,170 @@ button:active {
   border-style: outset !important;
 }
 
+@media only screen and (max-height: 1920px)
+and (min-width: 1080px) 
+ {
+  .card-title{
+    font-size: 1.2em;
+  }
+  .card-text{
+    margin-top: -1.5em;
+    font-size: 0.8em;
+  }  
+  .col-8{
+    width: 80%;
+  }
+  .col-2{
+    width: 10%;
+  }
+}
+
+
+@media only screen and (max-height: 650px)
+and (max-width: 991px) 
+ {
+  .card-title{
+    font-size: 1em;
+  }
+  .card-text{
+    font-size: 0.8em;
+  }  
+  .card{
+    padding: 0.5em;
+    height: 14em;
+  }
+}
+
+@media only screen and (max-height: 650px)
+and (max-width: 767px) 
+ {
+  .card-title{
+    font-size: 0.9em;
+  }
+  .card-text{
+    margin-top: 0em;
+    font-size: 0.7em;
+  }  
+  .card{
+    padding: 0.5em;
+    height: 12em;
+  }
+  .bi{
+    font-size: 2em !important;
+  }
+}
+
+
+@media only screen and (max-height: 650px)
+and (max-width: 655px) 
+ {
+  .card-title{
+    font-size: 0.9em;
+  }
+  .card-text{
+    font-size: 0.6em;
+  }  
+}
+
+@media only screen and (max-height: 650px)
+and (max-width: 620px) 
+ {
+  .card-title{
+    font-size: 0.8em;
+  }
+  .card-text{
+    font-size: 0.5em;
+  }  
+}
+
+##TODO 
+##Continue with lower maxwidth then 575px
+
+@media only screen and (max-height: 650px)
+and (max-width: 575px) 
+ {
+  .card-title{
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .card-text{
+    font-size: 0.8em;
+  }  
+  .bi{
+    font-size: 3em !important;
+  }
+  .bi-arrow-left{
+    margin-right: 0em;
+  }
+
+  .bi-arrow-right{
+    margin-left: 0em;
+  }
+}
+
+##TODO 
+##Continue with lower maxwidth then 575px
+
+@media only screen and (max-height: 300px)
+and (min-width: 1080px) 
+ {
+  .card-title{
+    font-size: 0.8em;
+  }
+  .card-text{
+    margin-top: 0em;
+    font-size: 0.5em;
+  }  
+  .card{
+    padding: 0.5em;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-height: 1920px)
+and (min-width: 1199px) 
+ {
+  .card-title{
+    font-size: 1.2em;
+  }
+  .card-text{
+    margin-top: -1.5em;
+    font-size: 0.8em;
+  }  
+  .col-8{
+    width: 80%;
+  }
+  .col-2{
+    width: 10%;
+  }
+}
+
+@media only screen and (max-height: 325px)
+and (min-width: 1199px) 
+ {
+  .card-title{
+    font-size: 1em;
+  }
+  .card-text{
+    margin-top: 0em;
+    font-size: 0.7em;
+  }  
+  .card{
+    padding: 0.5em;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-height: 200px)
+and (min-width: 1199px) 
+ {
+  .card-title{
+    font-size: 0.7em;
+  }
+  .card-text{
+    font-size: 0.5em;
+  }  
+  .card{
+    padding: 0.5em;
+  }
+}

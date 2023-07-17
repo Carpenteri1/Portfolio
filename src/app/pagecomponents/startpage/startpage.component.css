@@ -1,17 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
-
 html,
 body {
-  margin: 0px;
   height: 100%;
-  width: 100%;
   color: white;
   background-color: #2E3445;
   overflow: hidden;
 }
+
 
 .title {
   font-size: 10em;

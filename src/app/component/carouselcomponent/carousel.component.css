@@ -2,7 +2,7 @@
   padding: 0.5em;
 }
 
-@media only screen and (max-height: 340px)
+@media only screen and (max-width: 575px)
 {
 
   .col-xl-2, 

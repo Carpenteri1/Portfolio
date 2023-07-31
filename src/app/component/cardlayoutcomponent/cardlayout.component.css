@@ -1,6 +1,7 @@
 .card-title{
   padding-bottom: 1em;
 }
+
 .bi-arrow-left{
   margin-right: -1.5em;
 }
@@ -112,7 +113,7 @@ and (max-width: 850px)
 and (max-width: 695px) 
  {
   .card-title{
-    margin-top: -1.5em;
+    margin-top: -0.5em;
     font-size: 0.8em;
   }
   .card-text{
@@ -229,6 +230,11 @@ and (max-width: 575px)
   .card{
     padding: 0.5em;
     height: 10em;
+    width:match-parent;
+  }
+
+  .card-group{
+    margin-right: -10em;
     width: 18em;
   }
 
@@ -240,7 +246,7 @@ and (max-width: 575px)
   }
 
   .bi-arrow-right{
-    margin-left: 0em;
+    margin-left: 0.5em;
   }
 
 }
@@ -439,4 +445,119 @@ and (min-width: 1199px)
   .card{
     padding: 0.5em;
   }
+}
+
+@media only screen and (max-width: 500px) 
+ {
+  .card-title{
+    font-size: 1em;
+    text-align: center;
+  }
+  .card-text{
+    font-size: 0.6em;
+  }  
+  .card{
+    padding: 0.5em;
+    height: 10em;
+    width:match-parent;
+  }
+
+  .card-group{
+    margin-right: -11em;
+    width: 14em;
+  }
+}
+
+@media only screen and (max-width: 385px) 
+ {
+  .card-title{
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .card-text{
+    font-size: 0.5em;
+  }  
+  .card{
+    padding: 0.5em;
+    height: 10em;
+    width:match-parent;
+  }
+
+  .card-group{
+    width: 10em;
+    margin-left: 0.5em; 
+  }
+
+  .bi{
+    font-size: 1.5em !important;
+  }
+  
+  .btn{
+    width: match-parent;
+  }
+  .container-fluid{
+    width: 15em;
+  }
+}
+
+@media only screen and (max-width: 300px) 
+ {
+  .card-title{
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .card-text{
+    font-size: 0.5em;
+  }  
+  .card{
+    padding: 0.5em;
+    height: 10em;
+    width:match-parent;
+  }
+
+  .card-group{
+    margin-left: -0.5em;
+    align-content: center;
+  }
+  .col-8,
+  .col-sm-10{
+    width: 10em;
+  }
+  .bi{
+    font-size: 1.5em !important;
+  }
+
+}
+
+@media only screen and (max-width: 350px) 
+ {
+  .card-title{
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .card-text{
+    font-size: 0.5em;
+  }  
+  .card{
+    padding: 0.5em;
+    height: 10em;
+    width:match-parent;
+  }
+
+  .card-group{
+    margin-left: -1em;
+    align-content: center;
+    width: 8em;
+  }
+  .col-8,
+  .col-sm-10{
+    width: 7em;
+  }
+  .row{
+    margin-left: 1.5em;
+  }
+  .bi{
+    font-size: 1.5em !important;
+  }
+
 }

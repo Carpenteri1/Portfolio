@@ -11,6 +11,7 @@
     z-index: 1;
     height: 1em;
     color:black !important;
+    padding-top: 0.2em;
     }
     .progress{
       z-index: 0;

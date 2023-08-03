@@ -57,6 +57,23 @@ button:active {
   border-style: outset !important;
 }
 
+
+@media only screen and (max-height: 1180px)
+and (max-width: 900px) 
+ {
+  .card-title{
+    font-size: 0.88em;
+  }
+  .card-text{
+    margin-top: -1.5em;
+    font-size: 0.7em;
+  }  
+  .card{
+    padding: 0.8em;
+    padding-top: 1em;
+  }
+}
+
 @media only screen and (max-height: 1920px)
 and (min-width: 1080px) 
  {
@@ -183,7 +200,7 @@ and (max-width: 767px)
   }
   .card-text{
     margin-top: 0em;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }  
   .card{
     padding: 0.5em;
@@ -216,6 +233,36 @@ and (max-width: 620px)
     font-size: 0.5em;
   }  
 }
+
+@media only screen and (max-height: 650px)
+and (max-width: 500px) 
+ {
+  .card-group{
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+  .card{
+    width: 16em;
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+  .card-text{
+    font-size: 0.7em;
+  }
+  .btn .bi{
+    font-size: 2em !important;
+  }
+  .btn .bi-arrow-left{
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+
+  .btn .bi-arrow-right{
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+}
+
 
 @media only screen and (max-height: 795px)
 and (max-width: 575px) 
@@ -463,13 +510,20 @@ and (min-width: 1199px)
   }
 
   .card-group{
-    margin-right: -11em;
+    margin-right: -2em;
     width: 14em;
+  }
+  .bi-arrow-left{
+    margin-left: -2em;
+  }
+  .bi-arrow-right{
+    margin-right: -2em;
   }
 }
 
 @media only screen and (max-width: 385px) 
  {
+
   .card-title{
     font-size: 0.7em;
     text-align: center;
@@ -478,6 +532,7 @@ and (min-width: 1199px)
     font-size: 0.5em;
   }  
   .card{
+    width: 8em;
     padding: 0.5em;
     height: 10em;
     width:match-parent;
@@ -498,66 +553,4 @@ and (min-width: 1199px)
   .container-fluid{
     width: 15em;
   }
-}
-
-@media only screen and (max-width: 300px) 
- {
-  .card-title{
-    font-size: 0.7em;
-    text-align: center;
-  }
-  .card-text{
-    font-size: 0.5em;
-  }  
-  .card{
-    padding: 0.5em;
-    height: 10em;
-    width:match-parent;
-  }
-
-  .card-group{
-    margin-left: -0.5em;
-    align-content: center;
-  }
-  .col-8,
-  .col-sm-10{
-    width: 10em;
-  }
-  .bi{
-    font-size: 1.5em !important;
-  }
-
-}
-
-@media only screen and (max-width: 350px) 
- {
-  .card-title{
-    font-size: 0.7em;
-    text-align: center;
-  }
-  .card-text{
-    font-size: 0.5em;
-  }  
-  .card{
-    padding: 0.5em;
-    height: 10em;
-    width:match-parent;
-  }
-
-  .card-group{
-    margin-left: -1em;
-    align-content: center;
-    width: 8em;
-  }
-  .col-8,
-  .col-sm-10{
-    width: 7em;
-  }
-  .row{
-    margin-left: 1.5em;
-  }
-  .bi{
-    font-size: 1.5em !important;
-  }
-
 }

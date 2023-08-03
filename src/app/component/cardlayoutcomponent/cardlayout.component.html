@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-2 d-flex justify-content-center align-items-center">
+    <div class="col-2 col-sm-1 d-flex justify-content-center align-items-center">
       <button class="btn" (click)="navigate('left')"><i class="bi bi-arrow-left"></i></button>
     </div>
-    <div class="col-8">
+    <div class="col-8 col-sm-10">
       <div class="card-group" [hidden]="currentCardIndex == 0" >
         <div class="card shadow-custom" style="border-radius: 5%;margin: 1em;" *ngFor="let card of cardGroupOne; let i = index">
           <div class="card-body">
@@ -23,8 +23,8 @@
         </div>
       </div>
     </div>
-    <div class="col-2 d-flex justify-content-center align-items-center">
-      <button class="btn" (click)="navigate('right')"><i class="bi bi-arrow-right"></i></button>
+    <div class="col-2 col-sm-1 d-flex justify-content-center align-items-center">
+      <button class="btn btn-custom" (click)="navigate('right')"><i class="bi bi-arrow-right"></i></button>
     </div>
   </div>
 </div>

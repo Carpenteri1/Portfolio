@@ -2,19 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'typewriter',
-  template: `
-<div class="container">
-        <div class="row">
-        <h1 class="title">{{ titleOne }}</h1>
-        <h1 class="p-4">{{ titleTwo }}</h1>
-        </div>
-        <div class="row p-3">
-          <div class="col-10">
-            <p style="font-size: 1em; white-space: pre-line">{{ textValue }}</p>
-          </div>
-        </div>
-      </div>
-  `
+  templateUrl: 'typewriter.component.html',
+  styleUrls:['typewriter.component.css']
 })
 export class TypewriterComponent implements OnInit {
   titleOne = '';

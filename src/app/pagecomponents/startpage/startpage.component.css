@@ -1,12 +1,11 @@
 html,
 body {
-  margin: 0px;
   height: 100%;
-  width: 100%;
   color: white;
   background-color: #2E3445;
   overflow: hidden;
 }
+
 
 .title {
   font-size: 10em;
@@ -32,9 +31,10 @@ footer {
 }
 
 .full-page {
-  height: 100vh;
-  border-color: #b29600;
-  border-style: solid;
+  height: 99vh;
+  width: match-parent;
+  border-top: solid 2px #b29600;
+  box-sizing: border-box;
 }
 
 .scroll-dots-container {
@@ -53,4 +53,10 @@ footer {
   border-radius: 100%;
   background-color: white;
   border-color: white; 
+}
+
+@media only screen and (max-height: 720px) {
+  #sectionOne{
+      padding: -10em !important;
+  }
 }

@@ -1,3 +1,8 @@
+button:active,
+button:focus{
+  border:none;
+}
+
 .card-title{
   padding-bottom: 1em;
 }
@@ -52,9 +57,6 @@
 button > i {
   color:#b29600;
   font-size:40px;
-}
-button:active {
-  border-style: outset !important;
 }
 
 

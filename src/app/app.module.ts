@@ -29,9 +29,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,  
     AppRoutingModule,
     FormsModule,
-    FontAwesomeModule,
     CommonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

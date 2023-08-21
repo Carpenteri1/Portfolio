@@ -32,6 +32,8 @@ export class StartPageComponent {
     el.scrollIntoView({ behavior: 'smooth' });
   }
 
+  //#region scrolling logic
+  /* TODO: might be re-added later again. Disabled atm
   onScroll(event: WheelEvent) {
     const deltaY = event.deltaY;
     if (deltaY > 50) this.scrollDown();
@@ -76,6 +78,9 @@ export class StartPageComponent {
       scrollToElement.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
       this.setInputToChecked(elementIdOne, elementIdTwo);
     }
+    */
+
+    //#endregion
 
   setInputToChecked(elementIdOne: string, elementIdTwo: string) {
     var element = <HTMLInputElement>document.getElementById(elementIdOne);

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { CardModel } from "src/app/Models/CardModel";
+import { StringHandler } from "src/app/Utility/stringhandler";
 
 @Component({
     selector: 'cardlayout-component',
@@ -15,38 +16,38 @@ export class CardLayoutComponent implements OnInit {
     ngOnInit() {
     }    
 
-    constructor() {
+  constructor() {
       this.cardGroupOne.push(
-        new CardModel('Notify', 
-        'Android App, Helps to Keep Notes Of Things. In alpha stage at the moment. There is an apk file to try it out,'
-        ,"https://github.com/Carpenteri1/Notify"),
-        new CardModel('SWAPI-API', 
-        'Collect starwars characters from swapi, user can search for characters and add them to a list.'
-        ,"https://github.com/Carpenteri1/SWAPI-Web-Scrapper"),
-        new CardModel('WeatherApp', 
-        'Collects weather data using openweather api,' + 'There is a console verson and an mvc version.'
-        ,"https://github.com/Carpenteri1/WeatherApp"),
+        new CardModel(StringHandler.cardTitleOne, 
+        StringHandler.cardDescriptionOne,
+        StringHandler.CardLinkOne),
+        new CardModel(StringHandler.cardTitleTwo, 
+        StringHandler.cardDescriptionTwo,
+        StringHandler.CardLinkTwo),
+        new CardModel(StringHandler.cardTitleThree, 
+        StringHandler.cardDescriptionThree,
+        StringHandler.CardLinkThree),
       );
       this.cardGroupTwo.push(
-        new CardModel('Portfolio', 
-        'Website writen with Anguler with typescript. Wanted to try something new when I wrote my portfolio.'
-        ,"https://github.com/Carpenteri1/Portfolio"),
-        new CardModel('Falling-Rocks', 
-        'a windows console game. The player should avoide the rocks falling from the sky, with its little ship. '
-        ,"https://github.com/Carpenteri1/Falling-Rocks"),
-        new CardModel('KrankenHause', 
-         'here are 4 different threads who should work together. simulating a hospital'
-        ,"https://github.com/Carpenteri1/KrankenHause"),
+        new CardModel(StringHandler.cardTitleFour, 
+        StringHandler.cardDescriptionFour,
+        StringHandler.CardLinkFour),
+        new CardModel(StringHandler.cardTitleFive, 
+        StringHandler.CardLinkFive,
+        StringHandler.CardLinkFive),
+        new CardModel(StringHandler.cardTitleSix, 
+         StringHandler.cardDescriptionSix,
+         StringHandler.CardLinkSix),
       );
     }
 
     navigate(direction: string) {  
-        if (direction === 'left') {
+        if (direction === StringHandler.left) {
             if(this.currentCardIndex === 0)
                 this.currentCardIndex = (this.currentCardIndex + 1);
             else this.currentCardIndex = (this.currentCardIndex - 1);
           } 
-          else if (direction === 'right') 
+          else if (direction === StringHandler.right) 
           {
             if(this.currentCardIndex === 1)
                 this.currentCardIndex = (this.currentCardIndex - 1);

@@ -1,4 +1,5 @@
 import { ViewEncapsulation, Component, ElementRef, ViewChild } from '@angular/core';
+import { StringHandler } from 'src/app/Utility/stringhandler';
 
 @Component({
   selector: 'startpage-component',
@@ -8,17 +9,11 @@ import { ViewEncapsulation, Component, ElementRef, ViewChild } from '@angular/co
 })
 export class StartPageComponent {
 
-  private readonly sectionOneInput: string = "sectionOneInput";
-  private readonly sectionTwoInput: string = "sectionTwoInput";
-  private readonly sectionThreeInput: string = "sectionThreeInput";
-  private readonly sectionFourInput: string = "sectionFourInput";
-  private readonly sectionFiveInput: string = "sectionFiveInput";
-
-  @ViewChild('sectionOne', { static: false }) sectionOne: ElementRef;
-  @ViewChild('sectionTwo', { static: false }) sectionTwo: ElementRef;
-  @ViewChild('sectionThree', { static: false }) sectionThree: ElementRef;
-  @ViewChild('sectionFour', { static: false }) sectionFour: ElementRef;
-  @ViewChild('sectionFive', { static: false }) sectionFive: ElementRef;
+  @ViewChild(StringHandler.sectionOne, { static: false }) sectionOne: ElementRef;
+  @ViewChild(StringHandler.sectionTwo, { static: false }) sectionTwo: ElementRef;
+  @ViewChild(StringHandler.sectionThree, { static: false }) sectionThree: ElementRef;
+  @ViewChild(StringHandler.sectionFour, { static: false }) sectionFour: ElementRef;
+  @ViewChild(StringHandler.sectionFive, { static: false }) sectionFive: ElementRef;
 
   constructor() {
     this.sectionOne = new ElementRef(null);

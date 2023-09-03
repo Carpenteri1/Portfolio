@@ -1,0 +1,23 @@
+footer{
+    border-top: 2px solid #b29600;
+    background-color:#283c4f;
+    border-bottom:3px solid #b29600;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+footer .bi-linkedin {
+    margin-right: 0.8em;
+}
+
+footer .bi-envelope-at-fill {
+    margin-left: 0.8em;
+}
+
+footer a:hover{
+    color: #b29600;
+}

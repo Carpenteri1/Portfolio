@@ -85,6 +85,7 @@ export class StringHandler {
 
     //#region typewriter
     
+    static readonly TypeCursor: string = "|";
     static readonly typeWriterTitleOne: string = "Welcome...";
     static readonly typeWriterTitleTwo: string = "I'm Niclas";
     static readonly typeWriterText: string = "Software engineer based in Varberg, Sweden. " + 
@@ -98,7 +99,7 @@ export class StringHandler {
 
     static readonly appComponent: string = "AppComponent";
     static readonly should_create_the_app: string = "should create the app";
-    static readonly should_have_as_title: string = 'Portfolio: string = "should have as title 'Portfolio";
+    static readonly should_have_as_title: string = 'Portfolio: string = "should have as title Portfolio';
     static readonly Portfolio_app_is_running: string = "Portfolio app is running!";
     static readonly should_render_title: string = "should render title";
 

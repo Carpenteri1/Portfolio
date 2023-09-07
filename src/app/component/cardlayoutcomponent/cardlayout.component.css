@@ -1,6 +1,6 @@
-button:active,
-button:focus{
-  border:none;
+.btn{
+  border: none;
+  outline: none;
 }
 
 .card-title{

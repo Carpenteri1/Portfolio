@@ -16,7 +16,8 @@ export class TypewriterComponent implements OnInit {
   cursor = StringHandler.stringEmpy;
   blinkingCursor = StringHandler.stringEmpy;
   //#endregion
-  private readonly delayTitles = 180;
+  private readonly delayTitlesOne = 120;
+  private readonly delayTitlesTwo = 90;
   private readonly delayText = 60;
 
   ngOnInit() {
@@ -29,7 +30,7 @@ export class TypewriterComponent implements OnInit {
     fromIndex++;
     this.titleOneCursor = StringHandler.TypeCursor;
     if (fromIndex < titleValue.length)
-      setTimeout(() => this.TypeTitleOne(titleValue,fromIndex), this.delayTitles);
+      setTimeout(() => this.TypeTitleOne(titleValue,fromIndex), this.delayTitlesOne);
     else 
     {
       this.titleOneCursor = StringHandler.stringEmpy;
@@ -43,7 +44,7 @@ export class TypewriterComponent implements OnInit {
     fromIndex++;
 
     if (fromIndex < titleValue.length) 
-      setTimeout(() => this.TypeTitleTwo(titleValue,fromIndex), this.delayTitles);
+      setTimeout(() => this.TypeTitleTwo(titleValue,fromIndex), this.delayTitlesTwo);
     else{
       this.titleTwoCursor = StringHandler.stringEmpy;
       this.TypeText(StringHandler.typeWriterText,0);

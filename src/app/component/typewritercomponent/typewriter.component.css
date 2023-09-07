@@ -274,13 +274,10 @@ and (max-width: 1080px)
     }
 }
 
-
-
 /*
 Blinking cursour
 */
 
-/* Define the blinking cursor animation */
 @keyframes blink {
     0%, 100% {
       opacity: 1;
@@ -290,9 +287,13 @@ Blinking cursour
     }
   }
   
-  /* Apply the animation to an element with a class "blinking-cursor" */
   .blinking-cursor {
     animation: blink 2s infinite;
-    /* Set your desired cursor color and style */
-    caret-color: #000;
+    color: #b29600;
+    font-size: 20px;
+  }
+
+  .none-blinking-cursor{
+    color: #b29600;
+    font-size: 20px;
   }

@@ -22,6 +22,8 @@ import { StringHandler } from "src/app/Utility/stringhandler";
 
 export class CarouselComponent implements OnInit {
 
+    readonly title: string = StringHandler.carouselTitle;
+
     skillList1: ISkill[] = [
         { name: StringHandler.dotNet, level: 70 },
         { name: StringHandler.netFrameWork, level: 50 },

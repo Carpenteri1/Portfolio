@@ -28,13 +28,13 @@ export class TypewriterComponent implements OnInit {
   {
     this.titleOne += titleValue[fromIndex];
     fromIndex++;
-    this.titleOneCursor = StringHandler.TypeCursor;
+    this.titleOneCursor = StringHandler.typeCursor;
     if (fromIndex < titleValue.length)
       setTimeout(() => this.TypeTitleOne(titleValue,fromIndex), this.delayTitlesOne);
     else 
     {
       this.titleOneCursor = StringHandler.stringEmpy;
-      this.titleTwoCursor = StringHandler.TypeCursor;
+      this.titleTwoCursor = StringHandler.typeCursor;
       this.TypeTitleTwo(StringHandler.typeWriterTitleTwo,0);
     }
   }
@@ -58,10 +58,10 @@ export class TypewriterComponent implements OnInit {
 
     if (fromIndex < text.length) {
       setTimeout(() => this.TypeText(text,fromIndex), this.delayText);
-      this.cursor = StringHandler.TypeCursor;
+      this.cursor = StringHandler.typeCursor;
     }
     else{
-      this.blinkingCursor = StringHandler.TypeCursor;
+      this.blinkingCursor = StringHandler.typeCursor;
       this.cursor = StringHandler.stringEmpy;
     }
   }

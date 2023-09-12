@@ -52,7 +52,7 @@ export class StringHandler {
     //#region Languages
 
     static readonly dotNet: string = ".Net Core";
-    static readonly netFrameWork: string = ".Net Framework";
+    static readonly netFrameWork: string = ".Net FW";
     static readonly aspNet: string = "Asp.Net";
     static readonly xamarin: string = "Xamarin";
     static readonly angular: string = "Angular";
@@ -63,7 +63,7 @@ export class StringHandler {
     static readonly kubernetes: string = "Kubernetes";
 
     static readonly html: string = "Html";
-    static readonly css: string = "CSS/Boostrap";
+    static readonly css: string = "Bootstrap";
     static readonly csharp: string = "C#";
     static readonly java: string = "Java";
     static readonly javascript: string = "Javascript";
@@ -85,13 +85,19 @@ export class StringHandler {
 
     //#region typewriter
     
-    static readonly TypeCursor: string = "|";
+    static readonly typeCursor: string = "|";
     static readonly typeWriterTitleOne: string = "Welcome...";
     static readonly typeWriterTitleTwo: string = "I'm Niclas";
     static readonly typeWriterText: string = "Software engineer based in Varberg, Sweden. " + 
     "\n I describe myself as a passionate .NET developer, \n" +
     "always keen to explore new technologies and frameworks to help me stay at the forefront. \n" +
     "I have experience in developing both robust and scalable applications for small business and enterprises.";
+
+    //#endregion
+
+    //#region carousel
+
+    static readonly carouselTitle: string = "Confidence and Ease";
 
     //#endregion
 

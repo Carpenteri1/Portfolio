@@ -9,6 +9,10 @@ import { StringHandler } from "src/app/Utility/stringhandler";
 })
 
 export class CardLayoutComponent {
+  /*
+   TODO måste på nått sätt dölja ena listan när jag switchar eller fade out, 
+  lika så måste dom ligga på samma plan just nu ligger dom ovanpå varan
+  */
   cardGroupOne: CardModel[] = [];
   cardGroupTwo: CardModel[] = [];
 

@@ -10,7 +10,7 @@
     </div>
     <div class="col-8 col-sm-10">
       <div class="card-container">
-        <div class="card-group" style="margin-top: 17em;" [ngClass]="!slideIn ? 'slide-out' : 'slide-in'">
+        <div class="card-group" id="cardGroupOne" style="margin-top: 17em;" [ngClass]="!slideIn ? 'slide-out' : 'slide-in'">
           <div class="card shadow-custom" *ngFor="let card of cardGroupTwo; let i = index">
             <div class="card-body">
               <h5 class="card-title">{{card.title}}</h5>
@@ -19,7 +19,7 @@
             </div>
           </div>
         </div>
-        <div class="card-group" style="margin-top: 15em;" [ngClass]="slideIn ? 'slide-out' : 'slide-in'">
+        <div class="card-group" id="cardGroupTwo" style="margin-top: 15em;" [ngClass]="slideIn ? 'slide-out' : 'slide-in'">
           <div class="card shadow-custom" *ngFor="let card of cardGroupTwo; let i = index">
             <div class="card-body">
               <h5 class="card-title">hejhopp</h5>

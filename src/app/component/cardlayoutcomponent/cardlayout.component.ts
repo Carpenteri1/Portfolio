@@ -13,12 +13,9 @@ export class CardLayoutComponent {
   cardGroup: CardModel[] = [];
   startIndex: number = 0;
   cardWidth = 0;
-  /*TODO 
-  should be able to do something like [style]="'display(displayType)'" on class="card-group" in html. We can then hide the cards.
-  So lets say we click left, we go left with the cards, when out of screen, display:none. swipe them to the right, then display:flex, make them slide left so
-  so it looks like they swipe in from the right.
-  */
-  displayType = "none";
+  visable: boolean = true;
+  lookButtons: boolean = false;
+
   getVisibleCards(): any[] {
     const startIndex = this.startIndex;
     const endIndex = startIndex + 3;
@@ -26,19 +23,40 @@ export class CardLayoutComponent {
   }
 
   toggleGroup(direction: 'left' | 'right'): void {
-    const cardCount = this.getVisibleCards().length;
-    if (direction === 'left') {
-      this.cardWidth = -2000;
-      setTimeout(() => {
-        this.startIndex = (this.startIndex - 1 + cardCount) % cardCount;
-        this.cardWidth = 0;
-      }, 2000)
-    } else if (direction === 'right') {
-      this.cardWidth = 2000;
-      setTimeout(() => {
-        this.startIndex = (this.startIndex + 1) % cardCount;
-        this.cardWidth = 0;
-      }, 2000)
+    if(!this.lookButtons)
+    {
+      this.lookButtons = true;
+      const cardCount = this.getVisibleCards().length;
+      if (direction === 'left') {
+        setTimeout(() => {
+          this.cardWidth = -2000;
+          setTimeout(() => {
+            this.visable = false;
+            this.startIndex = (this.startIndex - 1 + cardCount) % cardCount;
+            this.cardWidth = 2000;
+            setTimeout(() => {
+              this.visable = true;
+              this.cardWidth = 0;
+            }, 400)
+          }, 300)
+        }, 500)
+      } 
+      else if (direction === 'right') 
+      {
+        setTimeout(() => {
+          this.cardWidth = 2000;
+          setTimeout(() => {
+            this.visable = false;
+            this.startIndex = (this.startIndex + 1) % cardCount;
+            this.cardWidth = -2000;
+               setTimeout(() => {
+                this.visable = true;
+                this.cardWidth = 0;
+              }, 400)
+          }, 300)
+        }, 500)
+      }
+      this.lookButtons = false;
     }
   }
 

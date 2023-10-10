@@ -1,18 +1,6 @@
 .card-group {
   display: flex;
-  transition: transform 0.8s ease-in-out;
-}
-
-.card {
-  transform: translateX(0);
-}
-
-.hide{
-  display: none;
-}
-
-.show{
-  display: flex;
+  transition: transform 0.4s ease-in-out;
 }
 
 .btn{

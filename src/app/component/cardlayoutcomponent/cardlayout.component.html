@@ -1,15 +1,11 @@
-<!--
-  TODO måste på nått sätt dölja ena listan när jag switchar eller fade out, 
-  lika så måste dom ligga på samma plan just nu ligger dom ovanpå varan
--->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center">
+    <div class="col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center mx-auto">
       <button class="btn" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
     </div>
-    <div class="col-xl-8 col-l-8 col-sm-10">
+    <div class="col-xl-8 col-l-8 col-sm-10 mx-auto">
       <div class="card-container">
-        <div class="card-group" [style.transform]="'translateX(' + (cardWidth) + 'px)'" [style]="'display(displayType)'">
+        <div class="card-group" [style.transform]="'translateX(' + (cardWidth) + 'px)'" [style.opacity]="visable ? '1' : '0'" >
           <div class="card shadow-custom" *ngFor="let card of getVisibleCards(); let i = index">
             <div class="card-body">
               <h5 class="card-title">{{card.title}}</h5>
@@ -20,34 +16,8 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center">
+    <div class="col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center mx-auto">
       <button class="btn btn-custom" (click)="toggleGroup('right')"><i class="bi bi-arrow-right"></i></button>
     </div>
   </div>
 </div>
-
-
-<!--
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center">
-      <button class="btn" (click)="toggleGroup()"><i class="bi bi-arrow-left"></i></button>
-    </div>
-    <div class="col-xl-8 col-l-8 col-sm-10">
-      <div class="card-container" >
-        <div class="card-group slideIn">
-          <div class="card shadow-custom" *ngFor="let card of getVisibleCards(); let i = index">
-            <div class="card-body">
-              <h5 class="card-title">{{card.title}}</h5>
-              <p class="card-text">{{card.text}}</p>
-              <a [href]="card.url" target="_blank" class="stretched-link"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center">
-      <button class="btn btn-custom" (click)="toggleGroup()"><i class="bi bi-arrow-right"></i></button>
-    </div>
-  </div>
-</div>-->

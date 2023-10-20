@@ -1,4 +1,4 @@
-import { ViewEncapsulation, Component, ElementRef, ViewChild } from '@angular/core';
+import { ViewEncapsulation, Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { StringHandler } from 'src/app/Utility/stringhandler';
 
 @Component({
@@ -14,7 +14,7 @@ export class StartPageComponent {
   @ViewChild(StringHandler.sectionThree, { static: false }) sectionThree: ElementRef;
   @ViewChild(StringHandler.sectionFour, { static: false }) sectionFour: ElementRef;
   @ViewChild(StringHandler.sectionFive, { static: false }) sectionFive: ElementRef;
-
+  section:number = 1;
   constructor() {
     this.sectionOne = new ElementRef(null);
     this.sectionTwo = new ElementRef(null);
@@ -26,6 +26,84 @@ export class StartPageComponent {
   clickScroll(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth' });
   }
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if(event.key === 'ArrowUp' )
+    {
+      this.HandleCurrentSectionArrowUp();
+    }
+    else if(event.key === 'ArrowDown')
+    {
+      this.HandleCurrentSectionArrowDown();
+    }
+  }
+ 
+    HandleCurrentSectionArrowUp ()
+    {
+      if (this.section === 2) 
+      {
+        this.clickScroll(this.sectionOne.nativeElement);
+        this.section = 1;
+      }
+      else if (this.section === 3) 
+      {
+        this.clickScroll(this.sectionTwo.nativeElement);
+        this.section = 2;
+      }
+      else if (this.section === 4) 
+      {
+        this.clickScroll(this.sectionThree.nativeElement);
+        this.section = 3;
+      }
+      else if (this.section === 5) 
+      {
+        this.clickScroll(this.sectionFour.nativeElement);
+        this.section = 4;
+      }
+    }
+    
+    HandleCurrentSectionArrowDown()
+    {
+      if (this.section === 1) {
+        this.clickScroll(this.sectionTwo.nativeElement);
+        this.section = 2;
+      }
+      else if(this.section === 2)
+      {
+        this.clickScroll(this.sectionThree.nativeElement);
+        this.section = 3;
+      }
+      else if(this.section === 3)
+      {
+        this.clickScroll(this.sectionFour.nativeElement);
+        this.section = 4;
+      }
+      else if(this.section === 4)
+      {
+        this.clickScroll(this.sectionFive.nativeElement);
+        this.section = 5;
+      }
+    }
+  
+/*
+
+    if (event.key === 'ArrowUp' && this.section === 3) 
+    {
+      this.clickScroll(this.sectionOne.nativeElement);
+      this.section = 1;
+    }
+    if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
+      this.clickScroll(this.sectionTwo.nativeElement);
+    }
+
+
+    if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
+      this.clickScroll(this.sectionTwo.nativeElement);
+    }
+    if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
+      this.clickScroll(this.sectionTwo.nativeElement);
+    }*/
 
   //#region scrolling logic
   /* TODO: might be re-added later again. Disabled atm
@@ -75,7 +153,7 @@ export class StartPageComponent {
     }
     */
 
-    //#endregion
+  //#endregion
 
   setInputToChecked(elementIdOne: string, elementIdTwo: string) {
     var element = <HTMLInputElement>document.getElementById(elementIdOne);

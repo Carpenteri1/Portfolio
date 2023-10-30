@@ -14,7 +14,8 @@ export class StartPageComponent {
   @ViewChild(StringHandler.sectionThree, { static: false }) sectionThree: ElementRef;
   @ViewChild(StringHandler.sectionFour, { static: false }) sectionFour: ElementRef;
   @ViewChild(StringHandler.sectionFive, { static: false }) sectionFive: ElementRef;
-  section:number = 1;
+  currentSection: number = 1;
+
   constructor() {
     this.sectionOne = new ElementRef(null);
     this.sectionTwo = new ElementRef(null);
@@ -29,81 +30,53 @@ export class StartPageComponent {
 
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    if(event.key === 'ArrowUp' )
-    {
-      this.HandleCurrentSectionArrowUp();
+    if (event.key === 'ArrowUp') {
+      this.ScrollToSection(this.currentSection-1);
     }
-    else if(event.key === 'ArrowDown')
-    {
-      this.HandleCurrentSectionArrowDown();
+    if (event.key === 'ArrowDown') {
+      this.ScrollToSection(this.currentSection+1);
     }
   }
- 
-    HandleCurrentSectionArrowUp ()
+
+  ScrollToSection(scrollTo:number) 
+  {  
+    if (scrollTo >= 0 && scrollTo <= 4) 
     {
-      if (this.section === 2) 
+      this.currentSection = scrollTo;  
+      this.clickScroll(this.GetSection(scrollTo));
+    }
+  }
+
+  GetSection(index : number): HTMLElement
+  {
+    let sections = [
+      this.sectionOne.nativeElement,
+      this.sectionTwo.nativeElement,
+      this.sectionThree.nativeElement,
+      this.sectionFour.nativeElement,
+      this.sectionFive.nativeElement,
+    ];
+    return sections[index];
+  }
+
+  /*
+  
+      if (event.key === 'ArrowUp' && this.section === 3) 
       {
         this.clickScroll(this.sectionOne.nativeElement);
         this.section = 1;
       }
-      else if (this.section === 3) 
-      {
+      if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
         this.clickScroll(this.sectionTwo.nativeElement);
-        this.section = 2;
       }
-      else if (this.section === 4) 
-      {
-        this.clickScroll(this.sectionThree.nativeElement);
-        this.section = 3;
-      }
-      else if (this.section === 5) 
-      {
-        this.clickScroll(this.sectionFour.nativeElement);
-        this.section = 4;
-      }
-    }
-    
-    HandleCurrentSectionArrowDown()
-    {
-      if (this.section === 1) {
-        this.clickScroll(this.sectionTwo.nativeElement);
-        this.section = 2;
-      }
-      else if(this.section === 2)
-      {
-        this.clickScroll(this.sectionThree.nativeElement);
-        this.section = 3;
-      }
-      else if(this.section === 3)
-      {
-        this.clickScroll(this.sectionFour.nativeElement);
-        this.section = 4;
-      }
-      else if(this.section === 4)
-      {
-        this.clickScroll(this.sectionFive.nativeElement);
-        this.section = 5;
-      }
-    }
   
-/*
-
-    if (event.key === 'ArrowUp' && this.section === 3) 
-    {
-      this.clickScroll(this.sectionOne.nativeElement);
-      this.section = 1;
-    }
-    if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
-      this.clickScroll(this.sectionTwo.nativeElement);
-    }
-
-
-    if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
-      this.clickScroll(this.sectionTwo.nativeElement);
-    }
-    if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
-      this.clickScroll(this.sectionTwo.nativeElement);
-    }*/
+  
+      if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
+        this.clickScroll(this.sectionTwo.nativeElement);
+      }
+      if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
+        this.clickScroll(this.sectionTwo.nativeElement);
+      }*/
 
   //#region scrolling logic
   /* TODO: might be re-added later again. Disabled atm

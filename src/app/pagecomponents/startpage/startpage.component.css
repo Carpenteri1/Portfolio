@@ -15,6 +15,11 @@ typewriter{
   height: 50%;
 }
 
+button > i {
+  color:#b29600;
+  font-size:40px;
+} 
+
 p,
 h1,
 h2,

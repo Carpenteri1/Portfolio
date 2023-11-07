@@ -2,23 +2,32 @@
     <div class="row p-4">
         <h2>{{title}}</h2>
     </div>
-    <div class="row big-row-container">
-        <div class="overflow-fix">
-            <div class="setspace" *ngFor="let item of currentListOfSKills" @fade>
-                <div class="row">
-                    <div class="col-xl-2 col-sm-4 col-xs-4">
-                        <p>{{item.name}} {{item.level}}%:</p>
-                    </div>
-                    <div class="col-xl-9 col-sm-8 col-xs-8 pt-1">
-                        <div class="progress">
-                            <div class="progress-bar" style="background-color: #b29600; width: {{item.level}}%;"></div>
+    <div class="row">
+        <div class="button-container  col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center mx-auto">
+            <button class="btn btn-custom"><i class="bi bi-arrow-left"></i></button>
+        </div>
+        <div class="col-xl-10 d-flex justify-content-center align-items-center">
+            <div class="row big-row-container">
+                <div class="overflow-fix">
+                    <div class="setspace" *ngFor="let item of currentListOfSKills" @fade>
+                        <div class="row">
+                            <div class="col-xl-2 col-sm-4 col-xs-4">
+                                <p>{{item.name}} {{item.level}}%:</p>
+                            </div>
+                            <div class="col-xl-9 col-sm-8 col-xs-8 pt-1">
+                                <div class="progress">
+                                    <div class="progress-bar"
+                                        style="background-color: #b29600; width: {{item.level}}%;"></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-1"></div>
                         </div>
                     </div>
-                    <div class="col-xl-1"></div>
                 </div>
             </div>
         </div>
+        <div class="button-container col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center mx-auto">
+            <button class="btn btn-custom"><i class="bi bi-arrow-right"></i></button>
+        </div>
     </div>
 </div>
-
-

@@ -3,11 +3,6 @@
   transition: transform 0.4s ease-in-out;
 }
 
-.btn{
-  border: none;
-  outline: none;
-}
-
 .card-title{
   padding-bottom: 1em;
 }
@@ -30,6 +25,7 @@
   padding: 1.5em;
   background-color: #b3b3b3;
 }
+
 .card:hover{
   height: 15.1em !important;
 }
@@ -38,15 +34,18 @@
   height: 180px;
   width: 100%;
 }
+
 .card-title{
   color:black !important;
   padding-left: 4%;
   padding-right: 4%;
   padding-top: 4%;
 }
+
 .card-body{
   padding: 0%;
 }
+
 .card-text{
   padding: auto;
   color:black !important;
@@ -55,13 +54,10 @@
   padding-right: 4%;
   padding-bottom: 4%;
 }
+
 .card-footer{
   font-size: x-small;
   text-align: right;
-}
-button > i {
-  color:#b29600;
-  font-size:40px;
 }
 
 

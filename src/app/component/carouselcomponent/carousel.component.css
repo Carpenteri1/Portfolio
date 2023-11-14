@@ -9,6 +9,18 @@
   align-items: center;
 }
 
+.bi-arrow-left{
+  margin-right: 5em;
+}
+
+.bi-arrow-right{
+  margin-left: 1.5em;
+}
+
+.button-container {
+  margin-bottom: 4em;
+}
+
 .overflow-fix{
   overflow-y: auto;
 }

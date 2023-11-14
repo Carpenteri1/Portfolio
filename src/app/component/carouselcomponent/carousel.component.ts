@@ -23,7 +23,9 @@ import { StringHandler } from "src/app/Utility/stringhandler";
 export class CarouselComponent implements OnInit {
 
     readonly title: string = StringHandler.carouselTitle;
-
+    
+    private intervalId: any;
+    
     skillList1: ISkill[] = [
         { name: StringHandler.dotNet, level: 70 },
         { name: StringHandler.netFrameWork, level: 50 },
@@ -66,22 +68,62 @@ export class CarouselComponent implements OnInit {
         this.skillList3
     ];
 
-    index: number = 0;
+    index: number = 1;
     currentListOfSKills: ISkill[] = this.listOfSkills[this.index];
     
-    carouselTime() {
-        setInterval(() => this.setMessage(), 5000);
+    carouselTime(interval:number) 
+    {
+        this.intervalId = setInterval(() => 
+            this.carouselRotation(), interval);
     }
-    setMessage() {
-        if (this.index <= 2) {
+
+    carouselRotation()
+    {
+        this.index++;
+        this.setMessage();
+    }
+
+    setMessage() 
+    {
+        if (this.index <= 2 && 
+            this.index >= 0) 
+        {
             this.currentListOfSKills = this.listOfSkills[this.index];
-            this.index++;
-        } else {
+        } 
+        else if(this.index >= 3)
+        {
             this.index = 0;
+            this.setMessage();
         }
+        else if(this.index <= -1){
+            this.index = 2;
+            this.setMessage();
+        }           
     }
-    ngOnInit() {
-        this.carouselTime();
+
+    toggleGroup(direction: 'left' | 'right'): void 
+    {
+        this.resetCarouselTime();
+        if(direction === 'left'){
+            this.index--;
+        }
+        if(direction === 'right'){
+            this.index++;  
+        }
+        this.setMessage();
     }
-    
+
+    private resetCarouselTime(): void
+    {
+        if (this.intervalId) 
+        {
+            clearInterval(this.intervalId);
+        }
+        this.carouselTime(5000);
+    }
+
+    ngOnInit() 
+    {
+        this.carouselTime(5000);
+    }    
 }

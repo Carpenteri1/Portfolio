@@ -10,10 +10,21 @@ body {
   font-size: 10em;
 }
 
+.no-outline{
+  border: none;
+  outline: none;
+  background-color: #313d4b;
+}
+
 typewriter{
   width: 100%;
   height: 50%;
 }
+
+button > i {
+  color:#b29600;
+  font-size:40px;
+} 
 
 p,
 h1,

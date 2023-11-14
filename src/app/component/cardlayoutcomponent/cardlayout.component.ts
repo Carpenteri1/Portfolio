@@ -27,7 +27,7 @@ export class CardLayoutComponent {
     {
       this.lookButtons = true;
       const cardCount = this.getVisibleCards().length;
-      if (direction === 'left') {
+      if (direction === StringHandler.left) {
         setTimeout(() => {
           this.cardWidth = -2000;
           setTimeout(() => {
@@ -41,7 +41,7 @@ export class CardLayoutComponent {
           }, 300)
         }, 500)
       } 
-      else if (direction === 'right') 
+      else if (direction === StringHandler.right) 
       {
         setTimeout(() => {
           this.cardWidth = 2000;

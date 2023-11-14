@@ -86,10 +86,10 @@ export class StringHandler {
     //#region typewriter
     
     static readonly typeCursor: string = "|";
-    static readonly typeWriterTitleOne: string = "Welcome...";
-    static readonly typeWriterTitleTwo: string = "I'm Niclas";
-    static readonly typeWriterText: string = "Software engineer based in Varberg, Sweden. " + 
-    "\n I describe myself as a passionate .NET developer, \n" +
+    static readonly typeWriterTitleOne: string = "Software engineer...";
+    static readonly typeWriterTitleTwo: string = ".Net focused";
+    static readonly typeWriterText: string = "Based in Varberg, Sweden. " + 
+    "\nA passionate developer, \n" +
     "always keen to explore new technologies and frameworks to help me stay at the forefront. \n" +
     "I have experience in developing both robust and scalable applications for small business and enterprises.";
 

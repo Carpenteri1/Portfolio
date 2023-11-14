@@ -3,8 +3,8 @@
         <h2>{{title}}</h2>
     </div>
     <div class="row">
-        <div class="button-container  col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center mx-auto">
-            <button class="btn btn-custom"><i class="bi bi-arrow-left"></i></button>
+        <div class="col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center mx-auto">
+            <button class="no-outline" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
         </div>
         <div class="col-xl-10 d-flex justify-content-center align-items-center">
             <div class="row big-row-container">
@@ -26,8 +26,8 @@
                 </div>
             </div>
         </div>
-        <div class="button-container col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center mx-auto">
-            <button class="btn btn-custom"><i class="bi bi-arrow-right"></i></button>
+        <div class="col-xl-1 col-l-1 col-sm-1 d-flex justify-content-center align-items-center mx-auto">
+            <button class="no-outline" (click)="toggleGroup('right')"><i class="bi bi-arrow-right"></i></button>
         </div>
     </div>
 </div>

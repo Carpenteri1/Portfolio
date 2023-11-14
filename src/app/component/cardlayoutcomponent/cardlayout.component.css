@@ -3,11 +3,6 @@
   transition: transform 0.4s ease-in-out;
 }
 
-.btn{
-  border: none;
-  outline: none;
-}
-
 .card-title{
   padding-bottom: 1em;
 }

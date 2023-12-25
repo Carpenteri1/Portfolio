@@ -86,12 +86,8 @@ export class StringHandler {
     //#region typewriter
     
     static readonly typeCursor: string = "|";
-    static readonly typeWriterTitleOne: string = "Software engineer...";
-    static readonly typeWriterTitleTwo: string = ".Net focused";
-    static readonly typeWriterText: string = "Based in Varberg, Sweden. " + 
-    "\nA passionate developer, \n" +
-    "always keen to explore new technologies and frameworks to help me stay at the forefront. \n" +
-    "I have experience in developing both robust and scalable applications for small business and enterprises.";
+    static readonly typeWriterTitleOne: string = "Niclas "; // full title in css for typewriter
+    static readonly typeWriterTitleTwo: string = "Evolving Skills, Building Solutions, with .NET";
 
     //#endregion
 

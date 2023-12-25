@@ -1,68 +1,55 @@
 import { Component, OnInit } from '@angular/core';
 import { StringHandler } from 'src/app/Utility/stringhandler';
+import { transition, style, animate, trigger } from '@angular/animations';
 
 @Component({
   selector: 'typewriter',
   templateUrl: 'typewriter.component.html',
-  styleUrls:['typewriter.component.css']
+  styleUrls:['typewriter.component.css'],
+  animations: 
+  [    
+      trigger('fade', [
+          transition(':enter', [
+              style({ opacity: 0 }),
+              animate(4000, style({ opacity: 1 }))
+          ]),
+      ])     
+  ]
+  
 })
 export class TypewriterComponent implements OnInit {
   titleOne = StringHandler.stringEmpy;
   titleTwo = StringHandler.stringEmpy;
-  textValue = StringHandler.stringEmpy;
   //#region Cursor types
-  titleOneCursor = StringHandler.stringEmpy;
   titleTwoCursor = StringHandler.stringEmpy;
-  cursor = StringHandler.stringEmpy;
-  blinkingCursor = StringHandler.stringEmpy;
+  blinkingCursor = StringHandler.typeCursor;
   //#endregion
-  private readonly delayTitlesOne = 120;
   private readonly delayTitlesTwo = 90;
-  private readonly delayText = 60;
 
   ngOnInit() {
-    this.TypeTitleOne(StringHandler.typeWriterTitleOne,0)
+    this.ShowTitleOne(StringHandler.typeWriterTitleOne)
   }
 
-  private TypeTitleOne(titleValue : string, fromIndex : number) 
+  private ShowTitleOne(titleValue : string) 
   {
-    this.titleOne += titleValue[fromIndex];
-    fromIndex++;
-    this.titleOneCursor = StringHandler.typeCursor;
-    if (fromIndex < titleValue.length)
-      setTimeout(() => this.TypeTitleOne(titleValue,fromIndex), this.delayTitlesOne);
-    else 
-    {
-      this.titleOneCursor = StringHandler.stringEmpy;
-      this.titleTwoCursor = StringHandler.typeCursor;
-      this.TypeTitleTwo(StringHandler.typeWriterTitleTwo,0);
-    }
+    this.titleOne += titleValue;
+    setTimeout(() => this.TypeTitleTwo(StringHandler.typeWriterTitleTwo,0), 3000);
   }
 
   private TypeTitleTwo(titleValue : string, fromIndex : number) {
+    if( fromIndex === titleValue.length)
+    {
+      this.blinkingCursor = StringHandler.typeCursor;
+      this.titleTwoCursor = StringHandler.stringEmpy;
+      return;
+    }
+    else if(this.titleTwoCursor === StringHandler.stringEmpy)
+    {
+      this.blinkingCursor = StringHandler.stringEmpy;
+      this.titleTwoCursor = StringHandler.typeCursor;
+    }
     this.titleTwo += titleValue[fromIndex];
     fromIndex++;
-
-    if (fromIndex < titleValue.length) 
-      setTimeout(() => this.TypeTitleTwo(titleValue,fromIndex), this.delayTitlesTwo);
-    else{
-      this.titleTwoCursor = StringHandler.stringEmpy;
-      this.TypeText(StringHandler.typeWriterText,0);
-    }
-  }
-
-  private TypeText(text : string, fromIndex : number) 
-  {
-    this.textValue += text[fromIndex];
-    fromIndex++;
-
-    if (fromIndex < text.length) {
-      setTimeout(() => this.TypeText(text,fromIndex), this.delayText);
-      this.cursor = StringHandler.typeCursor;
-    }
-    else{
-      this.blinkingCursor = StringHandler.typeCursor;
-      this.cursor = StringHandler.stringEmpy;
-    }
+    setTimeout(() => this.TypeTitleTwo(titleValue,fromIndex), this.delayTitlesTwo);
   }
 }

@@ -87,7 +87,7 @@ export class StringHandler {
     
     static readonly typeCursor: string = "|";
     static readonly typeWriterTitleOne: string = "Niclas "; // full title in css for typewriter
-    static readonly typeWriterTitleTwo: string = "Evolving Skills, Building Solutions, with .NET";
+    static readonly typeWriterTitleTwo: string = "Evolving Skills, Building Solutions, With .NET";
 
     //#endregion
 

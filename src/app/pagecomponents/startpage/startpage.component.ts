@@ -13,7 +13,6 @@ export class StartPageComponent {
   @ViewChild(StringHandler.sectionTwo, { static: false }) sectionTwo: ElementRef;
   @ViewChild(StringHandler.sectionThree, { static: false }) sectionThree: ElementRef;
   @ViewChild(StringHandler.sectionFour, { static: false }) sectionFour: ElementRef;
-  @ViewChild(StringHandler.sectionFive, { static: false }) sectionFive: ElementRef;
   currentSection: number = 1;
 
   constructor() {
@@ -21,7 +20,6 @@ export class StartPageComponent {
     this.sectionTwo = new ElementRef(null);
     this.sectionThree = new ElementRef(null);
     this.sectionFour = new ElementRef(null);
-    this.sectionFive = new ElementRef(null);
   }
 
   clickScroll(el: HTMLElement) {
@@ -53,8 +51,7 @@ export class StartPageComponent {
       this.sectionOne.nativeElement,
       this.sectionTwo.nativeElement,
       this.sectionThree.nativeElement,
-      this.sectionFour.nativeElement,
-      this.sectionFive.nativeElement,
+      this.sectionFour.nativeElement    
     ];
     return sections[index];
   }

@@ -10,7 +10,6 @@ import { StartPageComponent} from './pagecomponents/startpage/startpage.componen
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
 import { TypewriterComponent } from './component/typewritercomponent/typewriter.component';
 import { CardLayoutComponent } from './component/cardlayoutcomponent/cardlayout.component';
-import { AboutMeComponent } from './component/aboutmecomponent/aboutme.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CarouselComponent,
     TypewriterComponent,
     CardLayoutComponent,
-    AboutMeComponent,
     FooterComponent,
   ],
   imports: [

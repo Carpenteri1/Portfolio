@@ -4,6 +4,7 @@
 }
 
 .titleTwo {
+    padding-top: 3em;
     width: 100%;
 }
 
@@ -42,37 +43,87 @@ div.titleTwo h2 {
 }
 
 
-
-/* Responsive styles */
-@media only screen and (max-width: 1200px) {
-    /* Adjustments for larger desktop screens */
+@media only screen and (max-width: 1399px) {
     div.titleTwo h2 {
-        padding-left: 4em;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    /* Adjustments for medium-sized desktop screens and tablets */
-    div.titleTwo h2 {
+        padding-top: 0em;
         padding-left: 2em;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    /* Adjustments for tablets and smaller desktop screens */
+@media only screen and (max-width: 1200px) {
     div.titleTwo h2 {
-        padding-left: 1em;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    div.titleTwo h2 {
+        padding-left: 2.5em;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.titleTwo h2 {
+        padding-left: -1em;
+        font-size: 22px;
+    }
+    h1{
+        font-size: 100px;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    /* Adjustments for phones */
     div.titleTwo h2 {
-        padding-left: 0.5em;
+        padding-left: 5em;
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    .container .row:nth-child(2) {
+        width: 80%;
+        margin-left: 3em;
     }
 
     .blinking-cursor,
     .none-blinking-cursor {
         font-size: 20px;
     }
+}
+
+@media only screen and (max-width: 478px) {
+    div.titleTwo h2 {
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    .container .row:nth-child(2) {
+        width: 70%;
+    }
+
+
+}
+
+@media only screen and (max-width: 478px) {
+    div.titleTwo h2 {
+        font-size: 18px;
+        padding-left: 3em;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    .container .row:nth-child(2) {
+        width: 90%;
+        margin-left: 0em;
+    }
+
+
 }

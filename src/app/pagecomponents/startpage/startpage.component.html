@@ -9,17 +9,10 @@
         </div>
       </div>
     </div>
-      <div class="full-page d-flex justify-content-center align-items-center" #sectionThree>
-        <div class="container">
-          <div class="row">
-          <aboutme-component></aboutme-component>
-          </div>
-        </div>
-      </div>
-      <div class="full-page d-flex justify-content-center align-items-center" style="background-color: #313d4b;" #sectionFour>
+      <div class="full-page d-flex justify-content-center align-items-center" #sectionFour>
         <cardlayout-component></cardlayout-component>
       </div>
-      <div #sectionFive>
+      <div #sectionFive >
         <footer-component></footer-component>
       </div>
       <div class="scroll-button-container">
@@ -35,17 +28,12 @@
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <div (click)="clickScroll(sectionThree)" class="side-buttons" name="optradio" id="sectionThreeInput"></div>
+            <div (click)="clickScroll(sectionFour)" class="side-buttons" name="optradio" id="sectionThreeInput"></div>
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <div (click)="clickScroll(sectionFour)" class="side-buttons" name="optradio" id="sectionFourInput"></div>
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <div (click)="clickScroll(sectionFive)" class="side-buttons" name="optradio" id="sectionFiveInput"></div>
+            <div (click)="clickScroll(sectionFive)" class="side-buttons" name="optradio" id="sectionFourInput"></div>
           </label>
         </div>
       </div>

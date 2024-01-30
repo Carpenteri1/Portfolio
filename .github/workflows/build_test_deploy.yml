@@ -59,12 +59,12 @@ jobs:
         run: npm install
 
       - name: Deploy to gh-pages
-        run:  |
+        run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           git checkout -B gh-pages
 
           # Assuming your built files are in /root
-          git add -A /root
-          git commit -m "Deploy to gh-pages"
+          git add -A
+          git commit -m "Update gh-pages"
           git push -f origin gh-pages

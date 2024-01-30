@@ -2,11 +2,11 @@ name: Build Test Deploy gh-pages
 
 on:
   push:
-    branches: [ "master"]
+    branches: [ "master","*"]
   pull_request:
-    branches: [ "master"]
+    branches: [ "master","*"]
     types:
-      - opened
+      - opened ##remove
       - closed
 
 jobs:

@@ -65,8 +65,6 @@ jobs:
           git checkout -B gh-pages
 
           # Assuming your built files are in /root
-          mv /root/* .
-
-          git add -A
-          git commit -m "Update gh-pages"
+          git add -A /root
+          git commit -m "Deploy to gh-pages"
           git push -f origin gh-pages

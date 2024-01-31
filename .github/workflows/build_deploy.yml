@@ -2,11 +2,12 @@ name: Build And Deploy gh-pages
 
 on:
   push:
-    branches: [ "master"]
+    branches: [ "master", "*"]
   pull_request:
-    branches: [ "master"]
+    branches: [ "master","*"]
     types:
       - closed
+      - open
 
 jobs:
   build:
@@ -42,15 +43,9 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Check for changes
-        id: git-check
-        run: |
-          git diff --exit-code || echo "Changes detected"
+        run: npm ci
 
       - name: Deploy to gh-pages
-        if: steps.git-check.outputs.stdout
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"

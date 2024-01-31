@@ -1,11 +1,9 @@
 name: Build And Deploy gh-pages
 
 on:
-  pull_request:
-    branches: [ "master"]
-    types:
-      - closed
-
+  push:
+    branches: ["master"]
+    
 jobs:
   build:
     runs-on: ubuntu-latest

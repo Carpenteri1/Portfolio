@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './component/footercomponent/footer.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { StartPageComponent} from './pagecomponents/startpage/startpage.component'
 import { CarouselComponent } from './component/carouselcomponent/carousel.component';
 import { TypewriterComponent } from './component/typewritercomponent/typewriter.component';
@@ -27,7 +26,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     CommonModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

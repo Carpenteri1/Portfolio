@@ -1,13 +1,10 @@
 name: Build And Deploy gh-pages
 
 on:
-  push:
-    branches: [ "master", "*"]
   pull_request:
-    branches: [ "master","*"]
+    branches: [ "master"]
     types:
       - closed
-      - open
 
 jobs:
   build:

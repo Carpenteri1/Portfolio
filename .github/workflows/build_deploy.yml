@@ -1,8 +1,6 @@
 name: Build And Deploy gh-pages
 
 on:
-  push:
-    branches: [ "master"]
   pull_request:
     branches: [ "master"]
     types:
@@ -42,21 +40,21 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Check for changes
-        id: git-check
-        run: |
-          git diff --exit-code || echo "Changes detected"
+        run: npm ci
 
       - name: Deploy to gh-pages
-        if: steps.git-check.outputs.stdout
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           git checkout -B gh-pages
 
+          # Check if there are changes, --porcelain command checks for changes in the entire repository,
+          if [ -n "$(git status --porcelain)" ]; then 
           # Assuming your built files are in /root
           git add -A
           git commit -m "Update gh-pages"
           git push -f origin gh-pages
+          else
+          echo "No changes to commit."
+          fi
+

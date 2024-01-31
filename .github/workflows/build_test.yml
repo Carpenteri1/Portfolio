@@ -2,9 +2,9 @@ name: Build Test
 
 on:
   push:
-    branches: [ "!master", "*"]
+    branches: [ "!master","!gh-pages", "*"]
   pull_request:
-    branches: [ "!master", "*"]
+    branches: [ "!master","!gh-pages", "*"]
     types:
     - open
 

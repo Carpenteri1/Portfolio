@@ -3,21 +3,35 @@
   transition: transform 0.4s ease-in-out;
   text-align: center;
 }
+.container-fluid{
+  width: 95%;
+}
 
 button{
   background-color: #2E3445;
 }
 
+
+.button-on-one-row{
+  display: none;
+}
+
 /*Center button inside*/
 .col-xl-1,
-.col-l-1,
+.col-lg-1,
+.col-md-1,
 .col-sm-1,
 .col-xs-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   }
-
+  .col-lg-6,
+  .bi-arrow-left
+  {
+    margin-bottom: 2em;
+  } 
+/*767px*/
   .shadow-custom:hover{
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .25), 0 3px 11px 8px rgba(0, 0, 0, .55) !important;
   }
@@ -48,17 +62,17 @@ button{
     font-size: x-small;
     text-align: right;
   }
+  
 
-@media (max-width: 1500px)
-{
-  
-  .card-title{
-    /*color: red !important; TODO to test*/
+@media (max-width:991px) {
+  .button-on-one-row{
+    display: flex;
   }
-  
+  .button-on-side{
+    display: none;
+  }
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 575px) {
   /* Styles for phones */
   .col-xl-2,

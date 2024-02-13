@@ -50,9 +50,9 @@ footer {
 .scroll-button-container {
   position: fixed;
   top: 35%;
-  width: 5em;
+  width: 0em;
+  padding-right: 2em;
   right: 0;
-  padding-left: 2.5em;
 }
 
 .form-check{

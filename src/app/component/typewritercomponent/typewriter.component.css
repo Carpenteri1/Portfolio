@@ -1,19 +1,5 @@
 .title {
     text-align: center;
-    width: 100%;
-}
-
-.titleTwo {
-    padding-top: 3em;
-    width: 100%;
-}
-
-div.titleTwo h2 {
-    padding-left: 7em;
-}
-
-.infotext {
-    padding-left: 1.8em;
 }
 
 /* Blinking cursor styles */
@@ -42,88 +28,25 @@ div.titleTwo h2 {
     color:  #b29600;
 }
 
-
-@media only screen and (max-width: 1399px) {
-    div.titleTwo h2 {
-        padding-top: 0em;
-        padding-left: 2em;
-    }
+.titleTwo::after{
+    text-align: center;
 }
 
-@media only screen and (max-width: 1200px) {
-    div.titleTwo h2 {
-        font-size: 24px;
+@media (max-width: 767px) {
+    .title {
+        font-size: 17vw;
+    }
+    h2,
+    .blinking-cursor,
+    .none-blinking-cursor  {
+        font-size: 4.5vw;
     }
 }
-
-@media only screen and (max-width: 992px) {
-    div.titleTwo h2 {
-        padding-left: 2.5em;
-        font-size: 28px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    div.titleTwo h2 {
-        padding-left: -1em;
-        font-size: 22px;
-    }
-    h1{
-        font-size: 100px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    div.titleTwo h2 {
-        padding-left: 5em;
-        font-size: 18px;
-    }
-
-    h1{
-        font-size: 80px;
-    }
-
-    .container .row:nth-child(2) {
-        width: 80%;
-        margin-left: 3em;
-    }
-
+/*
+@media (max-width: 460px) {
+    h2,
     .blinking-cursor,
     .none-blinking-cursor {
-        font-size: 20px;
+        font-size: 4.5vw;
     }
-}
-
-@media only screen and (max-width: 478px) {
-    div.titleTwo h2 {
-        font-size: 18px;
-    }
-
-    h1{
-        font-size: 80px;
-    }
-
-    .container .row:nth-child(2) {
-        width: 70%;
-    }
-
-
-}
-
-@media only screen and (max-width: 478px) {
-    div.titleTwo h2 {
-        font-size: 18px;
-        padding-left: 3em;
-    }
-
-    h1{
-        font-size: 80px;
-    }
-
-    .container .row:nth-child(2) {
-        width: 90%;
-        margin-left: 0em;
-    }
-
-
-}
+}*/

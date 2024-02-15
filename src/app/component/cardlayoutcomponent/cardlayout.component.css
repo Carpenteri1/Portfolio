@@ -62,7 +62,7 @@ button{
     font-size: x-small;
     text-align: right;
   }
-  
+
 
 @media (max-width:991px) {
   .button-on-one-row{
@@ -71,6 +71,7 @@ button{
   .button-on-side{
     display: none;
   }
+  
 }
 
 @media (max-width: 575px) {

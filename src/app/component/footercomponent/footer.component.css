@@ -22,3 +22,10 @@ footer .bi-envelope-at-fill {
 footer a:hover{
     color: #b29600;
 }
+
+
+@media (max-width: 570px) {
+    h1{
+        font-size: 5vw;
+    }
+}

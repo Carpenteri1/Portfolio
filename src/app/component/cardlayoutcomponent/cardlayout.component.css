@@ -1,569 +1,135 @@
 .card-group {
-  display: flex;
+  /*display: flex;*/
   transition: transform 0.4s ease-in-out;
+  text-align: center;
+}
+.container-fluid{
+  width: 95%;
 }
 
-.card-title{
-  padding-bottom: 1em;
-}
-
-/*fix issue with squire, will fix once we look over css*/
 button{
   background-color: #2E3445;
 }
 
-.bi-arrow-left{
-  margin-right: -4em;
+
+.button-on-one-row{
+  display: none;
 }
 
-.bi-arrow-right{
-  margin-left: -5em;  
-}
-
-.shadow-custom:hover{
-  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .25), 0 3px 11px 8px rgba(0, 0, 0, .55) !important;
-}
-
-.card {
-  padding: 2em;
-  height: 15em;
-  margin-right: 3.5em;
-  background-color: #b3b3b3;
-  opacity: 80%;
-}
-
-.card:hover{
-  opacity: 100%;
-}
-
-.card-group{
-padding: 8em;
-}
-
-.card-img-top{
-  height: 180px;
-  width: 100%;
-}
-
-.card-title{
-  color:black !important;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 4%;
-}
-
-.card-body{
-  padding: 0%;
-}
-
-.card-text{
-  padding: auto;
-  color:black !important;
-  font-size: small;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-bottom: 4%;
-}
-
-.card-footer{
-  font-size: x-small;
-  text-align: right;
-}
-
-
-@media only screen and (max-height: 1180px)
-and (max-width: 900px) 
- {
-  .card-title{
-    font-size: 0.88em;
+/*Center button inside*/
+.col-xl-1,
+.col-lg-1,
+.col-md-1,
+.col-sm-1,
+.col-xs-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
+  .col-lg-6,
+  .bi-arrow-left
+  {
+    margin-bottom: 2em;
+  } 
+/*767px*/
+  .shadow-custom:hover{
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .25), 0 3px 11px 8px rgba(0, 0, 0, .55) !important;
+  }
+
+  .card {
+    margin-right: 1em;
+    margin-left: 1em;
+
+    background-color: #b3b3b3;
+    opacity: 80%;
+  }
+
+  .card:hover{
+    opacity: 100%;
+  }
+
   .card-text{
-    margin-top: -1.5em;
-    font-size: 0.7em;
-  }  
-  .card{
-    padding: 0.8em;
-    padding-top: 1em;
+    color:black !important;
+    font-size: small;
   }
-}
-
-@media only screen and (max-height: 1920px)
-and (min-width: 1080px) 
- {
-  .card-title{
-    font-size: 1.2em;
-  }
-  .card-text{
-    margin-top: -1.5em;
-    font-size: 0.8em;
-  }  
-  .col-8{
-    width: 80%;
-  }
-  .col-2{
-    width: 10%;
-  }
-}
-
-@media only screen and (max-height: 1145px)
-and (max-width: 900px) 
- {
-  .card-title{
-    font-size: 1em;
-  }
-  .card-text{
-    margin-top: -1.5em;
-    font-size: 0.8em;
-  }  
-  .col-8{
-    width: 80%;
-  }
-  .col-2{
-    width: 10%;
-  }
-}
-
-@media only screen and (max-height: 1145px)
-and (max-width: 850px) 
- {
-  .card-title{
-    font-size: 0.88em;
-  }
-  .card-text{
-    margin-top: -1.5em;
-    font-size: 0.7em;
-  }  
-  .card{
-    padding: 0.8em;
-    padding-top: 1em;
-  }
-}
-
-@media only screen and (max-height: 1145px)
-and (max-width: 695px) 
- {
-  .card-title{
-    margin-top: -0.5em;
-    font-size: 0.8em;
-  }
-  .card-text{
-    margin-top: -1.5em;
-    font-size: 0.7em;
-  }  
-}
-
-@media only screen and (max-height: 1145px)
-and (max-width: 575px) 
- {
-  .card-title{
-    text-align: center;
-    margin-top: 0em;
-    font-size: 2em;
-  }
-  .card-text{
-    margin-top: -1.5em;
-    font-size: 1em;
-  }  
-  .card{
-    padding: 1em;
-    padding-top: 1em;
-  }
-}
-
-@media only screen and (min-height: 1145px)
-and (max-width: 451px) 
- {
-  .card-title{
-    font-size: 1.5em;
-  }
-
-}
-
-@media only screen and (min-height: 1145px)
-and (max-width: 366px) 
- {
-  .card-title{
-    font-size: 1em;
-  }
-  .card-text{
-    font-size: 0.7em;
-  }
-}
-
-@media only screen and (max-height: 650px)
-and (max-width: 991px) 
- {
-  .card-title{
-    font-size: 1em;
-  }
-  .card-text{
-    font-size: 0.8em;
-  }  
-  .card{
-    padding: 0.5em;
-    height: 14em;
-  }
-}
-
-@media only screen and (max-height: 650px)
-and (max-width: 767px) 
- {
-  .card-title{
-    font-size: 0.9em;
-  }
-  .card-text{
-    margin-top: 0em;
-    font-size: 0.6em;
-  }  
-  .card{
-    padding: 0.5em;
-    height: 12em;
-  }
-  .bi{
-    font-size: 2em !important;
-  }
-}
-
-
-@media only screen and (max-height: 650px)
-and (max-width: 655px) 
- {
-  .card-title{
-    font-size: 0.9em;
-  }
-  .card-text{
-    font-size: 0.6em;
-  }  
-}
-
-@media only screen and (max-height: 650px)
-and (max-width: 620px) 
- {
-  .card-title{
-    font-size: 0.8em;
-  }
-  .card-text{
-    font-size: 0.5em;
-  }  
-}
-
-@media only screen and (max-height: 650px)
-and (max-width: 500px) 
- {
-  .card-group{
-    margin-right: 0em;
-    margin-left: 0em;
-  }
-  .card{
-    width: 16em;
-    margin-right: 0em;
-    margin-left: 0em;
-  }
-  .card-text{
-    font-size: 0.7em;
-  }
-  .btn .bi{
-    font-size: 2em !important;
-  }
-  .btn .bi-arrow-left{
-    margin-right: 0em;
-    margin-left: 0em;
-  }
-
-  .btn .bi-arrow-right{
-    margin-right: 0em;
-    margin-left: 0em;
-  }
-}
-
-
-@media only screen and (max-height: 795px)
-and (max-width: 575px) 
- {
-  .card-title{
-    font-size: 1.2em;
-    text-align: center;
-  }
-  .card-text{
-    font-size: 0.8em;
-  }  
-  .card{
-    padding: 0.5em;
-    height: 10em;
-    width:match-parent;
-  }
-
-  .card-group{
-    margin-right: -10em;
-    width: 18em;
-  }
-
-  .bi{
-    font-size: 3em !important;
-  }
-  .bi-arrow-left{
-    margin-right: 0em;
-  }
-
-  .bi-arrow-right{
-    margin-left: 0.5em;
-  }
-
-}
-
-@media only screen and (max-height: 650px)
-and (max-width: 575px) 
- {
-  .card-title{
-    font-size: 1.2em;
-  }
-  .card-text{
-    font-size: 0.6m;
-  }  
-
-  .card{
-    padding: 0em;
-  }
-}
-
-@media only screen and (max-height: 575px)
-and (max-width: 575px) 
- {
-  .card-title{
-    font-size: 1em;
-  }
-  .card-text{
-    margin-top: -1em;
-    font-size: 0.6em;
-  }  
-  .card{
-    height: 7.5em;
-    width: 12em;
-  }
-  .card-group{
-    margin-left: 2em;
-  }
-} 
-
-@media only screen and (max-height: 440px)
-and (max-width: 575px) 
- {
-  .card-title{
-    font-size: 0.9em;
-  }
-  .card-text{
-    margin-top: -1.5em;
-    font-size: 0.6em;
-  }  
-  .card{
-    height:6.5em;
-    width: 14em;
-  }
-  .card-group{
-    margin-left: 2.5em;
-  }
-} 
-
-@media only screen and (max-height: 375px)
-and (max-width: 575px) 
- {
-  .card-title{
-    font-size: 0.8em;
-  }
-  .card-text{
-    margin-top: -2em;
-    font-size: 0.5em;
-  }  
-  .card{
-    height:5.5em;
-    width: 10em;
-  }
-  .card-group{
-    margin-left: 2.5em;
-  }
-} 
-
-@media only screen and (max-height: 325px)
-and (max-width: 575px) 
- {
-  .card-title{
-    margin-top: -0.5em;
-    font-size: 0.7em;
-  }
-  .card-text{
-    margin-top: -2.5em;
-    font-size: 0.5em;
-  }  
-  .card{
-    height:4em;
-    width: 14em;
-  }
-  .card-group{
-    margin-left: 2.5em;
-  }
-} 
-
-@media only screen and (max-height: 250px)
-and (max-width: 575px) 
- {
-  .card-title{
-    margin-top: -0.5em;
-    font-size: 0.7em;
-  }
-  .card-text{
-    margin-top: -2.5em;
-    font-size: 0.5em;
-  }  
-  .card{
-    height:3em;
-    width: 18em;
-  }
-  .card-group{
-    margin-left: 1.5em;
-  }
-} 
-
-@media only screen and (max-height: 195px)
-and (max-width: 575px) 
- {
-  .card-title{
-    margin-top: -0.8em;
-    font-size: 0.6em;
-  }
-  .card-text{
-    margin-top: -2.5em;
-    font-size: 0.5em;
-  }  
-  .card{
-    height:2.5em;
-    width: 18em;
-  }
-  .card-group{
-    margin-left: 1.5em;
-  }
-} 
-
-@media only screen and (max-height: 300px)
-and (min-width: 1080px) 
- {
-  .card-title{
-    font-size: 0.8em;
-  }
-  .card-text{
-    margin-top: 0em;
-    font-size: 0.5em;
-  }  
-  .card{
-    padding: 0.5em;
-    height: 80%;
-  }
-}
-
-@media only screen and (max-height: 1920px)
-and (min-width: 1199px) 
- {
-  .card-title{
-    font-size: 1.2em;
-  }
-  .card-text{
-    margin-top: -1.5em;
-    font-size: 0.8em;
-  }  
-  .col-8{
-    width: 80%;
-  }
-  .col-2{
-    width: 10%;
-  }
-}
-
-@media only screen and (max-height: 325px)
-and (min-width: 1199px) 
- {
-  .card-title{
-    font-size: 1em;
-  }
-  .card-text{
-    margin-top: 0em;
-    font-size: 0.7em;
-  }  
-  .card{
-    padding: 0.5em;
-    height: 80%;
-  }
-}
-
-@media only screen and (max-height: 200px)
-and (min-width: 1199px) 
- {
-  .card-title{
-    font-size: 0.7em;
-  }
-  .card-text{
-    font-size: 0.5em;
-  }  
-  .card{
-    padding: 0.5em;
-  }
-}
-
-@media only screen and (max-width: 500px) 
- {
-  .card-title{
-    font-size: 1em;
-    text-align: center;
-  }
-  .card-text{
-    font-size: 0.6em;
-  }  
-  .card{
-    padding: 0.5em;
-    height: 10em;
-    width:match-parent;
-  }
-
-  .card-group{
-    margin-right: -2em;
-    width: 14em;
-  }
-  .bi-arrow-left{
-    margin-left: -2em;
-  }
-  .bi-arrow-right{
-    margin-right: -2em;
-  }
-}
-
-@media only screen and (max-width: 385px) 
- {
 
   .card-title{
-    font-size: 0.7em;
-    text-align: center;
-  }
-  .card-text{
-    font-size: 0.5em;
-  }  
-  .card{
-    width: 8em;
-    padding: 0.5em;
-    height: 10em;
-    width:match-parent;
+    color:black !important;
+
   }
 
-  .card-group{
-    width: 10em;
-    margin-left: 0.5em; 
+  .card-footer{
+    font-size: x-small;
+    text-align: right;
   }
 
-  .bi{
-    font-size: 1.5em !important;
+
+@media (max-width:991px) {
+  .button-on-one-row{
+    display: flex;
+  }
+  .button-on-side{
+    display: none;
   }
   
-  .btn{
-    width: match-parent;
+}
+
+@media (max-width: 575px) {
+  /* Styles for phones */
+  .col-xl-2,
+  .col-l-2,
+  .col-sm-2 {
+      flex: 1 0 100%;
   }
-  .container-fluid{
-    width: 15em;
+  .col-xl-8 {
+      flex: 1 0 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Styles for small tablets */
+  .col-xl-2,
+  .col-l-2,
+  .col-sm-2 {
+      flex: 1 0 33.33333%;
+  }
+  .col-xl-8 {
+      flex: 1 0 66.66667%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for larger tablets */
+  .col-xl-2,
+  .col-l-2,
+  .col-sm-2 {
+      flex: 1 0 25%;
+  }
+  .col-xl-8 {
+      flex: 1 0 75%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for smaller PCs */
+  .col-xl-2,
+  .col-l-2,
+  .col-sm-2 {
+      flex: 1 0 20%;
+  }
+  .col-xl-8 {
+      flex: 1 0 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Styles for larger PCs */
+  .col-xl-2,
+  .col-l-2,
+  .col-sm-2 {
+      flex: 1 0 15%;
+  }
+  .col-xl-8 {
+      flex: 1 0 70%;
   }
 }

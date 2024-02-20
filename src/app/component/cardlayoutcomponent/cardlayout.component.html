@@ -1,9 +1,9 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xl-2 col-l-2 col-sm-2 d-flex justify-content-center align-items-center mx-auto">
+    <div class="col-xl-1 col-lg-1 button-on-side">
       <button class="no-outline" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
     </div>
-    <div class="col-xl-8 col-l-8 col-sm-8 mx-auto">
+    <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12 mx-auto" >
       <div class="card-container">
         <div class="card-group" [style.transform]="'translateX(' + (cardWidth) + 'px)'" [style.opacity]="visable ? '1' : '0'">
           <div class="card shadow-custom" style="border-radius: 8%;" *ngFor="let card of getVisibleCards(); let i = index">
@@ -16,8 +16,16 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-2 col-l-2 col-sm-2 d-flex justify-content-center align-items-center mx-auto">
+    <div class="col-xl-1 col-lg-1 button-on-side">
       <button class="no-outline" (click)="toggleGroup('right')"><i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div class="button-on-one-row">
+      <div class="col-2"></div>
+      <div class="col-8 d-flex justify-content-between align-items-center">
+        <button class="no-outline" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
+        <button class="no-outline" (click)="toggleGroup('right')"><i class="bi bi-arrow-right"></i></button>
+      </div>
+      <div class="col-2"></div>
     </div>
   </div>
 </div>

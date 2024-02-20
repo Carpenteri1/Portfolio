@@ -1,317 +1,44 @@
-.title{
+.title {
     text-align: center;
-    width: 100%;
 }
 
-.titleTwo{
-    width: 100%;
-}
-div.titleTwo h2{
-    padding-left: 7em;
-}
-
-.infotext{
-    padding-left: 1.8em;
-}
-
-@media only screen and (max-height: 1915px) 
-and (max-width: 770px)
-{
-    .title{
-        font-size:4.5em ;
-        padding-left: 0.5em ;
-    }
-    .titleTwo{
-        font-size: 2em;     
-        padding-left: 1em;
-    }
-    .infotext{
-        font-size: 1em; 
-        padding-left: 2.2em;
-    }
-}
-
-@media only screen and (max-height: 1915px) 
-and (max-width: 500px)
-{
-    .title{
-        font-size:1.8em ;
-        margin-left: 0.2em;
-    }
-    .titleTwo{
-        font-size: 1em;     
-    }
-    .infotext{
-        font-size: 0.8em; 
-        padding-left: 2.2em;
-    }
-}
-
-@media only screen and (max-height: 1920px) 
-and (min-width: 0px)
-{
-    .title{
-        font-size: 2em;
-    }
-}  
-
-@media only screen and (max-height: 650px) 
-and (min-width: 0px)
-{
-    .title{
-        margin-top: -3em;
-        margin-bottom: -0.5em;
-        margin-left: 0em;
-    }
-    .titleTwo{
-        margin-bottom: -2em;
-    }
-    .infotext{
-        font-size: 0.7em;
-    }
-}  
-
-@media only screen and (max-height: 350px) 
-and (min-width: 0px)
-{
-    .title{
-        font-size: 1.5em;
-        margin-top: -1em;
-        margin-bottom: -1em;
-        margin-left: 0.2em;
-    }
-    .titleTwo{
-        margin-bottom: -2em;
-    }
-    .infotext{
-
-        font-size: 0.5em;
-    }
-}  
-
-@media only screen and (max-height: 280px) 
-and (min-width: 0px)
-{
-    .title{
-        font-size: 1.2em;
-        margin-top: -3em;
-        margin-bottom: -1.8em;
-        margin-left: 0.4em;
-    }
-    .titleTwo{
-        font-size: 0.8em;
-    }
-    .infotext{
-        font-size: 0.4em;
-    }
-}  
-
-
-@media only screen and (max-height: 1920px) 
-and (min-width: 500px)
-{
-    .title{
-        font-size: 4em;
-    }
-}  
-
-@media only screen and (max-height: 650px) 
-and (min-width: 500px)
-{
-    .title{
-        font-size: 3em;
-        margin-top: -2em;
-        margin-bottom: -0.5em;
-    }
-    .titleTwo{
-        margin-left: -0.2em;
-        margin-bottom: -1em;
-    }
-    .infotext{
-        font-size: 0.6em;
-    }
-}  
-
-@media only screen and (max-height: 350px) 
-and (min-width: 500px)
-{
-    .title{
-        font-size: 2em;
-        margin-top: -2em;
-        margin-bottom: -1em;
-        margin-left: 0em;
-    }
-    .titleTwo{
-        font-size: 1em;
-        margin-left: -0.2em;
-        margin-bottom: -2.5em;
-    }
-    .infotext{
-        font-size: 0.6em;
-    }
-}  
-
-@media only screen and (max-height: 1920px) 
-and (min-width: 720px)
-{
-    .title{
-        font-size: 5em;
-    }
-}  
-
-
-@media only screen and (max-height: 650px) 
-and (min-width: 720px)
-{
-    .title{
-        margin-top: -1.5em;
-    }
-}  
-
-@media only screen and (max-height: 500px) 
-and (min-width: 720px)
-{
-    .title{
-        font-size: 3.5em;
-        margin-bottom: -0.7em;
-    }
-    .titleTwo{
-        font-size: 2em;
-        margin-left: -0.2em;
-        margin-bottom: -1em;
-    }
-    .infotext{
-        font-size: 0.8em;
-    }
-}   
-
-@media only screen and (max-height: 300px) 
-and (min-width: 720px)
-{
-    .title{
-        font-size: 2.5em;
-        margin-bottom: -0.8em;
-    }
-    .titleTwo{
-        font-size: 1.2em;
-        margin-left: -0.2em;
-        margin-bottom: -2em;
-    }
-    .infotext{
-        font-size: 0.6em;
-    }
-}   
-
-@media only screen and (max-height: 650px)
-and (min-width: 1080px) 
- {
-    .title{
-        font-size:4.5em;
-        margin-top: -0.5em;
-    }
-    .titleTwo{
-        font-size:3em;
-        margin-top: -0.5em;
-        margin-left: -0.2em;
-    }
-    .infotext{
-        font-size: 1.2em;
-        margin-top: 0.5em;
-        margin-bottom: 0em;
-        padding-left: 2.5em;
-        margin-left: -0.2em;
-    }   
-}
-
-@media only screen and (max-height: 450px)
-and (min-width: 1080px) 
- {
-    .title{
-        font-size:2.5em;
-        margin-top:-2em ;
-        margin-bottom: -0.5em;
-    }
-    .titleTwo{
-        font-size:1.4em;
-        margin-bottom: -1em ;
-    }
-    .infotext{
-        font-size: 1em;
-        margin-left: -0.2em;
-    }
-}
-
-@media only screen and (max-height: 350px)
-and (min-width: 1080px) 
- {
-    .title{
-        font-size:2.5em;
-        margin-top: -1.5em ;
-        margin-left:0em;
-    }
-    .titleTwo{
-        font-size:1.4em;
-        margin-bottom: -1.2em ;
-    }
-    .infotext{
-        font-size: 0.8em;
-        margin-left: -0.2em;
-    }
-}
-
-@media only screen and (min-height: 1920px)
-and (max-width: 1200px) 
- {
-    .title{
-        font-size:7.5em;
-    }
-}
-
-@media only screen and (min-height: 1920px)
-and (max-width: 1080px)
- {
-    .title{
-        font-size:2.5em;
-        margin-top: -1.5em ;
-    }
-    .titleTwo{
-        font-size:1.4em;
-        margin-bottom: -1em ;
-    }
-    .infotext{
-        font-size: 1em;
-    }
-}
-
-/*
-Blinking cursor
-*/
-
+/* Blinking cursor styles */
 @keyframes blink {
     0%, 100% {
-      opacity: 1;
+        opacity: 1;
     }
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  .blinking-cursor {
+}
+
+.blinking-cursor {
     animation: blink 2s infinite;
     color: #b29600;
     font-size: 30px;
-  }
+}
 
-  .none-blinking-cursor{
+.none-blinking-cursor {
     color: #b29600;
     font-size: 30px;
-  }
-
-  /*
-  Blinking cursor end
-  */
+}
 
 .highlight-SurName::after {
     content: "Timle";
     color:  #b29600;
+}
+
+.titleTwo::after{
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 17vw;
+    }
+    h2,
+    .blinking-cursor,
+    .none-blinking-cursor  {
+        font-size: 4.5vw;
+    }
 }

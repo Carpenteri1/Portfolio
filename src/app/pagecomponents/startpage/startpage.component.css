@@ -47,6 +47,15 @@ footer {
   box-sizing: border-box;
 }
 
+.footer-page{
+  height: 20vh;
+  width: 100%;
+  border-top: solid 2px #b29600;
+  box-sizing: border-box;
+  border-bottom: solid 2px #b29600;
+  overflow: auto;
+}
+
 .scroll-button-container {
   position: fixed;
   top: 35%;

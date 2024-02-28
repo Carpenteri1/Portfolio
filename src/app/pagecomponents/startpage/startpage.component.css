@@ -1,15 +1,21 @@
-html,
-body {
-  height: 100%;
-  color: white;
+#sectionOne,
+#sectionFour{
   background-color: #2E3445;
-  overflow: hidden;
+}
+#sectionFour{
+  border-bottom: solid 1px #b29600;
+}
+
+#sectionTwo,
+#sectionFive{
+  background-color: #313d4b;
 }
 
 .title {
   font-size: 10em;
 }
 
+/*Buttons*/
 .no-outline{
   border: none;
   outline: none;
@@ -35,25 +41,12 @@ h5 {
   font-family: 'Courier New',Courier ,monospace;
   color: white !important;
 }
-header,
-footer {
-  background-color: #2E3445 !important;
-}
 
 .full-page {
   height: 99.5vh;
   width: match-parent;
   border-top: solid 2px #b29600;
   box-sizing: border-box;
-}
-
-.footer-page{
-  height: 20vh;
-  width: 100%;
-  border-top: solid 2px #b29600;
-  box-sizing: border-box;
-  border-bottom: solid 2px #b29600;
-  overflow: auto;
 }
 
 .scroll-button-container {
@@ -76,6 +69,7 @@ footer {
   background-color: #4d4a4a;
   border:1px solid black;
 }
+
 .side-buttons:hover{
   cursor: pointer;
 }

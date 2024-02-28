@@ -1,8 +1,12 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 html,body{
-  background-color: #2E3445;
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  
+  background-color: #313d4b;
+  border-bottom: solid 1px #b29600;
 }
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

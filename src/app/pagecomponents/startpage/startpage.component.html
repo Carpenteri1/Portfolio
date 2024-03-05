@@ -1,18 +1,14 @@
-<div class="row"><!-- TODO re-enable if we want to have scroll (wheel)="onScroll($event)"> -->
-      <div class="full-page d-flex justify-content-center align-items-center" id="sectionOne" #sectionOne>
+<!-- TODO re-enable if we want to have scroll (wheel)="onScroll($event)"> -->
+    <div #sectionOne id="sectionOne" class="full-page d-flex justify-content-center align-items-center">
        <typewriter></typewriter>
     </div>
-      <div class="full-page d-flex justify-content-center align-items-center"  style="background-color: #313d4b;" id="sectionTwo" #sectionTwo>
-        <div class="container">
-        <div class="row">
+      <div #sectionTwo id="sectionTwo" class="full-page d-flex justify-content-center align-items-center">
           <carousel-component></carousel-component>
-        </div>
-      </div>
     </div>
-      <div class="full-page d-flex justify-content-center align-items-center" #sectionFour>
+      <div #sectionFour id="sectionFour" class="full-page d-flex justify-content-center align-items-center" >
         <cardlayout-component></cardlayout-component>
       </div>
-      <div #sectionFive >
+      <div #sectionFive id="sectionFive" class="justify-content-center align-items-center">
         <footer-component></footer-component>
       </div>
       <div class="scroll-button-container">
@@ -37,4 +33,3 @@
           </label>
         </div>
       </div>
-  </div>

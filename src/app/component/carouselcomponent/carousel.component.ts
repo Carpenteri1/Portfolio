@@ -28,38 +28,33 @@ export class CarouselComponent implements OnInit {
     
     skillList1: ISkill[] = [
         { name: StringHandler.dotNet, level: 70 },
-        { name: StringHandler.netFrameWork, level: 50 },
-        { name: StringHandler.aspNet, level: 70 },
-        { name: StringHandler.xamarin, level: 60 },
+        { name: StringHandler.xamarin, level: 40 },
         { name: StringHandler.angular, level: 50 },
-        { name: StringHandler.entityFW, level: 30 },
-        { name: StringHandler.dapper, level: 40 },
-        { name: StringHandler.sql, level: 40 },
-        { name: StringHandler.docker, level: 40 },
-        { name: StringHandler.kubernetes, level: 5 },
-    ];
-
-    skillList2: ISkill[] = [
-        { name: StringHandler.html, level: 70 },
-        { name: StringHandler.css, level: 50 },
-        { name: StringHandler.csharp, level: 80 },
+        { name: StringHandler.vuejs, level: 30 },
         { name: StringHandler.java, level: 20 },
-        { name: StringHandler.javascript, level: 30 },
-        { name: StringHandler.typescript, level: 40 },
         { name: StringHandler.xml, level: 50 },
         { name: StringHandler.json, level: 60 },
         { name: StringHandler.yalm, level: 20 },
-        { name: StringHandler.restfulAPI, level: 50 },
+    ];
+
+    skillList2: ISkill[] = [
+        { name: StringHandler.csharp, level: 80 },
+        { name: StringHandler.sql, level: 50 },
+        { name: StringHandler.html, level: 70 },
+        { name: StringHandler.bootstrap, level: 60 },
+        { name: StringHandler.css, level: 50 },
+        { name: StringHandler.javascript, level: 35 },
+        { name: StringHandler.typescript, level: 35 },
     ];
 
     skillList3: ISkill[] = [
-        { name: StringHandler.npm, level: 40 },
-        { name: StringHandler.git, level: 70 },
+        { name: StringHandler.npm, level: 20 },
+        { name: StringHandler.git, level: 60 },
         { name: StringHandler.linux, level: 60 },
-        { name: StringHandler.mysql, level: 50 },
-        { name: StringHandler.mssql, level: 50 },
-        { name: StringHandler.yalm, level: 30 },
         { name: StringHandler.rancher, level: 20 },
+        { name: StringHandler.docker, level: 10 },
+        { name: StringHandler.kubernetes, level: 5 },
+        { name: StringHandler.aws, level: 20 },
     ];
 
     listOfSkills: ISkill[][] = [

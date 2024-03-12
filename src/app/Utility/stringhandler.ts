@@ -51,19 +51,16 @@ export class StringHandler {
 
     //#region Languages
 
-    static readonly dotNet: string = ".Net Core";
-    static readonly netFrameWork: string = ".Net FW";
-    static readonly aspNet: string = "Asp.Net";
+    static readonly dotNet: string = ".Net";
     static readonly xamarin: string = "Xamarin";
     static readonly angular: string = "Angular";
-    static readonly entityFW: string = "Entity FW";
-    static readonly dapper: string = "Dapper";
     static readonly sql: string = "SQL/T-SQL";
     static readonly docker: string = "Docker";
     static readonly kubernetes: string = "Kubernetes";
 
     static readonly html: string = "Html";
-    static readonly css: string = "Bootstrap";
+    static readonly bootstrap: string = "Bootstrap";
+    static readonly css: string = "CSS";
     static readonly csharp: string = "C#";
     static readonly java: string = "Java";
     static readonly javascript: string = "Javascript";
@@ -71,7 +68,7 @@ export class StringHandler {
     static readonly xml: string = "XML";
     static readonly json: string = "JSON";
     static readonly yalm: string = "Yalm";
-    static readonly restfulAPI: string = "RestFul API";
+    static readonly vuejs: string = "Vue.js";
 
     static readonly npm: string = "NPM";
     static readonly git: string = "Git";
@@ -80,6 +77,7 @@ export class StringHandler {
     static readonly mssql: string = "MSSQL";
     static readonly yatch: string = "Yatch";
     static readonly rancher: string = "Rancher";
+    static readonly aws: string = "AWS";
     
     //#endregion
 
@@ -93,7 +91,7 @@ export class StringHandler {
 
     //#region carousel
 
-    static readonly carouselTitle: string = "Confidence and Ease";
+    static readonly carouselTitle: string = "Confidence";
 
     //#endregion
 

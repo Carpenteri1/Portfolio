@@ -1,4 +1,8 @@
-.setspace {
+.container{
+  width: 100vh;
+}
+
+/*.setspace {
   padding: 0.5em;
 }
 
@@ -128,3 +132,4 @@ screen and (max-height: 450px) {
     }
 }
 
+*/

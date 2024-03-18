@@ -1,23 +1,18 @@
-<div class="container pt-5" ><!-- TODO rewrite style of the bars and text, more modernt feel -->
+<div class="container pt-5">
     <div class="row text-center">
         <h2>{{title}}</h2>
     </div>
-    <div class="row pt-4 d-flex justify-content-center align-items-center"><!-- might use somethinge else then-->
+    <div class="row pt-4 d-flex justify-content-center align-items-center">
         <div class="col-1">
             <button class="no-outline" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
         </div>
             <div class="col-10">
                 <div *ngFor="let item of currentListOfSKills" @fade>
-                    <div class="row">
-                        <div class="col-3 pt-2 text-center">
-                            <p>{{item.name}} {{item.level}}%:</p>
-                        </div>
-                        <div class="col-9 pt-2">
-                            <div class="progress">
-                                <div class="progress-bar"
-                                    style="background-color: #b29600; width: {{item.level}}%;"></div>
+                    <div class="row mb-2" style="position: relative;">
+                        <div class="progress-loaded" style="background-color:#b29600;width:{{item.level}}%;"></div>
+                            <div style=""  class="progress d-flex justify-content-center align-items-center">
+                                <p class="pt-3 progress-text">{{item.name}} {{item.level}}%</p>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>

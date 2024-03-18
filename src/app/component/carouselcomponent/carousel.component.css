@@ -2,78 +2,22 @@
   width: 100vh;
 }
 
-/*.setspace {
-  padding: 0.5em;
+.progress-loaded{
+  background-color: #313d4b;
+  border:0.5px solid black;
+  border-radius: 6px;
+  z-index:2;
+  height:24px;
 }
 
-.container-fluid{
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center;
+.progress{
+  position:absolute; 
+  width:100%;
 }
 
-.bi-arrow-left{
-  margin-right: 5em;
-}
-
-.bi-arrow-right{
-  margin-left: 1.5em;
-}
-
-.button-container {
-  margin-bottom: 4em;
-}
-
-.overflow-fix{
-  overflow-y: auto;
-}
-
-.big-row-container{
-  width: 70em;
-  height: 30em;
-  overflow-y: auto;
-}
-
-.col-xl-2,
-.col-sm-4, 
-.col-xs-4{
-  text-align: left;
-}
-
-@media only screen and (max-width: 575px)
-{
-
-  .col-xl-2, 
-  .col-sm-4,
-  .col-xs-4 p{
-    z-index: 1;
-    height: 1em;
-    color:black !important;
-    padding-top: 0.2em;
-    }
-    .progress{
-      z-index: 0;
-    }
-}
-
-@media only screen and (max-height: 240px)
-{
-  .col-xl-2, 
-  .col-sm-4,
-  .col-xs-4 p{
-    height: 0.7em;
-    font-size: 0.8em;
-    margin-bottom: 0.5em !important;
-  }
-  .col-xl-9, 
-  .col-sm-8,
-  .col-xs-8{
-    bottom: 1em;
-  }
-  .progress{
-    height: 0.8em !important;
-  }
+.progress-text{
+  z-index: 2;
+  color: black !important;
 }
 
 @media only screen and (max-width: 835px),
@@ -131,5 +75,3 @@ screen and (max-height: 450px) {
       height: 0.8em;
     }
 }
-
-*/

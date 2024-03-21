@@ -1,4 +1,4 @@
-name: Build And Deploy gh-pages
+name: Build And Execute Deploy To gh-pages
 
 on:
   push:
@@ -52,20 +52,3 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/portfolio
-
-      #- name: Deploy to gh-pages
-        #run: |
-          #git config --global user.name "${{ github.actor }}"
-          #git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          #git checkout -B gh-pages
-
-          # Check if there are changes, --porcelain command checks for changes in the entire repository,
-          # if [ -n "$(git status --porcelain)" ]; then 
-          # Assuming your built files are in /root
-          #git add -A
-          #git commit -m "Update gh-pages" --allow-empty
-          #git push -f origin gh-pages
-          #else
-          #echo "No changes to commit."
-          #fi
-

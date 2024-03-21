@@ -42,7 +42,7 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: ng build --configuration production --base-href "https://Carpenteri1.github.io/Portfolio/"
+        run: npm run build -- --configuration production --base-href "https://Carpenteri1.github.io/Portfolio/" 
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5

@@ -41,6 +41,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build
+        run: npm run build --if-present
+
       - name: Deploy to gh-pages
         run: |
           git config --global user.name "${{ github.actor }}"

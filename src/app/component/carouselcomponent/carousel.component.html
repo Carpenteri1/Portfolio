@@ -7,10 +7,10 @@
             <button class="no-outline" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
         </div>
             <div class="col-10">
-                <div *ngFor="let item of currentListOfSKills" @fade>
+                <div *ngFor="let item of currentListOfSKills" @fade [@fadeOut]="fadeIn ? null : true" (@fadeOut.done)="fadeOutDone($event)" [@fadeIn]="fadeIn">
                     <div class="row mb-2" style="position: relative;">
                         <div class="progress-loaded" style="background-color:#b29600;width:{{item.level}}%;"></div>
-                            <div style=""  class="progress d-flex justify-content-center align-items-center">
+                            <div class="progress d-flex justify-content-center align-items-center">
                                 <p class="pt-3 progress-text">{{item.name}} {{item.level}}%</p>
                             </div>
                     </div>

@@ -70,7 +70,6 @@ export class StringHandler {
     static readonly yalm: string = "Yalm";
     static readonly vuejs: string = "Vue.js";
 
-    static readonly npm: string = "NPM";
     static readonly git: string = "Git";
     static readonly linux: string = "Linux";
     static readonly mysql: string = "Mysql";
@@ -78,6 +77,7 @@ export class StringHandler {
     static readonly yatch: string = "Yatch";
     static readonly rancher: string = "Rancher";
     static readonly aws: string = "AWS";
+    static readonly rabbitMQ: string = "RabbitMQ";
     
     //#endregion
 

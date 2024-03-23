@@ -1,18 +1,21 @@
+
 <div class="container pt-5">
     <div class="row text-center">
         <h2>{{title}}</h2>
     </div>
-    <div class="row pt-4 d-flex justify-content-center align-items-center">
+    <div class="row pt-4 d-flex align-items-center">
         <div class="col-1">
             <button class="no-outline" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
         </div>
             <div class="col-10">
                 <div *ngFor="let item of currentListOfSKills" @fade [@fadeOut]="fadeIn ? null : true" (@fadeOut.done)="fadeOutDone($event)" [@fadeIn]="fadeIn">
-                    <div class="row mb-2" style="position: relative;">
-                        <div class="progress-loaded" style="background-color:#b29600;width:{{item.level}}%;"></div>
-                            <div class="progress d-flex justify-content-center align-items-center">
+                    <div class="row" style="margin-top: 1em;" >
+                        <div class="progress">
+                            <div class="col-2 d-flex align-items-center" style="background-color: #2E3445;border:2px solid black;">
                                 <p class="pt-3 progress-text">{{item.name}} {{item.level}}%</p>
                             </div>
+                            <div class="progress-loaded col-10" style="background-color:#b29600;width:{{item.level-12}}%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>

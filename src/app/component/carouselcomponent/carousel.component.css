@@ -4,7 +4,6 @@
 
 .progress-loaded{
   background-color: #313d4b;
-  border:0.5px solid black;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   height:18px;
@@ -18,6 +17,65 @@
   padding-left: 1em;
   color: black !important;
 }
+
+.skill-main {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-self:normal;
+  flex-direction: column;
+  gap: 20px;
+}
+  .skill-wrrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 2.5em;
+  }
+    .skill-name {
+      color: #ffffff;
+      font-size: 12x;
+      padding-left: 10px;
+    }
+
+    .skill-bar {
+      height: 20px;
+      background-color: #00283a;
+      border-radius: 8px;
+    }
+
+    .skill-per {
+      height: 20px;
+      background: #23576f;
+      border-radius: 8px;
+      width: 0;
+      transition: 1s linear;
+      position: relative;
+      &:before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background-color: #23576f;
+        color: #fff;
+        font-size: 11px;
+        border-radius: 4px;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #23576f ;
+        top: -20px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+      }
+    }
 /*  
 @media only screen and (max-width: 835px),
 screen and (max-height: 520px) {

@@ -11,7 +11,7 @@ import { StringHandler } from "src/app/Utility/stringhandler";
           state('in', style({opacity: 1})),
           state('out', style({opacity: 0})),
           transition('in <=> out', [
-            animate('3s')
+            animate('1s')
           ])
         ])
     ]
@@ -67,15 +67,14 @@ export class CarouselComponent implements OnInit {
     
     carouselTime(interval:number) 
     {
-        /*
         this.intervalId = setInterval(() => 
-            this.carouselRotation(), interval);*/
+            this.carouselRotation(), interval);
     }
 
     carouselRotation()
     {
         this.index++;
-        this.setMessage();
+        this.startFadeOut();
     }
 
     setMessage() 
@@ -114,22 +113,19 @@ export class CarouselComponent implements OnInit {
     
     fadeOutDone(event: AnimationEvent) {
       if (event.toState === 'out') {
-        this.index++;
         this.fadeState = 'in';
-        setTimeout(() => {
-            this.setMessage();
-        }, 3000); //
+        this.setMessage();
       }
     }
 
     private resetCarouselTime(): void
-    {/*
+    {
         if (this.intervalId) 
         {
             clearInterval(this.intervalId);
         }
-        if(this.fadeIn)
-            this.carouselTime(this.interval)*/
+        if(this.fadeState = 'in')
+            this.carouselTime(this.interval)
     }
 
     ngOnInit() 

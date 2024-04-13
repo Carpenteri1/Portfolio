@@ -1,25 +1,27 @@
 
-<div class="container pt-5">
-    <div class="row text-center">
-        <h2>{{title}}</h2>
-    </div>
+<div class="container pt-5" style="border:2px solid blue;">
     <div class="row pt-4 d-flex align-items-center">
         <div class="col-2">
             <button class="no-outline" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
         </div>
-        <div class="col-9">
-            <div *ngFor="let item of currentListOfSKills" @fade [@fadeOut]="fadeIn ? null : true" (@fadeOut.done)="fadeOutDone($event)" [@fadeIn]="fadeIn">
-                <div class="skill-main">
-                    <div class="skill-wrrap">
-                        <div class="skill-bar" style="position: relative;">
-                            <div class="skill-name" style="position: absolute; z-index: 1;">{{item.name}}</div>
-                            <div class="skill-per" style="background-color: #b29600; width:{{item.level}}%;" [attr.per]="item.level"></div>
+        <div class="col-8">
+            <div class="row text-center" style="border:2px solid red;">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="row" style="border:2px solid green;">
+                <div *ngFor="let item of currentListOfSKills" [@fadeIn]="fadeIn" (@fadeOut.done)="fadeOutDone($event)">
+                    <div class="skill-main">
+                        <div class="skill-wrrap">
+                            <div class="skill-bar" style="position: relative;">
+                                <div class="skill-name" style="position: absolute; z-index: 1;">{{item.name}}</div>
+                                <div class="skill-per" style="background-color: #b29600; width:{{item.level}}%;" [attr.per]="item.level"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-1">
+        <div class="col-2" style="padding-left: 4em;">
             <button class="no-outline" (click)="toggleGroup('right')"><i class="bi bi-arrow-right"></i></button>
         </div>
     </div>

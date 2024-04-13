@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { transition, style, animate, trigger, AnimationEvent } from '@angular/animations';
+import { transition, style, animate, trigger, AnimationEvent, state } from '@angular/animations';
 import { ISkill } from "src/app/Interfaces/ISkill";
 import { StringHandler } from "src/app/Utility/stringhandler";
 @Component({
@@ -8,13 +8,16 @@ import { StringHandler } from "src/app/Utility/stringhandler";
     styleUrls: ['carousel.component.css'],
     animations: [
         trigger('fadeOut', [
-          transition(':leave', [
-            animate('2000ms', style({ opacity: 0 }))
+            state('fadeIn', style({ opacity: 1 })),
+            state('fadeOut', style({ opacity: 0 })),
+            transition('fadeIn <=> fadeOut', [
+            animate('2000ms')
           ])
         ]),
         trigger('fadeIn', [
-          transition(':enter', [
-            style({ opacity: 0 }),
+          state('fadeOut', style({ opacity: 0 })),
+          state('fadeIn', style({ opacity: 1 })),
+          transition('fadeOut <=> fadeIn', [
             animate('2000ms', style({ opacity: 1 }))
           ])
         ])
@@ -25,7 +28,8 @@ export class CarouselComponent implements OnInit {
 
     readonly title: string = StringHandler.carouselTitle;
     private interval: number = 8000;
-    fadeIn = false;
+    fadeIn = true;
+    fadeOut = false;
 
     private intervalId: any;
     
@@ -81,6 +85,11 @@ export class CarouselComponent implements OnInit {
         this.setMessage();
     }
 
+    fadeOutDone2() {
+        this.index++;
+        this.setMessage();
+    }
+
     setMessage() 
     {
         if (this.index <= 2 && 
@@ -121,12 +130,19 @@ export class CarouselComponent implements OnInit {
             this.carouselTime(this.interval);
     }
 
-    fadeOutDone(event: AnimationEvent) {
-        if(event.toState === 'void'){
-            this.fadeIn = true;
+    fadeOutDone(event: AnimationEvent) {//TODO dont seem to change state.
+
+        if (event.fromState === 'void'){
+            console.log(event);
+            event.fromState = 'fadeIn';
+            event.toState = 'fadeOut';
+            this.fadeOut = true;
         }
-        else{
-            this.fadeIn = false;
+        if (event.fromState === 'fadeOut'){
+            console.log(event);
+            event.fromState = 'fadeOut';
+            event.toState = 'fadeIn';
+            this.fadeOut = true;
         }
     }
 

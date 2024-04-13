@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { transition, style, animate, trigger, AnimationEvent, state } from '@angular/animations';
+import { transition, style, animate, trigger, AnimationEvent ,state} from '@angular/animations';
 import { ISkill } from "src/app/Interfaces/ISkill";
 import { StringHandler } from "src/app/Utility/stringhandler";
 @Component({
@@ -7,29 +7,21 @@ import { StringHandler } from "src/app/Utility/stringhandler";
     templateUrl: 'carousel.component.html',
     styleUrls: ['carousel.component.css'],
     animations: [
-        trigger('fadeOut', [
-            state('fadeIn', style({ opacity: 1 })),
-            state('fadeOut', style({ opacity: 0 })),
-            transition('fadeIn <=> fadeOut', [
-            animate('2000ms')
-          ])
-        ]),
-        trigger('fadeIn', [
-          state('fadeOut', style({ opacity: 0 })),
-          state('fadeIn', style({ opacity: 1 })),
-          transition('fadeOut <=> fadeIn', [
-            animate('2000ms', style({ opacity: 1 }))
+        trigger('fade', [
+          state('in', style({opacity: 1})),
+          state('out', style({opacity: 0})),
+          transition('in <=> out', [
+            animate('3s')
           ])
         ])
-      ]
+    ]
 })
 
 export class CarouselComponent implements OnInit {
 
     readonly title: string = StringHandler.carouselTitle;
     private interval: number = 8000;
-    fadeIn = true;
-    fadeOut = false;
+    fadeState: string = 'in';
 
     private intervalId: any;
     
@@ -75,17 +67,13 @@ export class CarouselComponent implements OnInit {
     
     carouselTime(interval:number) 
     {
+        /*
         this.intervalId = setInterval(() => 
-            this.carouselRotation(), interval);
+            this.carouselRotation(), interval);*/
     }
 
     carouselRotation()
     {
-        this.index++;
-        this.setMessage();
-    }
-
-    fadeOutDone2() {
         this.index++;
         this.setMessage();
     }
@@ -117,33 +105,31 @@ export class CarouselComponent implements OnInit {
         if(direction === 'right'){
             this.index++;  
         }
-        this.setMessage();
+        this.startFadeOut();
+    }
+
+    startFadeOut() {
+        this.fadeState = 'out';
+    }
+    
+    fadeOutDone(event: AnimationEvent) {
+      if (event.toState === 'out') {
+        this.index++;
+        this.fadeState = 'in';
+        setTimeout(() => {
+            this.setMessage();
+        }, 3000); //
+      }
     }
 
     private resetCarouselTime(): void
-    {
+    {/*
         if (this.intervalId) 
         {
             clearInterval(this.intervalId);
         }
         if(this.fadeIn)
-            this.carouselTime(this.interval);
-    }
-
-    fadeOutDone(event: AnimationEvent) {//TODO dont seem to change state.
-
-        if (event.fromState === 'void'){
-            console.log(event);
-            event.fromState = 'fadeIn';
-            event.toState = 'fadeOut';
-            this.fadeOut = true;
-        }
-        if (event.fromState === 'fadeOut'){
-            console.log(event);
-            event.fromState = 'fadeOut';
-            event.toState = 'fadeIn';
-            this.fadeOut = true;
-        }
+            this.carouselTime(this.interval)*/
     }
 
     ngOnInit() 

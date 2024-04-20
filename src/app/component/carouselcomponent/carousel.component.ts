@@ -7,20 +7,27 @@ import { StringHandler } from "src/app/Utility/stringhandler";
     templateUrl: 'carousel.component.html',
     styleUrls: ['carousel.component.css'],
     animations: [
-        trigger('fade', [
+        trigger('fadeIn', [
           state('in', style({opacity: 1})),
-          state('out', style({opacity: 0})),
-          transition('in <=> out', [
-            animate('1s')
+          transition('out => in', [
+            animate('2s')
           ])
+        ]),
+        trigger('fadeOut', [
+            state('out', style({opacity: 0})),
+            transition('in => out', [
+              animate('1s')
+            ])
         ])
     ]
 })
-
+//TODO animatio for skillbar seems broken  and needs fixing. it needs to fill upp the bar from 0 to the level of the skill
+//Also the ccs needs fixing, the title seems to not be in the center of the carousel, so does the buttons.
+//Alot of the skillbar page isnt even used eather, we might need to set width to a higher value.
 export class CarouselComponent implements OnInit {
 
     readonly title: string = StringHandler.carouselTitle;
-    private interval: number = 8000;
+    private interval: number = 6000;
     fadeState: string = 'in';
 
     private intervalId: any;
@@ -109,13 +116,12 @@ export class CarouselComponent implements OnInit {
 
     startFadeOut() {
         this.fadeState = 'out';
-    }
-    
-    fadeOutDone(event: AnimationEvent) {
-      if (event.toState === 'out') {
-        this.fadeState = 'in';
-        this.setMessage();
-      }
+        setTimeout(() => {
+            this.setMessage();  
+        }, 2000); 
+        setTimeout(() => {
+            this.fadeState = 'in';
+        }, 2000); 
     }
 
     private resetCarouselTime(): void

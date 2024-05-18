@@ -2,7 +2,7 @@
 //Also the ccs needs fixing, the title seems to not be in the center of the carousel, so does the buttons.
 //Title also needs to have its own div so its not getting pushed up by the skillbar. 
 //Alot of the skillbar page isnt even used eather, we might need to set width to a higher value.
-
+//The skillbar is also not responsive, so we might need to fix that aswell.
 import { Component, OnInit } from "@angular/core";
 import { transition, style, animate, trigger, AnimationEvent ,state} from '@angular/animations';
 import { ISkill } from "src/app/Interfaces/ISkill";
@@ -15,7 +15,7 @@ import { StringHandler } from "src/app/Utility/stringhandler";
         trigger('fadeIn', [
           state('in', style({opacity: 1})),
           transition('out => in', [
-            animate('2s')
+            animate('1s')
           ])
         ]),
         trigger('fadeOut', [
@@ -30,7 +30,7 @@ import { StringHandler } from "src/app/Utility/stringhandler";
 export class CarouselComponent implements OnInit {
 
     readonly title: string = StringHandler.carouselTitle;
-    private interval: number = 8000;
+    private interval: number = 6000;
     fadeState: string = 'in';
 
     private intervalId: any;

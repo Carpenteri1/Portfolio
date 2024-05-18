@@ -1,12 +1,13 @@
-.container{
-  width: 100vh;
-}
 
 .progress-loaded{
   background-color: #313d4b;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   height:18px;
+}
+
+.col-8{
+  height: 550px;
 }
 
 .progress{
@@ -19,14 +20,10 @@
 }
 
 .skill-main {
-  width: 100%;
-  max-width: 600px;
-  display: flex;
-  align-self:normal;
-  flex-direction: column;
+  width: 75%;
   gap: 20px;
 }
-  .skill-wrrap {
+  .skill-wrap {
     display: flex;
     flex-direction: column;
     gap: 10px;

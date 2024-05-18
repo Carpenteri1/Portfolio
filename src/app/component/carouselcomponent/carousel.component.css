@@ -1,130 +1,75 @@
-.setspace {
-  padding: 0.5em;
+
+.progress-loaded{
+  background-color: #313d4b;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  height:18px;
 }
 
-.container-fluid{
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center;
+.col-8{
+  height: 550px;
 }
 
-.bi-arrow-left{
-  margin-right: 5em;
+.progress{
+  padding: 0%;
 }
 
-.bi-arrow-right{
-  margin-left: 1.5em;
+.progress-text{ 
+  padding-left: 1em;
+  color: black !important;
 }
 
-.button-container {
-  margin-bottom: 4em;
+.skill-main {
+  width: 75%;
+  gap: 20px;
 }
-
-.overflow-fix{
-  overflow-y: auto;
-}
-
-.big-row-container{
-  width: 70em;
-  height: 30em;
-  overflow-y: auto;
-}
-
-.col-xl-2,
-.col-sm-4, 
-.col-xs-4{
-  text-align: left;
-}
-
-@media only screen and (max-width: 575px)
-{
-
-  .col-xl-2, 
-  .col-sm-4,
-  .col-xs-4 p{
-    z-index: 1;
-    height: 1em;
-    color:black !important;
-    padding-top: 0.2em;
-    }
-    .progress{
-      z-index: 0;
-    }
-}
-
-@media only screen and (max-height: 240px)
-{
-  .col-xl-2, 
-  .col-sm-4,
-  .col-xs-4 p{
-    height: 0.7em;
-    font-size: 0.8em;
-    margin-bottom: 0.5em !important;
+  .skill-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 2.5em;
   }
-  .col-xl-9, 
-  .col-sm-8,
-  .col-xs-8{
-    bottom: 1em;
-  }
-  .progress{
-    height: 0.8em !important;
-  }
-}
-
-@media only screen and (max-width: 835px),
-screen and (max-height: 520px) {
-    .setspace{
-      padding:0;
-    }
-}
-
-@media only screen and (max-width: 767px),
-screen and (max-height: 655px) {
-    .progress{
-      height: 1.2em;
-      width: 85%;
-    }
-}
-
-@media only screen and (max-width: 575px){
-    p{
-        font-size:0.7em;
-    }
-    .progress{
-      width: 100%;
-      margin-top: -1.5em;
-    }
-    .col-sm-4 p{
-      text-align: center;
+    .skill-name {
+      color: #ffffff;
+      font-size: 12x;
+      padding-left: 10px;
     }
 
-}
-
-@media only screen and (min-height: 420px ){
-  .setspace{
-    padding:0;
-  }
-  .progress{
-    height: 2em !important;
-  }
-}
-
-
-@media only screen and (max-width: 420px),
-screen and (max-height: 535px) {
-  .progress{
-    height: 1em;
-  }
-}
-
-@media only screen and (max-width: 250px),
-screen and (max-height: 450px) {
-    p{
-        font-size:0.6em;
+    .skill-bar {
+      height: 20px;
+      background-color: #00283a;
+      border-radius: 8px;
     }
-    .progress{
-      height: 0.8em;
-    }
-}
 
+    .skill-per {
+      height: 20px;
+      background: #23576f;
+      border-radius: 8px;
+      width: 0;
+      transition: 1s linear;
+      position: relative;
+      &:before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background-color: #23576f;
+        color: #fff;
+        font-size: 11px;
+        border-radius: 4px;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #23576f ;
+        top: -20px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+      }
+    }

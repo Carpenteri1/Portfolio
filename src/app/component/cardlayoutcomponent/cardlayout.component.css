@@ -14,14 +14,18 @@
 .card {
   margin-right: 1em;
   margin-left: 1em;
+  width: 100%;
+  height: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   position: relative;
-  background-color: #b3b3b3;
+  background-color: #2E3445;
+  border: 1px solid #2E3445;
 }
 
 .card-main {
   display: flex;
+  text-decoration: underline #b29600;
   justify-content: center;
   align-items: center;
   width: 100%;

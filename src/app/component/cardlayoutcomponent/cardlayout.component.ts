@@ -11,6 +11,7 @@ import { StringHandler } from "src/app/Utility/stringhandler";
 export class CardLayoutComponent {
 
   cardGroup: CardModel[] = [];
+
   startIndex: number = 0;
   cardWidth = 0;
   visable: boolean = true;
@@ -64,22 +65,22 @@ export class CardLayoutComponent {
     this.cardGroup.push(
       new CardModel(StringHandler.cardTitleOne,
         StringHandler.cardDescriptionOne,
-        StringHandler.CardLinkOne),
+        StringHandler.CardLinkOne, ["Java","XML","Android"]),
       new CardModel(StringHandler.cardTitleTwo,
         StringHandler.cardDescriptionTwo,
-        StringHandler.CardLinkTwo),
+        StringHandler.CardLinkTwo,["Javascript","CSS","HTML","Bootstrap"]),
       new CardModel(StringHandler.cardTitleThree,
         StringHandler.cardDescriptionThree,
-        StringHandler.CardLinkThree),
+        StringHandler.CardLinkThree,["C#","Javascript","CSS","HTML","Bootstrap",".NET"]),
       new CardModel(StringHandler.cardTitleFour,
         StringHandler.cardDescriptionFour,
-        StringHandler.CardLinkFour),
+        StringHandler.CardLinkFour,["Angular","NPM","CSS","TypeScript","HTML"]),
       new CardModel(StringHandler.cardTitleFive,
         StringHandler.cardDescriptionFive,
-        StringHandler.CardLinkFive),
+        StringHandler.CardLinkFive,["C#","Console","Terminal","Game",".NET"]),
       new CardModel(StringHandler.cardTitleSix,
         StringHandler.cardDescriptionSix,
-        StringHandler.CardLinkSix),
+        StringHandler.CardLinkSix,["C#",".NET","Threading"]),
     );
   }
 }

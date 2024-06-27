@@ -13,12 +13,9 @@
                 <h3>{{card.title}}</h3>
                 <p>{{card.text}}</p>
                 <div class="tags">
-                  <div class="tag">nodeJS</div>
-                  <div class="tag">Express</div>
-                  <div class="tag">mongoDB</div>
-                  <div class="tag">ejs</div>
-                  <div class="tag">bootstrap</div>
-                   <div class="tag">bootstrap</div>
+                  <div *ngFor="let tag of card.tags">
+                    <div class="tag">{{tag}}</div>
+                  </div>
                 </div>
                 <p class="card-footer">
                   <a [href]="card.url" target="_blank" class="stretched-link"></a>

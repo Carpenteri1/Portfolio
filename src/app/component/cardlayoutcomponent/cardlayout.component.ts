@@ -11,6 +11,7 @@ import { StringHandler } from "src/app/Utility/stringhandler";
 export class CardLayoutComponent {
 
   cardGroup: CardModel[] = [];
+
   startIndex: number = 0;
   cardWidth = 0;
   visable: boolean = true;
@@ -64,22 +65,48 @@ export class CardLayoutComponent {
     this.cardGroup.push(
       new CardModel(StringHandler.cardTitleOne,
         StringHandler.cardDescriptionOne,
-        StringHandler.CardLinkOne),
+        StringHandler.CardLinkOne, [
+          StringHandler.CardTagJava,
+          StringHandler.CardTagNPM,
+          StringHandler.CardTagAndroid]),
       new CardModel(StringHandler.cardTitleTwo,
         StringHandler.cardDescriptionTwo,
-        StringHandler.CardLinkTwo),
+        StringHandler.CardLinkTwo,[
+          StringHandler.CardTagJavaScript,
+          StringHandler.CardTagCSS,
+          StringHandler.CardTagHTML,
+          StringHandler.CardTagBootStrap]),
       new CardModel(StringHandler.cardTitleThree,
         StringHandler.cardDescriptionThree,
-        StringHandler.CardLinkThree),
+        StringHandler.CardLinkThree,[
+          StringHandler.CardTagCSharp,
+          StringHandler.CardTagJavaScript,
+          StringHandler.CardTagCSS,
+          StringHandler.CardTagHTML,
+          StringHandler.CardTagBootStrap,
+          StringHandler.CardTagDotNet]),
       new CardModel(StringHandler.cardTitleFour,
         StringHandler.cardDescriptionFour,
-        StringHandler.CardLinkFour),
+        StringHandler.CardLinkFour,[
+          StringHandler.CardTagAngular,
+          StringHandler.CardTagNPM,
+          StringHandler.CardTagCSS,
+          StringHandler.CardTagTypeScript,
+          StringHandler.CardTagHTML]),
       new CardModel(StringHandler.cardTitleFive,
         StringHandler.cardDescriptionFive,
-        StringHandler.CardLinkFive),
+        StringHandler.CardLinkFive,[
+          StringHandler.CardTagCSharp,
+          StringHandler.CardTagConsole,
+          StringHandler.CardTagTerminal,
+          StringHandler.CardTagGame,
+          StringHandler.CardTagDotNet]),
       new CardModel(StringHandler.cardTitleSix,
         StringHandler.cardDescriptionSix,
-        StringHandler.CardLinkSix),
+        StringHandler.CardLinkSix,[
+          StringHandler.CardTagCSharp,
+          StringHandler.CardTagDotNet,
+          StringHandler.CardTagThearding]),
     );
   }
 }

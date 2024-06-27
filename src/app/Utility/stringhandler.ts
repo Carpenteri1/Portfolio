@@ -38,6 +38,27 @@ export class StringHandler {
     static readonly cardDescriptionFour: string = 'Website writen with Anguler with typescript. Wanted to try something new when I wrote my portfolio.';
     static readonly cardDescriptionFive: string = 'a windows console game. The player should avoide the rocks falling from the sky, with its little ship. ';
     static readonly cardDescriptionSix: string = 'here are 4 different threads who should work together. simulating a hospital';
+    
+    //Tags
+    static readonly CardTagAngular: string = "Angular";
+    static readonly CardTagCSharp: string = "C#";
+    static readonly CardTagCSS: string = "CSS";
+    static readonly CardTagHTML: string = "HTML";
+    static readonly CardTagJavaScript: string = "JavaScript";
+    static readonly CardTagJava: string = "Java";
+    static readonly CardTagTypeScript: string = "TypeScript";
+    static readonly CardTagDotNet: string = ".NET";
+    static readonly CardTagTerminal: string = "Terminal";
+    static readonly CardTagBootStrap: string = "BootStrap";
+    static readonly CardTagAndroid: string = "Android";
+    static readonly CardTagNPM: string = "NPM";
+    static readonly CardTagThearding: string = "Threading";
+    static readonly CardTagGame: string = "Game";
+    static readonly CardTagConsole: string = "Console";
+    static readonly CardTagXML: string = "XML";
+
+
+
 
     //Links
     static readonly CardLinkOne: string = "https://github.com/Carpenteri1/Notify";

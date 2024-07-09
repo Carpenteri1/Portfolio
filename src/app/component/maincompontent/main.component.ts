@@ -1,16 +1,28 @@
 import { ViewEncapsulation, Component, ElementRef, ViewChild, HostListener } from '@angular/core';
-import { StartPageComponent } from 'src/app/pagecomponents/startpage/startpage.component'; 
+import { StringHandler } from 'src/app/Utility/stringhandler';
 
 @Component({
-    selector: 'scrollbutton-component',
-    templateUrl: 'scrollbutton.component.html',
-    styleUrls: ['scrollbutton.component.css']
+    selector: 'main-component',
+    encapsulation: ViewEncapsulation.None,
+    templateUrl: 'main.component.html',
+    styleUrls: ['main.component.css']
   })
 
-export class ScrollButtonComponent
+export class MainCompontent
 {
+  @ViewChild(StringHandler.sectionOne, { static: false }) sectionOne: ElementRef;
+  @ViewChild(StringHandler.sectionTwo, { static: false }) sectionTwo: ElementRef;
+  @ViewChild(StringHandler.sectionThree, { static: false }) sectionThree: ElementRef;
+  @ViewChild(StringHandler.sectionFour, { static: false }) sectionFour: ElementRef;
+
+  constructor() {
+    this.sectionOne = new ElementRef(null);
+    this.sectionTwo = new ElementRef(null);
+    this.sectionThree = new ElementRef(null);
+    this.sectionFour = new ElementRef(null);
+  }
+
     currentSection: number = 1;
-    startPageComponent = new StartPageComponent();
 
     clickScroll(el: HTMLElement) {
       el.scrollIntoView({ behavior: 'smooth' });
@@ -37,7 +49,17 @@ export class ScrollButtonComponent
 
     GetSection(index : number): HTMLElement
     {
-       return this.startPageComponent.Sections()[index]
+       return this.Sections()[index]
+    }
+
+    Sections(): HTMLElement[]
+    {
+      return [
+        this.sectionOne.nativeElement,
+        this.sectionTwo.nativeElement,
+        this.sectionThree.nativeElement,
+        this.sectionFour.nativeElement    
+      ];
     }
   
     /*

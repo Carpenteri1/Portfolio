@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
-import { StringHandler } from './utility/stringhandler';
+import { AppComponent } from 'src/app/app.component';
+import { StringHandler } from 'src/app/utility/stringhandler';
 
 describe(StringHandler.appComponent, () => {
   beforeEach(async () => {

@@ -10,25 +10,6 @@
 <div #sectionFive id="sectionFive">
   <footer-component></footer-component>
 </div>
-<div class="scroll-button-container" style="border:2px solid red;">
-    <div class="form-check">
-      <label class="form-check-label">
-        <div (click)="clickScroll(sectionOne)" class="side-buttons" name="optradio" id="sectionOneInput"></div>
-      </label>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label">
-        <div (click)="clickScroll(sectionTwo)" class="side-buttons" name="optradio" id="sectionTwoInput"></div>
-      </label>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label">
-        <div (click)="clickScroll(sectionFour)" class="side-buttons" name="optradio" id="sectionThreeInput"></div>
-      </label>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label">
-        <div (click)="clickScroll(sectionFive)" class="side-buttons" name="optradio" id="sectionFourInput"></div>
-      </label>
-    </div>
-  </div>
+<div>
+  <scrollbutton-component [sections]="sections"></scrollbutton-component>
+</div>

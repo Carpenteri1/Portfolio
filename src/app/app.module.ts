@@ -9,7 +9,8 @@ import { CarouselComponent } from './component/carouselcomponent/carousel.compon
 import { TypewriterComponent } from './component/typewritercomponent/typewriter.component';
 import { CardLayoutComponent } from './component/cardlayoutcomponent/cardlayout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MainCompontent } from './component/maincompontent/main.component';
+import { MainComponent } from './component/maincompontent/main.component';
+import { ScrollButtonComponent } from './component/scrollbuttoncomponent/maincompontent/scrollbutton.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainCompontent } from './component/maincompontent/main.component';
     TypewriterComponent,
     CardLayoutComponent,
     FooterComponent,
-    MainCompontent
+    MainComponent,
+    ScrollButtonComponent
   ],
   imports: [
     BrowserModule,  

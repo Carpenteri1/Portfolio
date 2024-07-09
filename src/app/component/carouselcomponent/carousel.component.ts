@@ -5,8 +5,8 @@
 //The skillbar is also not responsive, so we might need to fix that aswell.
 import { Component, OnInit } from "@angular/core";
 import { transition, style, animate, trigger, AnimationEvent ,state} from '@angular/animations';
-import { ISkill } from "src/app/Interfaces/ISkill";
-import { StringHandler } from "src/app/Utility/stringhandler";
+import { ISkill } from "src/app/interfaces/ISkill";
+import { StringHandler } from "src/app/utility/stringhandler";
 @Component({
     selector: 'carousel-component',
     templateUrl: 'carousel.component.html',

@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
-import { CardModel } from "src/app/Models/CardModel";
-import { StringHandler } from "src/app/Utility/stringhandler";
+import { CardModel } from "src/app/models/CardModel";
+import { StringHandler } from "src/app/utility/stringhandler";
 
 @Component({
   selector: 'cardlayout-component',

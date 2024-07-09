@@ -1,5 +1,5 @@
 import { ViewEncapsulation, Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-import { StringHandler } from 'src/app/utility/stringhandler';
+import { StringHandler } from 'src/app/Utility/stringhandler';
 
 @Component({
   selector: 'main-component',

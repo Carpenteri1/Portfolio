@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StringHandler } from 'src/app/utility/stringhandler';
+import { StringHandler } from 'src/app/Utility/stringhandler';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'

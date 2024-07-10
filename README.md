@@ -16,7 +16,7 @@ Additionally, I wanted to deploy this portfolio on GitHub Pages, which is well-s
  ![Custom Badge](https://img.shields.io/badge/HTML5-orange)
  ![Custom Badge](https://img.shields.io/badge/CSS-Yellow)
  ![Custom Badge](https://img.shields.io/badge/Bootstrap-purple)
- ![Custom Badge](https://img.shields.io/badge/Bootstrap-green)
+ ![Custom Badge](https://img.shields.io/badge/NPM-green)
 
 ### Why Angular and TypeScript?
 

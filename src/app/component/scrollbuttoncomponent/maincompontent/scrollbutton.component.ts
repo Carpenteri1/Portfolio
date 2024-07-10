@@ -1,59 +1,52 @@
-import { ViewEncapsulation, Component, ElementRef, ViewChild, HostListener } from '@angular/core';
-import { StringHandler } from 'src/app/Utility/stringhandler';
+import { ViewEncapsulation, Component, ElementRef, Input, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'startpage-component',
+  selector: 'scrollbutton-component',
   encapsulation: ViewEncapsulation.None,
-  templateUrl: 'startpage.component.html',
-  styleUrls: ['startpage.component.css']
+  templateUrl: 'scrollbutton.component.html',
+  styleUrls: ['scrollbutton.component.css']
 })
-export class StartPageComponent {
 
-  @ViewChild(StringHandler.sectionOne, { static: false }) sectionOne: ElementRef;
-  @ViewChild(StringHandler.sectionTwo, { static: false }) sectionTwo: ElementRef;
-  @ViewChild(StringHandler.sectionThree, { static: false }) sectionThree: ElementRef;
-  @ViewChild(StringHandler.sectionFour, { static: false }) sectionFour: ElementRef;
+export class ScrollButtonComponent {
+  @Input() sections!: { [key: string]: ElementRef };
+
   currentSection: number = 1;
 
-  constructor() {
-    this.sectionOne = new ElementRef(null);
-    this.sectionTwo = new ElementRef(null);
-    this.sectionThree = new ElementRef(null);
-    this.sectionFour = new ElementRef(null);
-  }
-
-  clickScroll(el: HTMLElement) {
-    el.scrollIntoView({ behavior: 'smooth' });
+  clickScroll(section: ElementRef) {
+    section.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     if (event.key === 'ArrowUp') {
-      this.ScrollToSection(this.currentSection-1);
+      this.ScrollToSection(this.currentSection - 1);
     }
     if (event.key === 'ArrowDown') {
-      this.ScrollToSection(this.currentSection+1);
+      this.ScrollToSection(this.currentSection + 1);
     }
   }
 
-  ScrollToSection(scrollTo:number) 
-  {  
-    if (scrollTo >= 0 && scrollTo <= 4) 
-    {
-      this.currentSection = scrollTo;  
-      this.clickScroll(this.GetSection(scrollTo));
+  ScrollToSection(scrollTo: number) {
+    if (scrollTo >= 1 && scrollTo <= 4) {
+      this.currentSection = scrollTo;
+      const sectionKey = `section${scrollTo}`;
+      this.clickScroll(this.sections[sectionKey]);
     }
   }
-
+  /*
   GetSection(index : number): HTMLElement
   {
-    let sections = [
+     return this.Sections()[index]
+  }
+  
+  Sections(): HTMLElement[]
+  {
+    return [
       this.sectionOne.nativeElement,
       this.sectionTwo.nativeElement,
       this.sectionThree.nativeElement,
       this.sectionFour.nativeElement    
     ];
-    return sections[index];
   }
 
   /*
@@ -131,4 +124,5 @@ export class StartPageComponent {
     element = <HTMLInputElement>document.getElementById(elementIdTwo);
     element.checked = true;
   }
+
 }

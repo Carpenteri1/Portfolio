@@ -1,4 +1,9 @@
-# Description
+# Portfolio 
+[![Build Test](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_test.yml/badge.svg?branch=master)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_test.yml)
+[![Deploy To gh-pages](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml/badge.svg?branch=master)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml)
+
+
+#### Description
 
 This project is a personal portfolio built with TypeScript and Angular. 
 The goal of this project was to explore new technologies beyond my usual 
@@ -21,14 +26,3 @@ I chose Angular and TypeScript for this project because:
 - I wanted to learn and experiment with these technologies to broaden my skill set.
 - GitHub Pages is ideal for hosting static sites, and Angular can be compiled into a static site easily.
 
-#### Challenges and Learnings
-
-- Adapting to Angular’s architecture and learning its core concepts such as components, services, and dependency injection.
-- TypeScript’s strict typing required a shift in how I approached coding compared to JavaScript.
-- Deploying on GitHub Pages involved configuring the project to build into a format suitable for static hosting.
-
-#### Future Enhancements
-
-- Add more projects: Continuously update the portfolio with new projects.
-- Enhance UI/UX: Improve the design and user experience.
-- Integrate a backend: Eventually, add a backend service for more dynamic features.

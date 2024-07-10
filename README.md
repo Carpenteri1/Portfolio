@@ -11,11 +11,11 @@ The goal of this project was to explore new technologies beyond my usual
 Additionally, I wanted to deploy this portfolio on GitHub Pages, which is well-suited for static sites and not ideal for .NET applications.
 
  ### Technologies Used
-- Typescript
-- Angular
-- HTML5
-- CSS
-- Boostrap
+ ![Custom Badge](https://img.shields.io/badge/TypeScript-blue)
+ ![Custom Badge](https://img.shields.io/badge/Angular-red)
+ ![Custom Badge](https://img.shields.io/badge/HTML5-orange)
+ ![Custom Badge](https://img.shields.io/badge/CSS-Yellow)
+ ![Custom Badge](https://img.shields.io/badge/Bootstrap-purple)
 
 ### Why Angular and TypeScript?
 

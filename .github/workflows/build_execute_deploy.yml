@@ -1,4 +1,4 @@
-name: Build And Execute Deploy To gh-pages
+name: Deployed
 
 on:
   push:

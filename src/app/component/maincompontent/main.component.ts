@@ -11,24 +11,24 @@ export class MainComponent implements AfterViewInit {
 
   @ViewChild(StringHandler.sectionOne) sectionOne: ElementRef;
   @ViewChild(StringHandler.sectionTwo) sectionTwo: ElementRef;
+  @ViewChild(StringHandler.sectionThree) sectionThree: ElementRef;
   @ViewChild(StringHandler.sectionFour) sectionFour: ElementRef;
-  @ViewChild(StringHandler.sectionFive) sectionFive: ElementRef;
 
   sections: { [key: string]: ElementRef } = {};
 
   constructor() {
     this.sectionOne = new ElementRef(null);
     this.sectionTwo = new ElementRef(null);
+    this.sectionThree = new ElementRef(null);
     this.sectionFour = new ElementRef(null);
-    this.sectionFive = new ElementRef(null);
   }
 
   ngAfterViewInit() {
     this.sections = {
-      sectionOne: this.sectionOne,
-      sectionTwo: this.sectionTwo,
-      sectionFour: this.sectionFour,
-      sectionFive: this.sectionFive
+      1 : this.sectionOne,
+      2: this.sectionTwo,
+      3: this.sectionThree,
+      4: this.sectionFour
     };
   }
 }

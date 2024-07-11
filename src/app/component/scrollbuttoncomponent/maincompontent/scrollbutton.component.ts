@@ -8,30 +8,34 @@ import { ViewEncapsulation, Component, ElementRef, Input, HostListener } from '@
 })
 
 export class ScrollButtonComponent {
+  
   @Input() sections!: { [key: string]: ElementRef };
-
   currentSection: number = 1;
 
-  clickScroll(section: ElementRef) {
-    section.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  ScrollAction(section: ElementRef) {
+    if (section && section.nativeElement) 
+        section.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    if (event.key === 'ArrowUp') {
-      this.ScrollToSection(this.currentSection - 1);
+    if (event.key.toLowerCase() === 'w') {
+      this.ScrollToSection(this.currentSection - 1);//TODO set this in another place, increase and decreate
     }
-    if (event.key === 'ArrowDown') {
-      this.ScrollToSection(this.currentSection + 1);
+    if (event.key.toLowerCase() === 's') {
+      this.ScrollToSection(this.currentSection + 1);//TODO set this in another place, increase and decreate
     }
   }
 
   ScrollToSection(scrollTo: number) {
     if (scrollTo >= 1 && scrollTo <= 4) {
+      this.ScrollAction(this.sections[scrollTo]);//set return value for scrollAction and if true we set currenction to scrollTo if false we dont update
       this.currentSection = scrollTo;
-      const sectionKey = `section${scrollTo}`;
-      this.clickScroll(this.sections[sectionKey]);
     }
+    if(this.currentSection < 1)
+      this.currentSection = 1;
+    if(this.currentSection > 4)
+      this.currentSection = 4    
   }
   /*
   GetSection(index : number): HTMLElement
@@ -49,7 +53,6 @@ export class ScrollButtonComponent {
     ];
   }
 
-  /*
   
       if (event.key === 'ArrowUp' && this.section === 3) 
       {
@@ -66,7 +69,7 @@ export class ScrollButtonComponent {
       }
       if (event.key === 'ArrowDown' && this.section === 1 || this.section === 3) {
         this.clickScroll(this.sectionTwo.nativeElement);
-      }*/
+      }
 
   //#region scrolling logic
   /* TODO: might be re-added later again. Disabled atm

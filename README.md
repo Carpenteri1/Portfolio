@@ -3,7 +3,7 @@
 [![Deploy To gh-pages](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml/badge.svg?branch=master)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml)
 
 
-#### Description
+### Description
 
 This project is a personal portfolio built with TypeScript and Angular. 
 The goal of this project was to explore new technologies beyond my usual 

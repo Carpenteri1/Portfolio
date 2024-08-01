@@ -12,13 +12,8 @@ export class ScrollButtonComponent {
   @Input() sections!: { [key: string]: ElementRef };
   currentSection: number = 1;
 
-  ScrollAction(section: ElementRef) {
-    if (section && section.nativeElement) 
-        section.nativeElement.scrollIntoView({ behavior: 'smooth' });
-  }
-
   @HostListener('window:keydown', ['$event'])
-  handleKeyboardEvent(event: KeyboardEvent) {
+  HandleKeyboardEvent(event: KeyboardEvent) {
     if (event.key.toLowerCase() === 'w') {
       this.ScrollToSection(this.currentSection - 1);//TODO set this in another place, increase and decreate
     }
@@ -27,9 +22,19 @@ export class ScrollButtonComponent {
     }
   }
 
+  OnClick(section: ElementRef){
+    this.ScrollToSection(parseInt(section.nativeElement.id))
+  }
+  
+  ScrollAnimation(section: ElementRef) {
+    if (section && section.nativeElement) 
+        section.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
   ScrollToSection(scrollTo: number) {
     if (scrollTo >= 1 && scrollTo <= 4) {
-      this.ScrollAction(this.sections[scrollTo]);//set return value for scrollAction and if true we set currenction to scrollTo if false we dont update
+      this.sections[scrollTo].nativeElement.scrollIntoView({ behavior: 'smooth' });
+      this.SetInputToChecked(this.sections[this.currentSection].nativeElement,this.sections[scrollTo].nativeElement) //TODO maybe remove note needed
       this.currentSection = scrollTo;
     }
     if(this.currentSection < 1)
@@ -121,11 +126,9 @@ export class ScrollButtonComponent {
 
   //#endregion
 
-  setInputToChecked(elementIdOne: string, elementIdTwo: string) {
-    var element = <HTMLInputElement>document.getElementById(elementIdOne);
-    element.checked = false;
-    element = <HTMLInputElement>document.getElementById(elementIdTwo);
-    element.checked = true;
+  SetInputToChecked(elementIdOne: any, elementIdTwo: any) {
+    elementIdOne.checked = false;
+    elementIdTwo.checked = true;
   }
 
 }

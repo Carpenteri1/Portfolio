@@ -1,22 +1,23 @@
 <div class="scroll-button-container">
   <div class="form-check">
     <label class="form-check-label">
-      <div (click)="ScrollAction(sections['1'])" class="side-buttons" name="optradio" id="sectionOneInput"></div>
+      <div (click)="OnClick(sections['1'])" class="side-buttons" name="optradio" [ngClass]="{'checked': currentSection === 1}"></div>
+
     </label>
   </div>
   <div class="form-check">
     <label class="form-check-label">
-      <div (click)="ScrollAction(sections['2'])" class="side-buttons" name="optradio" id="sectionTwoInput"></div>
+      <div (click)="OnClick(sections['2'])" class="side-buttons" name="optradio" [ngClass]="{'checked': currentSection === 2}"></div>
     </label>
   </div>
   <div class="form-check">
     <label class="form-check-label">
-      <div (click)="ScrollAction(sections['3'])" class="side-buttons" name="optradio" id="sectionThreeInput"></div>
+      <div (click)="OnClick(sections['3'])" class="side-buttons" name="optradio" [ngClass]="{'checked': currentSection === 3}"></div>
     </label>
   </div>
   <div class="form-check">
     <label class="form-check-label">
-      <div (click)="ScrollAction(sections['4'])" class="side-buttons" name="optradio" id="sectionFourInput"></div>
+      <div (click)="OnClick(sections['4'])" class="side-buttons" name="optradio" [ngClass]="{'checked': currentSection === 4}"></div>
     </label>
   </div>
 </div>

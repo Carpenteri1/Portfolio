@@ -25,10 +25,12 @@ export class MainComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.sections = {
-      1 : this.sectionOne,
+      1: this.sectionOne,
       2: this.sectionTwo,
       3: this.sectionThree,
       4: this.sectionFour
     };
+
+    this.sections[1].nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

@@ -14,6 +14,10 @@ export class ScrollButtonComponent {
   private scrollTimeout: any = null;
   currentSection: number = 1;
 
+  constructor(){
+    this.ScrollToSection(0);
+  }
+
   @HostListener('window:keydown', ['$event'])
   HandleKeyboardEvent(event: KeyboardEvent) {
     const key = event.key.toLowerCase();

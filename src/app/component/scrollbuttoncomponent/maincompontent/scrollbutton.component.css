@@ -16,11 +16,15 @@
   width: 0.5em;
   border-radius: 50%;
   background-color: #4d4a4a;
-  border:1px solid black;
+  border:1px solid #242323;
 }
 
 .side-buttons:hover{
   cursor: pointer;
+}
+
+.side-buttons.checked {
+  background-color: #242323; /* or any other styles you want to apply when checked */
 }
 
 @media (max-width: 768px) {

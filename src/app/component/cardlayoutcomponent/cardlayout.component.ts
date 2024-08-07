@@ -13,31 +13,37 @@ export class CardLayoutComponent {
   cardGroup: CardModel[] = [];
 
   startIndex: number = 0;
-  cardWidth = 0;
+  cardDirectionToSlide = 0;
   visable: boolean = true;
-  lookButtons: boolean = false;
 
-  getVisibleCards(): any[] {
-    const startIndex = this.startIndex;
-    const endIndex = startIndex + 3;
-    return this.cardGroup.slice(startIndex, endIndex);
+  private slideToLeft = -2000;
+  private slideToRight = 2000;
+  private slideToCenter = 0;
+  private lockArrowButtons: boolean = false;
+  private firstIndex = 0;
+  private lastIndex = 3;
+
+  GetVisibleCards(): any[] {
+    let endIndex = this.startIndex + 3;
+    return this.cardGroup.slice(this.startIndex, endIndex);
   }
 
-  toggleGroup(direction: 'left' | 'right'): void {
-    if(!this.lookButtons)
+  ToggleGroup(direction: 'left' | 'right'): void {
+    if(!this.lockArrowButtons)
     {
-      this.lookButtons = true;
-      const cardCount = this.getVisibleCards().length;
+      this.lockArrowButtons = true;
+      const cardCount = this.GetVisibleCards().length;
+
       if (direction === StringHandler.left) {
         setTimeout(() => {
-          this.cardWidth = -2000;
+          this.cardDirectionToSlide = this.slideToLeft;
           setTimeout(() => {
-            this.visable = false;
-            this.startIndex = (this.startIndex - 1 + cardCount) % cardCount;
-            this.cardWidth = 2000;
+            this.indexHandeler(
+              this.slideToRight,
+              this.lastIndex,
+              this.firstIndex);     
             setTimeout(() => {
-              this.visable = true;
-              this.cardWidth = 0;
+              this.indexHandeler(this.slideToCenter); 
             }, 400)
           }, 300)
         }, 500)
@@ -45,20 +51,33 @@ export class CardLayoutComponent {
       else if (direction === StringHandler.right) 
       {
         setTimeout(() => {
-          this.cardWidth = 2000;
+          this.cardDirectionToSlide = this.slideToRight;
           setTimeout(() => {
-            this.visable = false;
-            this.startIndex = (this.startIndex + 1) % cardCount;
-            this.cardWidth = -2000;
-               setTimeout(() => {
-                this.visable = true;
-                this.cardWidth = 0;
+            this.indexHandeler(
+              this.slideToLeft,
+              this.lastIndex,
+              this.firstIndex)
+                setTimeout(() => {
+                this.indexHandeler(this.slideToCenter)
               }, 400)
           }, 300)
         }, 500)
       }
-      this.lookButtons = false;
+      this.lockArrowButtons = false;
     }
+  }
+
+  private indexHandeler(slideCardTo:number,startIndexIs?: number,resetIndexTo?: number){
+    if(startIndexIs !== undefined && resetIndexTo !== undefined){
+      this.visable = false;
+      if(this.startIndex === startIndexIs)
+        this.startIndex = resetIndexTo!;
+      else this.startIndex = startIndexIs!;
+    }
+    else{
+      this.visable = true;
+    }
+    this.cardDirectionToSlide = slideCardTo;
   }
 
   constructor() {

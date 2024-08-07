@@ -8,7 +8,7 @@
           <div class="card" *ngFor="let card of GetVisibleCards(); let i = index">   
             <div class="card-main">
                 <h3>{{card.title}}</h3>
-              <!--<div class="card-hover">
+              <div class="card-hover">
                 <a> <i class="bi bi-github"></i> </a> 
                 <h3>{{card.title}}</h3>
                 <p>{{card.text}}</p>
@@ -20,7 +20,7 @@
                 <p class="card-footer">
                   <a [href]="card.url" target="_blank" class="stretched-link"></a>
                 </p>
-            </div>-->
+            </div>
           </div>
         </div>
       </div>

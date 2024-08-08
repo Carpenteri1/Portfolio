@@ -40,12 +40,46 @@ h5 {
 .section-layout {
   height: 99.5vh;
   border-top: solid 2px #b29600;
-  /* box-sizing: border-box;*/
   display: flex; 
   justify-content: center;
   align-items: center;
 }
 
+.always-on-button {
+  display: none;
+}
+
+.jumping-arrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .jumping-arrow {
+    display: block;
+    background-color: transparent;
+    position: fixed;
+    color: #b29600;
+    border: none;
+    border-radius: 5px;
+    bottom: 5%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: jump 1s ease-out infinite;
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
+}
 
 @media only screen and (max-height: 720px) {
   #sectionOne{

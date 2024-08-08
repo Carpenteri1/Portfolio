@@ -13,6 +13,7 @@ export class MainComponent implements AfterViewInit {
   @ViewChild(StringHandler.sectionTwo) sectionTwo: ElementRef;
   @ViewChild(StringHandler.sectionThree) sectionThree: ElementRef;
   @ViewChild(StringHandler.sectionFour) sectionFour: ElementRef;
+  @ViewChild(StringHandler.jumpingArrow) jumpingArrow: ElementRef;
 
   sections: { [key: string]: ElementRef } = {};
 
@@ -21,6 +22,7 @@ export class MainComponent implements AfterViewInit {
     this.sectionTwo = new ElementRef(null);
     this.sectionThree = new ElementRef(null);
     this.sectionFour = new ElementRef(null);
+    this.jumpingArrow = new ElementRef(null);
   }
 
   ngAfterViewInit() {
@@ -28,7 +30,8 @@ export class MainComponent implements AfterViewInit {
       1: this.sectionOne,
       2: this.sectionTwo,
       3: this.sectionThree,
-      4: this.sectionFour
+      4: this.sectionFour,
+      5: this.jumpingArrow
     };
 
     this.sections[1].nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });

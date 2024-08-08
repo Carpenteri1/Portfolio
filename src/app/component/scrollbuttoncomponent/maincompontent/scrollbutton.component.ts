@@ -1,4 +1,4 @@
-import { ViewEncapsulation, Component, ElementRef, Input, HostListener } from '@angular/core';
+import { ViewEncapsulation, Component, ElementRef, Input, HostListener, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'scrollbutton-component',
@@ -9,12 +9,12 @@ import { ViewEncapsulation, Component, ElementRef, Input, HostListener } from '@
 
 export class ScrollButtonComponent {
   
-  @Input() sections!: { [key: string]: ElementRef };
+  @Input() domElements!: { [key: string]: ElementRef };
   private startTouchY: number = 0;
   private scrollTimeout: any = null;
   currentSection: number = 1;
 
-  constructor(){
+  constructor(private renderer: Renderer2){
     this.ScrollToSection(0);
   }
 
@@ -56,10 +56,14 @@ export class ScrollButtonComponent {
   
   ScrollToSection(scrollTo: number) {
     if (scrollTo >= 1 && scrollTo <= 4) {
-      this.sections[scrollTo].nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      this.SetInputToChecked(this.sections[this.currentSection].nativeElement,this.sections[scrollTo].nativeElement)
+
+      this.SetDisplayValueForElement(scrollTo);
+
+      this.domElements[scrollTo].nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      this.SetInputToChecked(this.domElements[this.currentSection].nativeElement,this.domElements[scrollTo].nativeElement)
       this.currentSection = scrollTo;
     }
+
     if(this.currentSection < 1)
       this.currentSection = 1;
     if(this.currentSection > 4)
@@ -85,5 +89,12 @@ export class ScrollButtonComponent {
         this.ScrollToSection(this.currentSection - 1);
       }
     },timeOut);
+  }
+  
+  private SetDisplayValueForElement(scrollToValue: number){
+    if(scrollToValue === 4) 
+      this.renderer.setStyle(this.domElements[5].nativeElement,'display','none');
+    if(scrollToValue < 4 && window.getComputedStyle(this.domElements[5].nativeElement).display !== 'block')  
+      this.renderer.setStyle(this.domElements[5].nativeElement,'display','block');
   }
 }

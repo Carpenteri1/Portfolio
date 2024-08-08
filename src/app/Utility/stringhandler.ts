@@ -12,12 +12,12 @@ export class StringHandler {
     static readonly sectionThree: string = 'sectionThree';
     static readonly sectionFour: string = 'sectionFour';
     static readonly sectionFive: string = 'sectionFive';
+    static readonly jumpingArrow: string = "jumpingArrow";
 
     static readonly sectionOneInput: string = "sectionOneInput";
     static readonly sectionTwoInput: string = "sectionTwoInput";
     static readonly sectionThreeInput: string = "sectionThreeInput";
     static readonly sectionFourInput: string = "sectionFourInput";
-    static readonly sectionFiveInput: string = "sectionFiveInput";
 
     //#endregion
 

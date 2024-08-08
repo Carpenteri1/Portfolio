@@ -1,5 +1,6 @@
 <div #sectionOne id="1" class="section-layout">
   <typewriter></typewriter>
+  <div #jumpingArrow class="jumping-arrow"><i class="bi bi-arrow-down"></i></div>
 </div>
 <div #sectionTwo id="2" class="section-layout">
   <carousel-component class="container-fluid"></carousel-component>
@@ -11,5 +12,5 @@
   <footer-component></footer-component>
 </div>
 <div>
-  <scrollbutton-component [sections]="sections"></scrollbutton-component>
+  <scrollbutton-component [domElements]="sections"></scrollbutton-component>
 </div>

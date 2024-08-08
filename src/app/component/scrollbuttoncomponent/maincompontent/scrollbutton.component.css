@@ -24,7 +24,7 @@
 }
 
 .side-buttons.checked {
-  background-color: #242323; /* or any other styles you want to apply when checked */
+  background-color: #242323;
 }
 
 @media (max-width: 768px) {

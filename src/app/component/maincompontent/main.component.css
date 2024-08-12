@@ -11,10 +11,6 @@
   background-color: #313d4b;
 }
 
-.title {
-  font-size: 10em;
-}
-
 /*Buttons*/
 .no-outline{
   border: none;
@@ -78,11 +74,5 @@ h5 {
     100% {
       transform: translateY(0); 
     }
-  }
-}
-
-@media only screen and (max-height: 720px) {
-  #sectionOne{
-      padding: -10em !important;
   }
 }

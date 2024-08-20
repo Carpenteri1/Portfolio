@@ -1,9 +1,4 @@
 
-
-.col-8{
-  height: 550px;
-}
-
 .progress{
   padding: 0%;
 }
@@ -71,13 +66,10 @@
       }
     }
 
-    @media (max-width:  767px) {
+    @media (max-width:  1366px) {
       .bi-arrow-right,
-      .bi-arrow-left,
-      .arrow{
+      .bi-arrow-left{
         display: none;
       }
- 
-      
     }
    

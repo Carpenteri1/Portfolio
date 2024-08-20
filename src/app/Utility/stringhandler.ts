@@ -126,4 +126,9 @@ export class StringHandler {
 
     //#endregion
 
+    //#region footer
+    static readonly ContactMeAt: string = "Contact Me At";
+
+    //endregion
+
 }

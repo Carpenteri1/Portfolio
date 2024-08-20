@@ -46,22 +46,23 @@ h5 {
 }
 
 .jumping-arrow {
-  display: none !important;
+  display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) {
 
   .jumping-arrow {
-    display: block !important;
+    display: block;
     background-color: transparent;
     position: fixed;
     color: #b29600;
     border: none;
     border-radius: 5px;
-    bottom: 5%;
+    bottom: 10px;
     cursor: pointer;
+    z-index: 1;
     transition: background-color 0.3s;
-    animation: jump 1s ease-out infinite;
+    animation: jump 1.2s ease-out infinite;
   }
 
   @keyframes jump {

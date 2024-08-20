@@ -1,4 +1,6 @@
-
+.container{
+  height: 90vh;
+}
 .progress{
   padding: 0%;
 }

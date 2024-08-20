@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { StringHandler } from "src/app/Utility/stringhandler";
   
 @Component({
     selector:'footer-component',
@@ -11,5 +12,5 @@ import { Component } from "@angular/core";
 })
 
 export class FooterComponent{
-
+  contactMeAt = StringHandler.ContactMeAt;
 }

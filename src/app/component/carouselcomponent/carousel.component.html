@@ -1,26 +1,27 @@
-
-<div class="row w-100">
-    <div class="col-2 d-flex justify-content-center">
-        <button class="no-outline" style="margin-left:auto;" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
+<div class="container">
+    <div class="row text-center">   
+        <h2>{{title}}</h2>
     </div>
-    <div class="col-8">
-        <div class="row text-center">   
-            <h2>{{title}}</h2>
+    <div class="row">
+        <div class="col-2 d-flex justify-content-center arrow" style="padding-top: 2em;">
+            <button class="no-outline" style="margin-left:auto;" (click)="toggleGroup('left')"><i class="bi bi-arrow-left"></i></button>
         </div>
-        <div class="row">
-            <div class="d-flex justify-content-center" *ngFor="let item of currentListOfSKills" [@fadeOut]="fadeState" [@fadeIn]="fadeState">
-                <div class="skill-main" >
-                    <div class="skill-wrap">
-                        <div class="skill-bar" style="position: relative;">
-                            <div class="skill-name" style="position: absolute; z-index: 1;">{{item.name}}</div>
-                            <div class="skill-per" style="background-color: #b29600; width:{{item.level}}%;" [attr.per]="item.level"></div>
+        <div class="col-xl-8 col-l-12">
+            <div class="row">
+                <div class="d-flex justify-content-center" *ngFor="let item of currentListOfSKills" [@fadeOut]="fadeState" [@fadeIn]="fadeState">
+                    <div class="skill-main" >
+                        <div class="skill-wrap">
+                            <div class="skill-bar" style="position: relative;">
+                                <div class="skill-name" style="position: absolute; z-index: 1;">{{item.name}}</div>
+                                <div class="skill-per" style="background-color: #b29600; width:{{item.level}}%;" [attr.per]="item.level"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-2 justify-content-center d-flex">
-        <button class="no-outline" style="margin-right:auto;" (click)="toggleGroup('right')"><i class="bi bi-arrow-right"></i></button>
+        <div class="col-2 d-flex justify-content-center arrow">
+            <button class="no-outline" style="margin-right:auto;" (click)="toggleGroup('right')"><i class="bi bi-arrow-right"></i></button>
+        </div>
     </div>
 </div>

@@ -95,3 +95,11 @@
 button {
   background-color: #2E3445;
 }
+
+@media (max-width: 1366px) {
+    .bi-arrow-right,
+    .bi-arrow-left,
+    .col-2{
+      display: none;
+    }
+}

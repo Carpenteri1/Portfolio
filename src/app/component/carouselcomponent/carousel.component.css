@@ -1,14 +1,6 @@
-.progress-loaded{
-  background-color: #313d4b;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  height:18px;
+.container{
+  height: 90vh;
 }
-
-.col-8{
-  height: 550px;
-}
-
 .progress{
   padding: 0%;
 }
@@ -30,18 +22,20 @@
   }
     .skill-name {
       color: #ffffff;
-      font-size: 12x;
+      font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+      font-size: 16x;
+      padding-top: 2px;
       padding-left: 10px;
     }
 
     .skill-bar {
-      height: 20px;
+      height: 30px;
       background-color: #00283a;
       border-radius: 8px;
     }
 
     .skill-per {
-      height: 20px;
+      height: 30px;
       background: #23576f;
       border-radius: 8px;
       width: 0;
@@ -53,11 +47,12 @@
         padding: 4px 6px;
         background-color: #23576f;
         color: #fff;
-        font-size: 11px;
+        font-size: 16px;
         border-radius: 4px;
         top: -35px;
         right: 0;
         transform: translateX(50%);
+        z-index: 1;
       }
 
       &:after {
@@ -72,3 +67,11 @@
         border-radius: 2px;
       }
     }
+
+    @media (max-width:  1366px) {
+      .bi-arrow-right,
+      .bi-arrow-left{
+        display: none;
+      }
+    }
+   

@@ -17,6 +17,7 @@ Additionally, I wanted to deploy this portfolio on GitHub Pages, which is well-s
  ![Custom Badge](https://img.shields.io/badge/CSS-Yellow)
  ![Custom Badge](https://img.shields.io/badge/Bootstrap-purple)
  ![Custom Badge](https://img.shields.io/badge/NPM-green)
+ ![Custom Badge](https://img.shields.io/badge/Yaml-brown)
 
 ### Why Angular and TypeScript?
 
@@ -26,4 +27,9 @@ I chose Angular and TypeScript for this project because:
 - TypeScript offers type safety, which helps catch errors early and improves code quality.
 - I wanted to learn and experiment with these technologies to broaden my skill set.
 - GitHub Pages is ideal for hosting static sites, and Angular can be compiled into a static site easily.
+
+
+### Experimental Workflows and CI/CD
+
+In addition to being a personal portfolio, this project also serves as a playground for experimenting with different workflows, build pipelines, and YAML configurations. I’m using it to try out new techniques in Continuous Integration/Continuous Deployment (CI/CD) and to refine my understanding of automated processes within software development. This hands-on experimentation allows me to better understand the integration of various tools and methodologies.
 

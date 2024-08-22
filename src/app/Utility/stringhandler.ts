@@ -32,12 +32,12 @@ export class StringHandler {
     static readonly cardTitleSix: string = 'KrankenHause';
    
     //Description
-    static readonly cardDescriptionOne: string = 'Android App, Helps to Keep Notes Of Things. In alpha stage at the moment. There is an apk file to try it out,';
-    static readonly cardDescriptionTwo: string = 'Collect starwars characters from swapi, user can search for characters and add them to a list.';
-    static readonly cardDescriptionThree: string = 'Collects weather data using openweather api,' + 'There is a console verson and an mvc version.';
-    static readonly cardDescriptionFour: string = 'Website writen with Anguler with typescript. Wanted to try something new when I wrote my portfolio.';
-    static readonly cardDescriptionFive: string = 'a windows console game. The player should avoide the rocks falling from the sky, with its little ship. ';
-    static readonly cardDescriptionSix: string = 'here are 4 different threads who should work together. simulating a hospital';
+    static readonly cardDescriptionOne: string = 'Android App, Helps to Keep Notes Of Things. In alpha stage at the moment';
+    static readonly cardDescriptionTwo: string = 'Search for starwars characters and add them to a list.';
+    static readonly cardDescriptionThree: string = 'Show weather data using openweather, There is a console app and web app';
+    static readonly cardDescriptionFour: string = 'My porfolio, a website with a short description on my projects and skills';
+    static readonly cardDescriptionFive: string = 'Terminal game. The player should avoide the rocks falling from the sky';
+    static readonly cardDescriptionSix: string = 'Using 4 different threads who should work together. simulating different roles';
     
     //Tags
     static readonly CardTagAngular: string = "Angular";

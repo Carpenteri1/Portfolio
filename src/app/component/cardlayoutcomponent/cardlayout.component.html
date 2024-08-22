@@ -8,17 +8,15 @@
             <div class="card-main">
                 <h3>{{card.title}}</h3>
               <div class="card-hover">
-                <a> <i class="bi bi-github"></i> </a> 
-                <h3>{{card.title}}</h3>
+                <a><i class="bi bi-github"></i></a> 
+                <h5>{{card.title}}</h5>
                 <p>{{card.text}}</p>
                 <div class="tags">
                   <div *ngFor="let tag of card.tags">
                     <div class="tag">{{tag}}</div>
                   </div>
                 </div>
-                <p class="card-footer">
-                  <a [href]="card.url" target="_blank" class="stretched-link"></a>
-                </p>
+                <a [href]="card.url" target="_blank" class="stretched-link"></a>
             </div>
           </div>
         </div>

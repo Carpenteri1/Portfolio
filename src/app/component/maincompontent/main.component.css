@@ -45,14 +45,16 @@ h5 {
   display: none;
 }
 
-.jumping-arrow {
-  display: none;
+.bi-arrow-down {
+     display: none;
 }
 
 @media (max-width: 1366px) {
 
-  .jumping-arrow {
+  .bi-arrow-down{
     display: block;
+  }
+  .jumping-arrow {
     background-color: transparent;
     position: fixed;
     color: #b29600;

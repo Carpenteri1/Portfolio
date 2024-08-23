@@ -48,13 +48,9 @@ export class StringHandler {
     static readonly CardTagJava: string = "Java";
     static readonly CardTagTypeScript: string = "TypeScript";
     static readonly CardTagDotNet: string = ".NET";
-    static readonly CardTagTerminal: string = "Terminal";
     static readonly CardTagBootStrap: string = "BootStrap";
     static readonly CardTagAndroid: string = "Android";
     static readonly CardTagNPM: string = "NPM";
-    static readonly CardTagThearding: string = "Threading";
-    static readonly CardTagGame: string = "Game";
-    static readonly CardTagConsole: string = "Console";
     static readonly CardTagXML: string = "XML";
 
 

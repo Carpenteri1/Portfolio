@@ -86,7 +86,6 @@ export class CardLayoutComponent {
         StringHandler.cardDescriptionOne,
         StringHandler.CardLinkOne, [
           StringHandler.CardTagJava,
-          StringHandler.CardTagNPM,
           StringHandler.CardTagAndroid]),
       new CardModel(StringHandler.cardTitleTwo,
         StringHandler.cardDescriptionTwo,
@@ -116,16 +115,12 @@ export class CardLayoutComponent {
         StringHandler.cardDescriptionFive,
         StringHandler.CardLinkFive,[
           StringHandler.CardTagCSharp,
-          StringHandler.CardTagConsole,
-          StringHandler.CardTagTerminal,
-          StringHandler.CardTagGame,
           StringHandler.CardTagDotNet]),
       new CardModel(StringHandler.cardTitleSix,
         StringHandler.cardDescriptionSix,
         StringHandler.CardLinkSix,[
           StringHandler.CardTagCSharp,
-          StringHandler.CardTagDotNet,
-          StringHandler.CardTagThearding]),
+          StringHandler.CardTagDotNet]),
     );
   }
 }

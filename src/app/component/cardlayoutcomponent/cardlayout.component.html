@@ -7,7 +7,7 @@
           <div class="card" style="border-radius: 25px;" *ngFor="let card of GetVisibleCards(); let i = index">   
               <div class="card-header" style="background-color: gray;">
                 <h3>{{card.title}}</h3>
-              </div>  
+              </div>
                 <div class="card-body">
                   <h5>{{card.title}}</h5>
                   <p>{{card.text}}</p>
@@ -18,9 +18,7 @@
                   </div>
                 </div>
           <div class="link-button-container">
-            <a class="btn btn-secondary" 
-              style="border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;border:0.5px solid black;" 
-              [href]="card.url" target="_blank" class="stretched-link">
+            <a class="btn btn-secondary" [href]="card.url" target="_blank">
               <i class="bi bi-github"></i>
           </a>
           </div>

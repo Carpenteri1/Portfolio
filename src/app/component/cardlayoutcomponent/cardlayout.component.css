@@ -12,59 +12,22 @@ h5{
   text-align: center;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 100%;
-  gap: 1rem;
+.card-header{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px
 }
 
 .card {
   margin-right: 1em;
   margin-left: 1em;
   width: 100%;
-  height: 100%;
-  aspect-ratio: 1 / 1;
+  height: 350px;
   overflow: hidden;
   position: relative;
-  background-color: #2E3445;
+  background-color: darkgray;
   border: 1px solid #2E3445;
+  transition: transform 1s ease;
 }
-
-.card-main {
-  display: flex;
-  text-decoration: underline #b29600;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.card-hover {
-  position: absolute;
-  border: 2px solid white;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-  background: hsla(0, 0%, 0%, 0.9);
-  gap: 1rem;
-  /*visibility: hidden;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: visibility 0s, opacity 0.6s ease, transform 0.6s ease-out;*/
-}
-
-/*.card-hover a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  transition: 250ms ease;
-}*/
-
 
 .tag {
   outline: 1px solid white;
@@ -74,44 +37,8 @@ h5{
   transition: 250ms ease;
 }
 
-.card:hover .card-hover {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
-  cursor: pointer;
-}
-
-.card:not(:hover) .card-hover {
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(100%);
-}
-
 button {
   background-color: #2E3445;
-}
-
-.card{
-  height: 520px;
-  background-color: darkgray;
-}
-
-.card-header{
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px
-}
-
-.link-button-container{
-  width: 100%;
-  height: 35px;
-}
-
-.btn, .btn-secondary{
-  border:2px solid black;
-  width: 100%;
-  padding-top: 2px;
 }
 
 .card-footer{
@@ -122,6 +49,27 @@ button {
   align-items: center;
   flex-wrap: wrap;
   background-color: darkgray;
+}
+
+.link-button-container, .btn, .btn-secondary{
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  display: block;
+  transition: bottom 1.2s ease-in-out;
+}
+
+.card:hover .link-button-container, .btn, .btn-secondary{
+  display: block;
+  bottom: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1366px) {

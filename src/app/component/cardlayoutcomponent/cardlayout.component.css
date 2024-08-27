@@ -39,6 +39,7 @@ h5{
 
 button {
   background-color: #2E3445;
+  cursor: pointer;
 }
 
 .card-footer{

@@ -45,26 +45,29 @@ button {
   display: flex;
   justify-content: center;
   gap: 0.2rem;
+  border-radius: 0px;
   border-bottom:0.5px solid;
   align-items: center;
   flex-wrap: wrap;
   background-color: darkgray;
 }
 
-.link-button-container, .btn, .btn-secondary{
-  position: absolute;
+.link-button-container{
   bottom: -40px;
+  transition: bottom 1.2s ease-in-out;
+  background-color: #007bff;
+}
+
+.link-button-container, .btn, .btn-secondary{
   width: 100%;
   height: 40px;
   border: none;
-  background-color: #007bff;
   color: #fff;
-  display: block;
-  transition: bottom 1.2s ease-in-out;
+  position: absolute;
+  border-radius: 0px;
 }
 
-.card:hover .link-button-container, .btn, .btn-secondary{
-  display: block;
+.card:hover .link-button-container{
   bottom: 0;
 }
 

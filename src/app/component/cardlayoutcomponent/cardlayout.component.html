@@ -11,16 +11,16 @@
                 <div class="card-body">
                   <h5>{{card.title}}</h5>
                   <p>{{card.text}}</p>
-                </div>
-                <div class="card-footer">
                   <div *ngFor="let tag of card.tags">
                     <div class="tag">{{tag}}</div>
                   </div>
                 </div>
+                <div class="card-footer">
+                <a class="btn btn-secondary" [href]="card.url" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                </div>
           <div class="link-button-container">
-            <a class="btn btn-secondary" [href]="card.url" target="_blank">
-              <i class="bi bi-github"></i>
-          </a>
           </div>
         </div>
       </div>

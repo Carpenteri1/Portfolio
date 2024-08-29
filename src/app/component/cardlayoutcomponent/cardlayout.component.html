@@ -4,7 +4,7 @@
   </div>
   <div class="col-8">
         <div class="card-group" [style.transform]="'translateX(' + (cardDirectionToSlide) + 'px)'" [style.opacity]="visable ? '1' : '0'">
-          <div class="card" style="border-radius: 25px;" *ngFor="let card of GetVisibleCards(); let i = index" >   
+          <div class="card" style="border-radius: 25px;border:1.5px solid #b29600;" *ngFor="let card of GetVisibleCards(); let i = index" >   
               <div class="card-header">
                 <h4>{{card.title}}</h4>
               </div>

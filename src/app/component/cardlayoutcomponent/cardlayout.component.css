@@ -6,25 +6,29 @@ h5{
   font-size: 24px;
 }
 
+h2 > i{
+  color: #b29600;
+}
+
 .card-group {
   text-align: center;
+  gap: 1rem;
+  transition: transform 0.4s ease-in;
+
 }
 
 .card-header{
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: gray;
+  background-color: #00283a;
 }
 
 .card {
-  margin-right: 1em;
-  margin-left: 1em;
-  width: 100%;
+  width: 95%;
   height: 350px;
   overflow: hidden;
   position: relative;
-  background-color: darkgray;
-  border: 1px solid #2E3445;
+  background-color: #313d4b;
   transition: transform 1s ease, box-shadow 1s ease;
 }
 
@@ -36,13 +40,13 @@ h5{
 .tags {
   display: flex;
   justify-content: center;
-  gap: 0.2rem;
+  gap: 0.3rem;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .tag {
-  outline: 1px solid white;
+  outline: 1px solid #b29600;
   color: white;
   padding: 0.2rem;
   font-size: 10px;
@@ -65,121 +69,63 @@ button {
     .col-2{
       display: none;
     }
-    .card-hover > a,i {
-      margin-bottom: -15px;
-    }
-    .card-hover > h5 {
-      font-size: 14px ;
-      margin-bottom: -10px;
-    }
-    .card-hover > p {
-      font-size: 10px;
-      margin-bottom: -5px;
-    }
-    .tag{
-      font-size: 8px;
-    }
-
-}
-@media (max-width: 1080px) {
-  .card{
-    aspect-ratio: 1 / 1.2;
-  }
-  .card-hover > a,i {
-    font-size: 20px;
-  }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 876px) {
   .card-group{
-    height: 500px;
+    margin: auto;
+    height: 650px;
+    width: 280px;
     flex-direction: column;
   }
-  .card {
-    margin: auto;/*center cards*/
-    aspect-ratio: 0;
-  }
-  .card-hover{
-    margin: auto;/*center cards*/
-    width: 50%;
-  }
-  .card-main{
-    height: 30%;
-    margin-top: 4em;
-    margin-right: 10em;
-  }
-  .card-main > h3{
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 680px) {
-  .card-main > h3{
-    font-size: 12;
-  }
-  .card-hover > h5{
-    font-size: 13px;
-  }
-  .card-hover > p{
-    font-size: 9px;
-  }
-  .card-hover > a,i {
-    font-size: 14px;
-  }
-  .card-group{
-    height: 720px;
-  }
-  .tag{
-    font-size: 7px;
-  }
-}
-
-
-@media (max-width: 520px) {
-  .card-main > h3{
-    font-size: 12;
-  }
-  .card-hover{
+  .card-header {
+    margin: auto;
     width: 100%;
   }
-  .card-hover > h5{
-    font-size: 18px;
+  .card-header > h4{
+    font-size: 16px;
   }
-  .card-hover > p{
-    font-size: 12px;
+  .card-body{
+    padding: 12px;
   }
-  .card-hover > a,i {
-    font-size: 20px;
+  .card-body > h2
+  {
+    font-size: 16px;
   }
-  .card-group{
-    height: 720px;
-  }
-  .tag{
+  .card-body > p
+  {
     font-size: 10px;
   }
 }
 
+@media (max-width: 575px) {
 
-@media (max-width: 335px) {
-  .card-main > h3{
-    font-size: 12;
-  }
-  .card-hover > h5{
-    font-size: 13px;
-  }
-  .card-hover > p{
-    font-size: 9px;
-  }
-  .card-hover > a,i {
-    font-size: 14px;
-  }
-  .card-group{
-    height: 720px;
-  }
-  .tag{
-    font-size: 7px;
+  .card{
+    position: relative;
+    height: 210px;
+    border:2px solid greenyellow;
   }
 }
 
+@media (max-width: 445px) {
+  .card{
+    width: 60vw;
+  }
+}
 
-
+@media (max-width: 350px) {
+    .card-header > h4{
+      font-size: 10px;
+    }
+    .card-body > h2
+    {
+      font-size: 14px;
+    }
+    .card-body > p
+    {
+      font-size: 8px;
+    }
+    .tag{
+      font-size: 6.5px;
+    }
+}

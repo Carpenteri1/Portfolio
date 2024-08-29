@@ -82,50 +82,51 @@ export class CardLayoutComponent {
 
   constructor() {
     this.cardGroup.push(
-      new CardModel(StringHandler.cardTitleOne,
-        StringHandler.cardDescriptionOne,
-        StringHandler.CardLinkOne, [
+      new CardModel(StringHandler.CardTitleNotify,
+        StringHandler.CardDescriptionNotify,
+        StringHandler.CardLinkNotify, [
           StringHandler.CardTagJava,
-          StringHandler.CardTagNPM,
-          StringHandler.CardTagAndroid]),
-      new CardModel(StringHandler.cardTitleTwo,
-        StringHandler.cardDescriptionTwo,
-        StringHandler.CardLinkTwo,[
+          StringHandler.CardTagAndroid],
+          StringHandler.AndroidIcon),
+      new CardModel(StringHandler.CardTitleSwapi,
+        StringHandler.CardDescriptionSwapi,
+        StringHandler.CardLinkSwapi,[
           StringHandler.CardTagJavaScript,
           StringHandler.CardTagCSS,
           StringHandler.CardTagHTML,
-          StringHandler.CardTagBootStrap]),
-      new CardModel(StringHandler.cardTitleThree,
-        StringHandler.cardDescriptionThree,
-        StringHandler.CardLinkThree,[
+          StringHandler.CardTagBootStrap],
+          StringHandler.StarsIcon),
+      new CardModel(StringHandler.CardTitleWeatherApp,
+        StringHandler.CardDescriptionWeatherApp,
+        StringHandler.CardLinkWeatherApp,[
           StringHandler.CardTagCSharp,
           StringHandler.CardTagJavaScript,
           StringHandler.CardTagCSS,
           StringHandler.CardTagHTML,
           StringHandler.CardTagBootStrap,
-          StringHandler.CardTagDotNet]),
-      new CardModel(StringHandler.cardTitleFour,
-        StringHandler.cardDescriptionFour,
-        StringHandler.CardLinkFour,[
+          StringHandler.CardTagDotNet],
+          StringHandler.CloudIcon),
+      new CardModel(StringHandler.CardTitlePortfolio,
+        StringHandler.CardDescriptionPortolio,
+        StringHandler.CardLinkPortfolio,[
           StringHandler.CardTagAngular,
           StringHandler.CardTagNPM,
           StringHandler.CardTagCSS,
           StringHandler.CardTagTypeScript,
-          StringHandler.CardTagHTML]),
-      new CardModel(StringHandler.cardTitleFive,
-        StringHandler.cardDescriptionFive,
-        StringHandler.CardLinkFive,[
+          StringHandler.CardTagHTML],
+        StringHandler.BriefCaseIcon),
+      new CardModel(StringHandler.CardTitleFallenRock,
+        StringHandler.CardDescriptionFallenRock,
+        StringHandler.CardLinkFallenRock,[
           StringHandler.CardTagCSharp,
-          StringHandler.CardTagConsole,
-          StringHandler.CardTagTerminal,
-          StringHandler.CardTagGame,
-          StringHandler.CardTagDotNet]),
-      new CardModel(StringHandler.cardTitleSix,
-        StringHandler.cardDescriptionSix,
-        StringHandler.CardLinkSix,[
+          StringHandler.CardTagDotNet],
+          StringHandler.DpadIcon),
+      new CardModel(StringHandler.CardTitleKrankenHouse,
+        StringHandler.CardDescriptionKrankenHause,
+        StringHandler.CardLinkKrankenHause,[
           StringHandler.CardTagCSharp,
-          StringHandler.CardTagDotNet,
-          StringHandler.CardTagThearding]),
+          StringHandler.CardTagDotNet],
+          StringHandler.CpuIcon),
     );
   }
 }

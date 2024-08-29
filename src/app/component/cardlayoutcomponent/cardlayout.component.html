@@ -4,23 +4,20 @@
   </div>
   <div class="col-8">
         <div class="card-group" [style.transform]="'translateX(' + (cardDirectionToSlide) + 'px)'" [style.opacity]="visable ? '1' : '0'">
-          <div class="card" *ngFor="let card of GetVisibleCards(); let i = index">   
-            <div class="card-main">
-                <h3>{{card.title}}</h3>
-              <div class="card-hover">
-                <a> <i class="bi bi-github"></i> </a> 
-                <h3>{{card.title}}</h3>
-                <p>{{card.text}}</p>
-                <div class="tags">
-                  <div *ngFor="let tag of card.tags">
-                    <div class="tag">{{tag}}</div>
+          <div class="card" style="border-radius: 25px;border:1.5px solid #b29600;" *ngFor="let card of GetVisibleCards(); let i = index" >   
+              <div class="card-header">
+                <h4>{{card.title}}</h4>
+              </div>
+                <div class="card-body">
+                  <h2><i class="{{card.icon}}"></i></h2>
+                  <p>{{card.text}}</p>
+                  <div class="tags">
+                    <div *ngFor="let tag of card.tags">
+                      <div class="tag">{{tag}}</div>
+                    </div>
                   </div>
                 </div>
-                <p class="card-footer">
-                  <a [href]="card.url" target="_blank" class="stretched-link"></a>
-                </p>
-            </div>
-          </div>
+                <a [href]="card.url" target="_blank" class="stretched-link"></a>
         </div>
       </div>
   </div>

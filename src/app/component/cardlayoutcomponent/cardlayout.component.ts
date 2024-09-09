@@ -10,6 +10,56 @@ import { StringHandler } from "src/app/Utility/stringhandler";
 
 export class CardLayoutComponent {
 
+  constructor() {
+    this.cardGroup.push(
+      new CardModel(StringHandler.CardTitleNotify,
+        StringHandler.CardDescriptionNotify,
+        StringHandler.CardLinkNotify, [
+          StringHandler.CardTagJava,
+          StringHandler.CardTagAndroid],
+          StringHandler.AndroidIcon),
+      new CardModel(StringHandler.CardTitleSwapi,
+        StringHandler.CardDescriptionSwapi,
+        StringHandler.CardLinkSwapi,[
+          StringHandler.CardTagJavaScript,
+          StringHandler.CardTagCSS,
+          StringHandler.CardTagHTML,
+          StringHandler.CardTagBootStrap],
+          StringHandler.StarsIcon),
+      new CardModel(StringHandler.CardTitleWeatherApp,
+        StringHandler.CardDescriptionWeatherApp,
+        StringHandler.CardLinkWeatherApp,[
+          StringHandler.CardTagCSharp,
+          StringHandler.CardTagJavaScript,
+          StringHandler.CardTagCSS,
+          StringHandler.CardTagHTML,
+          StringHandler.CardTagBootStrap,
+          StringHandler.CardTagDotNet],
+          StringHandler.CloudIcon),
+      new CardModel(StringHandler.CardTitlePortfolio,
+        StringHandler.CardDescriptionPortolio,
+        StringHandler.CardLinkPortfolio,[
+          StringHandler.CardTagAngular,
+          StringHandler.CardTagNPM,
+          StringHandler.CardTagCSS,
+          StringHandler.CardTagTypeScript,
+          StringHandler.CardTagHTML],
+        StringHandler.BriefCaseIcon),
+      new CardModel(StringHandler.CardTitleFallenRock,
+        StringHandler.CardDescriptionFallenRock,
+        StringHandler.CardLinkFallenRock,[
+          StringHandler.CardTagCSharp,
+          StringHandler.CardTagDotNet],
+          StringHandler.DpadIcon),
+      new CardModel(StringHandler.CardTitleKrankenHouse,
+        StringHandler.CardDescriptionKrankenHause,
+        StringHandler.CardLinkKrankenHause,[
+          StringHandler.CardTagCSharp,
+          StringHandler.CardTagDotNet],
+          StringHandler.CpuIcon),
+    );
+  }
+
   cardGroup: CardModel[] = [];
 
   startIndex: number = 0;
@@ -78,55 +128,5 @@ export class CardLayoutComponent {
       this.visable = true;
     }
     this.cardDirectionToSlide = slideCardTo;
-  }
-
-  constructor() {
-    this.cardGroup.push(
-      new CardModel(StringHandler.CardTitleNotify,
-        StringHandler.CardDescriptionNotify,
-        StringHandler.CardLinkNotify, [
-          StringHandler.CardTagJava,
-          StringHandler.CardTagAndroid],
-          StringHandler.AndroidIcon),
-      new CardModel(StringHandler.CardTitleSwapi,
-        StringHandler.CardDescriptionSwapi,
-        StringHandler.CardLinkSwapi,[
-          StringHandler.CardTagJavaScript,
-          StringHandler.CardTagCSS,
-          StringHandler.CardTagHTML,
-          StringHandler.CardTagBootStrap],
-          StringHandler.StarsIcon),
-      new CardModel(StringHandler.CardTitleWeatherApp,
-        StringHandler.CardDescriptionWeatherApp,
-        StringHandler.CardLinkWeatherApp,[
-          StringHandler.CardTagCSharp,
-          StringHandler.CardTagJavaScript,
-          StringHandler.CardTagCSS,
-          StringHandler.CardTagHTML,
-          StringHandler.CardTagBootStrap,
-          StringHandler.CardTagDotNet],
-          StringHandler.CloudIcon),
-      new CardModel(StringHandler.CardTitlePortfolio,
-        StringHandler.CardDescriptionPortolio,
-        StringHandler.CardLinkPortfolio,[
-          StringHandler.CardTagAngular,
-          StringHandler.CardTagNPM,
-          StringHandler.CardTagCSS,
-          StringHandler.CardTagTypeScript,
-          StringHandler.CardTagHTML],
-        StringHandler.BriefCaseIcon),
-      new CardModel(StringHandler.CardTitleFallenRock,
-        StringHandler.CardDescriptionFallenRock,
-        StringHandler.CardLinkFallenRock,[
-          StringHandler.CardTagCSharp,
-          StringHandler.CardTagDotNet],
-          StringHandler.DpadIcon),
-      new CardModel(StringHandler.CardTitleKrankenHouse,
-        StringHandler.CardDescriptionKrankenHause,
-        StringHandler.CardLinkKrankenHause,[
-          StringHandler.CardTagCSharp,
-          StringHandler.CardTagDotNet],
-          StringHandler.CpuIcon),
-    );
   }
 }

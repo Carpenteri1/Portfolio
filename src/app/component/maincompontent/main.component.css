@@ -51,6 +51,12 @@ h5 {
 
 @media (max-width: 1366px) {
 
+  html,body{
+    overflow: hidden;
+    touch-action: none;
+    -webkit-overflow-scrolling: auto; 
+   }
+
   .bi-arrow-down{
     display: block;
   }

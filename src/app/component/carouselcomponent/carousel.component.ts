@@ -75,19 +75,19 @@ export class CarouselComponent implements OnInit {
     index: number = 1;
     currentListOfSKills: ISkill[] = this.listOfSkills[this.index];
     
-    carouselTime(interval:number) 
+    private carouselTime(interval:number) 
     {
         this.intervalId = setInterval(() => 
             this.carouselRotation(), interval);
     }
 
-    carouselRotation()
+    private carouselRotation()
     {
         this.index++;
         this.startFadeOut();
     }
 
-    setMessage() 
+    private setMessage() 
     {
         if (this.index <= 2 && 
             this.index >= 0) 
@@ -117,7 +117,7 @@ export class CarouselComponent implements OnInit {
         this.startFadeOut();
     }
 
-    startFadeOut() {
+    private startFadeOut() {
         this.fadeState = 'out';
         setTimeout(() => {
             this.setMessage();  

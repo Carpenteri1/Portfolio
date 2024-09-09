@@ -27,7 +27,7 @@
   background-color: #242323;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
   .scroll-button-container{
     display: none;
   }

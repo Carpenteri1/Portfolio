@@ -68,7 +68,7 @@
       }
     }
 
-    @media (max-width:  1080px) {
+    @media (max-width:  1200px) {
       .bi-arrow-right,
       .bi-arrow-left{
         display: none;

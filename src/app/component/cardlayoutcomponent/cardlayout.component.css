@@ -96,7 +96,6 @@ button {
   .card{
     position: relative;
     height: 210px;
-    border:2px solid greenyellow;
   }
 }
 
@@ -106,12 +105,14 @@ button {
   }
 }
 
+/**--IPhoneSE--**/
 @media screen and (max-width: 375px), 
        screen and (max-height: 667px) {
   .card-group{
     width: 100%;
     height: 100%;
     margin: auto;
+    margin-bottom: 30px;
   }
   .card{
     height: 150px;
@@ -136,21 +137,7 @@ button {
   
 }
 
-@media screen and (max-width: 320px), 
-       screen and (max-height: 568px) {
-  .card-group{
-    margin: auto;
-    width: 200px;
-    height: 100%;
-    margin: auto;
-  }
-  .card{
-    height: 160px;
-    width: 100%;
-    margin: auto;
-    margin-top: 10px;
-  }
-  
+@media (max-width: 350px) {
   .card-header > h4{
     font-size: 10px;
   }
@@ -165,22 +152,46 @@ button {
   .tag{
     font-size: 6.5px;
   }
-  
 }
 
-@media (max-width: 350px) {
-    .card-header > h4{
-      font-size: 10px;
-    }
-    .card-body > h2
-    {
-      font-size: 14px;
-    }
-    .card-body > p
-    {
-      font-size: 8px;
-    }
-    .tag{
-      font-size: 6.5px;
-    }
+/**--IPhone 5/4 --**/
+@media screen and (max-width: 320px), 
+       screen and (max-height: 568px) {
+  .card-group{
+    width: 200px;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .card{
+    height: 140px;
+    width: 80%;
+    margin: auto;
+    margin-top: 4px;
+  }
+  .card-header{
+    height: 25px;
+  }
+  .card-header > h4{
+    font-size: 8px;
+  }
+  .card-body > h2
+  {
+    font-size: 14px;
+  }
+  .card-body > p
+  {
+    margin-top: -1em;
+    font-size: 8px;
+  }
+  .card-body >  h2 > i
+  {
+    display: none;
+  }
+  .tag{
+    font-size: 6.5px;
+  }
+
+  
+  
 }

@@ -41,6 +41,10 @@ h5 {
   align-items: center;
 }
 
+.section-container{
+  /*height: 100%;*/
+}
+
 .always-on-button {
   display: none;
 }

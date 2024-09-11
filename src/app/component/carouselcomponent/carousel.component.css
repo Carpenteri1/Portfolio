@@ -1,5 +1,6 @@
 .container{
   height: 90vh;
+  width: 90vw;
 }
 .progress{
   padding: 0%;
@@ -61,7 +62,7 @@
         width: 10px;
         height: 10px;
         background-color: #23576f ;
-        top: -20px;
+        top: -8px;
         right: 0;
         transform: translateX(50%) rotate(45deg);
         border-radius: 2px;
@@ -74,4 +75,63 @@
         display: none;
       }
     }
+
+/**--IPhoneSE--**/
+@media screen and (max-width: 375px), 
+       screen and (max-height: 667px) {
+        .skill-container{
+          margin-bottom: -1em;
+        }
+      
+        .skill-bar {
+          height: 20px;
+        }
+      
+        .skill-per {
+          height: 20px;
+          &:before {
+            font-size: 10px;
+            top: -25px;
+          }
+      
+          &:after {
+            width: 5px;
+            height: 5px;
+            top: -5px;
+          }
+        }
+        
+        .skill-name {
+          font-size: 10px;
+        }
+      }
+
+      /**--IPhone 5/4 --**/
+@media screen and (max-width: 320px), 
+screen and (max-height: 568px) {
+  .skill-container{
+    margin-bottom: -1.5em ;
+  }
+
+  .skill-bar, .skill-per {
+    height: 16px ;
+  }
+
+  .skill-per {
+    &:before {
+      font-size: 6px;
+      top: -19px;
+    }
+
+    &:after {
+      width: 5px;
+      height: 5px;
+      top: -5px;
+    }
+  }
+
+  .skill-name {
+    font-size: 8px ;
+  }
+}
    

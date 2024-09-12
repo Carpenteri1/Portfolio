@@ -40,7 +40,6 @@ export class CarouselComponent implements OnInit {
         { name: StringHandler.xamarin, level: 20 },
         { name: StringHandler.angular, level: 40 },
         { name: StringHandler.vuejs, level: 30 },
-        { name: StringHandler.java, level: 10 },
         { name: StringHandler.xml, level: 60 },
         { name: StringHandler.json, level: 60 },
         { name: StringHandler.yalm, level: 20 },
@@ -48,10 +47,10 @@ export class CarouselComponent implements OnInit {
 
     skillList2: ISkill[] = [
         { name: StringHandler.csharp, level: 80 },
+        { name: StringHandler.java, level: 10 },
         { name: StringHandler.sql, level: 60 },
-        { name: StringHandler.html, level: 70 },
+        { name: StringHandler.htmlAndCss, level: 70 },
         { name: StringHandler.bootstrap, level: 40 },
-        { name: StringHandler.css, level: 40 },
         { name: StringHandler.javascript, level: 35 },
         { name: StringHandler.typescript, level: 35 },
     ];

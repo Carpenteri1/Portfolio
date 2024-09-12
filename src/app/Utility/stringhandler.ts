@@ -80,7 +80,7 @@ export class StringHandler {
     static readonly docker: string = "Docker";
     static readonly kubernetes: string = "Kubernetes";
 
-    static readonly html: string = "Html";
+    static readonly htmlAndCss: string = "Html/Css";
     static readonly bootstrap: string = "Bootstrap";
     static readonly css: string = "CSS";
     static readonly csharp: string = "C#";

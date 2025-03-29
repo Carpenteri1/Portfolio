@@ -7,10 +7,14 @@ import { Component, OnInit } from "@angular/core";
 import { transition, style, animate, trigger, AnimationEvent ,state} from '@angular/animations';
 import { ISkill } from "src/app/Interfaces/ISkill";
 import { StringHandler } from "src/app/Utility/stringhandler";
+import { MainComponent } from "../maincompontent/main.component";
+import { CommonModule } from "@angular/common";
 @Component({
     selector: 'carousel-component',
     templateUrl: 'carousel.component.html',
     styleUrls: ['carousel.component.css'],
+    standalone: true,
+    imports: [CommonModule],
     animations: [
         trigger('fadeIn', [
           state('in', style({opacity: 1})),

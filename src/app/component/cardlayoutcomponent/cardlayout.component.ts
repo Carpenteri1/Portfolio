@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { CardModel } from "src/app/Models/CardModel";
 import { StringHandler } from "src/app/Utility/stringhandler";
@@ -6,6 +7,8 @@ import { StringHandler } from "src/app/Utility/stringhandler";
   selector: 'cardlayout-component',
   templateUrl: 'cardlayout.component.html',
   styleUrls: ['cardlayout.component.css'],
+  imports: [CommonModule],
+  standalone: true,
 })
 
 export class CardLayoutComponent {

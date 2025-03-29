@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { ViewEncapsulation, Component, ElementRef, Input, HostListener, Renderer2, DEFAULT_CURRENCY_CODE } from '@angular/core';
 
 @Component({
   selector: 'scrollbutton-component',
   encapsulation: ViewEncapsulation.None,
   templateUrl: 'scrollbutton.component.html',
-  styleUrls: ['scrollbutton.component.css']
+  styleUrls: ['scrollbutton.component.css'],
+  imports: [CommonModule],
+  standalone: true
 })
 
 export class ScrollButtonComponent {

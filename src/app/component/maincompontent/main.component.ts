@@ -1,11 +1,24 @@
 import { ViewEncapsulation, Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { StringHandler } from 'src/app/Utility/stringhandler';
+import { TypewriterComponent } from '../typewritercomponent/typewriter.component';
+import { CarouselComponent } from '../carouselcomponent/carousel.component';
+import { CardLayoutComponent } from '../cardlayoutcomponent/cardlayout.component';
+import { FooterComponent } from '../footercomponent/footer.component';
+import { ScrollButtonComponent } from '../scrollbuttoncomponent/maincompontent/scrollbutton.component';
 
 @Component({
   selector: 'main-component',
   encapsulation: ViewEncapsulation.None,
   templateUrl: 'main.component.html',
-  styleUrls: ['main.component.css']
+  styleUrls: ['main.component.css'],
+  standalone: true,
+  imports:[
+    TypewriterComponent, 
+    CarouselComponent, 
+    CardLayoutComponent, 
+    FooterComponent, 
+    ScrollButtonComponent
+  ]
 })
 export class MainComponent implements AfterViewInit {
 

@@ -1,5 +1,4 @@
 # Portfolio 
-[![Build Test](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_test.yml/badge.svg?branch=master)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_test.yml)
 [![Deploy To gh-pages](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml/badge.svg?branch=master)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml)
 
 

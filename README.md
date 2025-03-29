@@ -1,6 +1,8 @@
 # Portfolio 
-[![Deploy To gh-pages](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml/badge.svg?branch=master)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml)
-
+[![Build Test](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_test.yml/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_test.yml)
+[![CodeQL Advanced](https://github.com/Carpenteri1/Portfolio/actions/workflows/codeql.yml/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/codeql.yml)
+[![Deployed](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml)
+[![pages-build-deployment](https://github.com/Carpenteri1/Portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/pages/pages-build-deployment)
 
 ### Description
 

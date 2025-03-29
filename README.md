@@ -1,7 +1,7 @@
 # Portfolio 
 [![Build Test](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_test.yml/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_test.yml)
 [![CodeQL Advanced](https://github.com/Carpenteri1/Portfolio/actions/workflows/codeql.yml/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/codeql.yml)
-[![Dependabot Updates](https://github.com/Carpenteri1/Portfolio/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/dependabot/dependabot-updates)
+[![Dependabot Updates](https://github.com/Carpenteri1/Portfolio/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/dependabot/dependabot-updates)<br>
 [![Deployed](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml)
 [![pages-build-deployment](https://github.com/Carpenteri1/Portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/pages/pages-build-deployment)
 

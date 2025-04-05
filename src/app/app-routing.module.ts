@@ -1,13 +1,11 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from 'src/app/component/maincompontent/main.component';
-const routes: Routes = 
-[
-  { path: "", component: MainComponent },
-];
+import { Routes } from '@angular/router';
+import { MainComponent } from './component/maincompontent/main.component';
+import { Component } from '@angular/core';
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+Component({
+  selector: 'router-outlet',
 })
-export class AppRoutingModule { }
+export const routes: Routes = [
+
+  { path: '', component: MainComponent }
+];

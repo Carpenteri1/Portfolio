@@ -1,0 +1,19 @@
+<section id="stacks" class="min-vh-90 mt-5">
+  <div class="container" style="max-width: 1140px;">
+    <h2 class="text-center fw-bold mb-5 display-6 gradient-text">
+      Skills &amp; Technologies
+    </h2>
+
+    <div class="row g-3 g-md-4">
+      <div
+        class="col-6 col-md-4 col-lg-3"
+        *ngFor="let skill of skills; let i = index">
+        <div
+          class="card text-center p-4 skill-card"
+          [style.animation-delay]="(i * 50) + 'ms'">
+          <p class="fw-semibold mb-0">{{ skill }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

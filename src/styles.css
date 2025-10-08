@@ -1,12 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
 html,body{
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;  
   background-color: #313d4b;
-  border-bottom: solid 1px #b29600;
 }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.min-vh-90 {
+  min-height: 90vh;
+}

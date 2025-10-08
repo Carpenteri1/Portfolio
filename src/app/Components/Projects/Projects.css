@@ -1,0 +1,29 @@
+.gradient-text {
+  background: linear-gradient(90deg, var(--bs-primary), var(--bs-info));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid var(--bs-border-color);
+  animation: fade-in-up 0.5s ease both;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
+  border-color: rgba(var(--bs-primary-rgb), 0.4);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

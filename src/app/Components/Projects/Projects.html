@@ -1,0 +1,56 @@
+<section id="projects" class="py-5 px-4 min-vh-90">
+  <div class="container" style="max-width: 1140px;">
+    <h2
+      class="text-center fw-bold mb-5 display-6 gradient-text"
+    >
+      Featured Projects
+    </h2>
+
+    <div class="row g-4">
+      <div
+        class="col-12 col-md-6 col-lg-4"
+        *ngFor="let p of projects; let i = index"
+      >
+        <div
+          class="card h-100 project-card"
+          [ngStyle]="{ animationDelay: (i * 100) + 'ms' }"
+        >
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5 fw-bold mb-2">{{ p.title }}</h3>
+            <p class="text-muted mb-3">
+              {{ p.description }}
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span
+                class="badge text-bg-secondary"
+                *ngFor="let t of p.tech"
+                >{{ t }}</span
+              >
+            </div>
+
+            <div class="mt-auto d-flex gap-2">
+              <a
+                class="btn btn-primary flex-grow-1 d-flex align-items-center justify-content-center gap-2"
+                [href]="p.github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-github"></i>
+                Code
+              </a>
+              <a
+                class="btn btn-outline-primary d-flex align-items-center justify-content-center"
+                [href]="p.github"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open repository">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

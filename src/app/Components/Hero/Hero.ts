@@ -1,5 +1,5 @@
 import { Component , OnInit} from "@angular/core";
-import { StringHandler } from 'src/app/Utility/StringHandler';
+import { StringHandler } from 'src/app/Utility/StringCollections';
 import { transition, style, animate, trigger } from '@angular/animations';
 
 

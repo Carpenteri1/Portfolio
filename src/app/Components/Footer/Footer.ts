@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { StringHandler } from 'src/app/Utility/StringHandler';
+import { StringHandler } from 'src/app/Utility/StringCollections';
 
 
 @Component({

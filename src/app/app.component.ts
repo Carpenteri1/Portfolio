@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StringHandler } from 'src/app/Utility/StringHandler';
+import { StringHandler } from 'src/app/Utility/StringCollections';
 import { FooterComponent } from "./Components/Footer/Footer";
 import { ProjectsComponent } from "./Components/Projects/Projects";
 import { StacksComponent } from './Components/Stacks/Stacks';

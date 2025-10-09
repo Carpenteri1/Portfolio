@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { StringHandler } from "src/app/Utility/StringHandler";
+import { StringHandler } from "src/app/Utility/StringCollections";
 
 
 @Component({

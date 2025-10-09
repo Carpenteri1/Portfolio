@@ -66,7 +66,7 @@ export class StringHandler {
 
     //Links
     static readonly GitHubLinkPortfolio: string = "https://github.com/Carpenteri1/Portfolio";
-    static readonly GitHubLinkGridly: string = "https://github.com/Carpenteri1/Grildy";
+    static readonly GitHubLinkGridly: string = "https://github.com/Carpenteri1/Gridly";
     static readonly GitHubLinkJukeBox: string = "https://github.com/Carpenteri1/JukeBox";
     static readonly GitHubPageLink: string = "https://github.com/carpenteri1";
     static readonly LinkedInPageLink: string = "https://linkedin.com/in/niclas-timle/";

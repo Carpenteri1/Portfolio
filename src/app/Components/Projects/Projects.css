@@ -1,7 +1,7 @@
 .gradient-text {
   background: linear-gradient(90deg, var(--bs-primary), var(--bs-info));
   -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: text;  
   color: transparent;
 }
 
@@ -11,19 +11,22 @@
   animation: fade-in-up 0.5s ease both;
   background-color: #181d25;
 }
-.project-card:hover{
-  border:1px solid #8b42f0;
-}
 
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
-  border-color: rgba(var(--bs-primary-rgb), 0.4);
+  border:1px solid #8b42f0;
 }
 
-.btn{
+.btn:nth-child(1){
   background-color: #8b42f0;
   border:none;
+  border-radius: 10px;
+}
+.btn:nth-child(2){
+  background-color: #0f1319;
+  border: 1px solid #29303d;
+  border-radius: 10px;
 }
 
 h3{

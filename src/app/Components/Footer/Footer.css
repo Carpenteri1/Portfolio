@@ -1,0 +1,8 @@
+.max-icon-size{
+    height: 40px;
+    width: 40px;
+}
+
+.bg-secondary:hover{
+    background-color: #8b42f0 !important;
+}

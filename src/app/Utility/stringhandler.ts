@@ -1,135 +1,106 @@
 export class StringHandler {
 
     static readonly pageTitle: string = "Portfolio";
-    static readonly left: string = "left";
-    static readonly right: string = "right";
     static readonly stringEmpy: string = "";
-
-    //#region Startpage
-    
-    static readonly sectionOne: string = 'sectionOne';
-    static readonly sectionTwo: string = 'sectionTwo';
-    static readonly sectionThree: string = 'sectionThree';
-    static readonly sectionFour: string = 'sectionFour';
-    static readonly sectionFive: string = 'sectionFive';
-    static readonly jumpingArrow: string = "jumpingArrow";
-
-    static readonly sectionOneInput: string = "sectionOneInput";
-    static readonly sectionTwoInput: string = "sectionTwoInput";
-    static readonly sectionThreeInput: string = "sectionThreeInput";
-    static readonly sectionFourInput: string = "sectionFourInput";
-
-    //#endregion
 
     //#region Cardlayout
 
     //Titles
-    static readonly CardTitleNotify: string = 'Notify';
-    static readonly CardTitleSwapi: string = 'SWAPI-API';
-    static readonly CardTitleWeatherApp: string = 'WeatherApp';
-    static readonly CardTitlePortfolio: string = 'Portfolio';
-    static readonly CardTitleFallenRock: string = 'Falling-Rocks';
-    static readonly CardTitleKrankenHouse: string = 'KrankenHause';
+    static readonly ProjectGridlyTitle: string = 'Gridly';
+    static readonly ProjectPortfolioTitle: string = 'Portfolio';
+    static readonly ProjectJukeBoxTitle: string = 'Jukebox';
    
     //Description
-    static readonly CardDescriptionNotify: string = 'Android App, Helps to Keep Notes Of Things. In alpha stage at the moment';
-    static readonly CardDescriptionSwapi: string = 'Search for starwars characters and add them to a list.';
-    static readonly CardDescriptionWeatherApp: string = 'Show weather data using openweather, There is a console app and web app';
-    static readonly CardDescriptionPortolio: string = 'My porfolio, a website with a short description on my projects and skills';
-    static readonly CardDescriptionFallenRock: string = 'Terminal game. The player should avoide the rocks falling from the sky';
-    static readonly CardDescriptionKrankenHause: string = 'Using 4 different threads who should work together. simulating different roles';
+    static readonly ProjectDescriptionPortolio: string = 'Personal portfolio built with TypeScript and Angular. The goal of this project was to explore new technologies beyond my usual .NET and to take advantage of the benefits offered by Angular';
+    static readonly ProjectDescriptionGridly: string = 'Gridly is a self-contained application that implements a lightweight, minimal grid system tailored for modern web. Users can run Gridly on supported systems without requiring installing .NET or Angular Topics';
+    static readonly ProjectDescriptionJukeBox: string = '.NET API that fetches music data from external APIs and stores it in a local system. It acts as a backend service for aggregating and managing artist, album, cover and short description information about the artist';
     
     //Tags
-    static readonly CardTagAngular: string = "Angular";
-    static readonly CardTagCSharp: string = "C#";
-    static readonly CardTagCSS: string = "CSS";
-    static readonly CardTagHTML: string = "HTML";
-    static readonly CardTagJavaScript: string = "JavaScript";
-    static readonly CardTagJava: string = "Java";
-    static readonly CardTagTypeScript: string = "TypeScript";
-    static readonly CardTagDotNet: string = ".NET";
-    static readonly CardTagBootStrap: string = "BootStrap";
-    static readonly CardTagAndroid: string = "Android";
-    static readonly CardTagNPM: string = "NPM";
-    static readonly CardTagXML: string = "XML";
+    static readonly SkillTagAngular: string = "Angular";
+    static readonly SkillTagCSharp: string = "C#";
+    static readonly SkillTagCSS: string = "CSS";
+    static readonly SkillTagHTML: string = "HTML";
+    static readonly SkillTagTypeScript: string = "TypeScript";
+    static readonly SkillTagDotNet: string = ".NET";
+    static readonly SkillTagAspNet: string = "Asp.Net";
+    static readonly SkillTagBootStrap: string = "Bootstrap";
+    static readonly SkillTagNPM: string = "NPM";
+    static readonly SkillTagJavascript: string = "Javascript";
+    static readonly SkillTagYaml: string = "Yalm";
+    static readonly SkillTagGulp: string = "Gulp";
+    static readonly SkillTagSQL: string = "SQL";
+    static readonly SkillTagSQLite: string = "SQLite";
+    static readonly SkillTagApi: string = "Restful Api";
+    static readonly SkillTagMemoryCashing: string = "Memory cashing";
+    static readonly SkillTagJson: string = "Json";
+    static readonly SkillTagSwagger: string = "Swagger";
+    static readonly SkillTagDapper: string = "Dapper";
+    static readonly SkillTagMediaR: string = "MediaR";
+    static readonly SkillTagPoppin: string = "Poppin";
+    static readonly SkillTagEntityFrameWork: string = "Entity Framework";
+    static readonly SkillTagGit: string = "Git";
+    static readonly SkillTagDevops: string = "Devops";
+    static readonly SkillTagVue: string = "Vue.js 2.7";
+    static readonly SkillTagMVC: string = "MVC";
+    static readonly SkillTagBlazer: string = "Blazer";
+    static readonly SkillTagDocker: string = "Docker";
+    static readonly SkillTagShell: string = "Shell";
+    static readonly SkillTagPostgreSQL: string = "PostgreSQL";
+    static readonly SkillTagOctopus: string = "Octopus";
+    static readonly SkillTagKibana: string = "Kibana";
+    static readonly SkillTagMysql: string = "Mysql";
+    static readonly SkillTagTeamCity: string = "TeamCity";
+    static readonly SkillTagGithub: string = "Github";
+    static readonly SkillTagGitlab: string = "Gitlab";
+    static readonly SkillTagCoPilot: string = "Co-pilot";
+    static readonly SkillTagUbuntu: string = "Ubuntu";
+    static readonly SkillTagFedora: string = "Fedora";
+    static readonly SkillTagRedHat: string = "RedHat";
+    static readonly SkillTagMac: string = "Mac";
 
     //Icons
-    static readonly AndroidIcon: string = "bi bi-android2";
-    static readonly CloudIcon: string = "bi bi-cloud-sun-fill";
-    static readonly StarsIcon: string = "bi bi-stars";
-    static readonly BriefCaseIcon: string = "bi bi-briefcase-fill";
-    static readonly DpadIcon: string = "bi bi-dpad-fill";
-    static readonly CpuIcon: string = "bi bi-cpu-fill";
+    static readonly GitHubIcon: string = "bi bi-github";
+    static readonly LinkedInIcon: string = "bi bi-linkedin";
+    static readonly EmailIcon: string = "bi bi-envelope";
+    static readonly ArrowUpIcon: string = "bi bi-box-arrow-up-right";
 
     //Links
-    static readonly CardLinkNotify: string = "https://github.com/Carpenteri1/Notify";
-    static readonly CardLinkSwapi: string = "https://github.com/Carpenteri1/SWAPI-Web-Scrapper";
-    static readonly CardLinkWeatherApp: string = "https://github.com/Carpenteri1/WeatherApp";
-    static readonly CardLinkPortfolio: string = "https://github.com/Carpenteri1/Portfolio";
-    static readonly CardLinkFallenRock: string = "https://github.com/Carpenteri1/Falling-Rocks";
-    static readonly CardLinkKrankenHause: string = "https://github.com/Carpenteri1/KrankenHause";
-
-    //#endregion
-
-    //#region Languages
-
-    static readonly dotNet: string = ".Net";
-    static readonly xamarin: string = "Xamarin";
-    static readonly angular: string = "Angular";
-    static readonly sql: string = "SQL/T-SQL";
-    static readonly docker: string = "Docker";
-    static readonly kubernetes: string = "Kubernetes";
-
-    static readonly htmlAndCss: string = "Html/Css";
-    static readonly bootstrap: string = "Bootstrap";
-    static readonly css: string = "CSS";
-    static readonly csharp: string = "C#";
-    static readonly java: string = "Java";
-    static readonly javascript: string = "Javascript";
-    static readonly typescript: string = "Typescript";
-    static readonly xml: string = "XML";
-    static readonly json: string = "JSON";
-    static readonly yalm: string = "Yalm";
-    static readonly vuejs: string = "Vue.js";
-
-    static readonly git: string = "Git";
-    static readonly linux: string = "Linux";
-    static readonly mysql: string = "Mysql";
-    static readonly mssql: string = "MSSQL";
-    static readonly yatch: string = "Yatch";
-    static readonly rancher: string = "Rancher";
-    static readonly aws: string = "AWS";
-    static readonly rabbitMQ: string = "RabbitMQ";
-    
+    static readonly GitHubLinkPortfolio: string = "https://github.com/Carpenteri1/Portfolio";
+    static readonly GitHubLinkGridly: string = "https://github.com/Carpenteri1/Grildy";
+    static readonly GitHubLinkJukeBox: string = "https://github.com/Carpenteri1/JukeBox";
+    static readonly GitHubPageLink: string = "https://github.com/carpenteri1";
+    static readonly LinkedInPageLink: string = "https://linkedin.com/in/niclas-timle/";
+    static readonly EmailLink: string = "mailto:niclastimle@icloud.com";
     //#endregion
 
     //#region typewriter
-    
-    static readonly typeCursor: string = "|";
-    static readonly typeWriterTitleOne: string = "Niclas "; // full title in css for typewriter
-    static readonly typeWriterTitleTwo: string = "Evolving Skills, Building Solutions, With .NET";
-
+    static readonly typeCursor: string = " | ";
+    static readonly typeWriterTitleTwo: string = "Building robust and scalable applications with modern .NET technologies ";
     //#endregion
 
-    //#region carousel
+    //#region hero
+    static readonly HeroFirstTitle: string = "Niclas Timle";
+    static readonly HeroSecondTitle: string = ".NET Developer";
+    static readonly HeroGitHubTitle: string = "Github";
+    static readonly HeroLinkedInTitle: string = "LinkedIn";
+    static readonly HeroEmailTitle: string = "Email";
+    //end region
 
-    static readonly carouselTitle: string = "Confidence";
+    //#region Projects
+    static readonly ProjectTitle: string = 'Featured Projects';
+    static readonly ProjectButtonTitle: string = 'code';
+    //end region
 
-    //#endregion
-
-    //#region 
-
-    static readonly appComponent: string = "AppComponent";
-    static readonly should_create_the_app: string = "should create the app";
-    static readonly should_have_as_title: string = 'Portfolio: string = "should have as title Portfolio';
-    static readonly Portfolio_app_is_running: string = "Portfolio app is running!";
-    static readonly should_render_title: string = "should render title";
-
-    //#endregion
+    //#region Stacks
+    static readonly TechnologiesTitle: string = 'Technologies';
+    static readonly FrontEndTitle: string = 'Frontend';
+    static readonly BackEndTitle: string = 'Backend';
+    //end region
 
     //#region footer
-    static readonly ContactMeAt: string = "Contact Me At";
-
+    static readonly ReservedTemplate: string = '© {year} Niclas Timle. All rights reserved.';
+    static readonly FooterTitle: string = 'Niclas Timle';
+    static readonly FooterDescription: string = '.NET Developer';
     //endregion
 
 }

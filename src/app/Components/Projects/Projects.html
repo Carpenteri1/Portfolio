@@ -1,7 +1,7 @@
-<section id="projects" class="py-5 px-4 min-vh-90">
+<section id="projects" class="py-5 px-4 min-vh-90 mt-5">
   <div class="container" style="max-width: 1140px;">
     <h2 class="text-center fw-bold mb-5 display-6">
-      Featured Projects
+      {{Title}}
     </h2>
 
     <div class="row g-4">
@@ -25,18 +25,16 @@
               <a
                 class="btn flex-grow-1 d-flex align-items-center justify-content-center gap-2"
                 [href]="p.github"
-                target="_blank"
-                rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-                Code
+                target="_blank">
+                <i class={{GitHubIcon}}></i>
+                {{ButtonTitle}}
               </a>
               <a
                 class="btn d-flex align-items-center justify-content-center"
                 [href]="p.github"
                 target="_blank"
-                rel="noopener noreferrer"
                 aria-label="Open repository">
-                <i class="bi bi-box-arrow-up-right"></i>
+                <i class={{ArrowUpIcon}}></i>
               </a>
             </div>
           </div>

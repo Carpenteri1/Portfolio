@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { StringHandler } from "src/app/Utility/StringHandler";
 
 type Project = {
   title: string;
@@ -16,27 +17,66 @@ type Project = {
   imports: [CommonModule]
 })
 export class ProjectsComponent {
+  readonly GitHubIcon = StringHandler.GitHubIcon;
+  readonly ArrowUpIcon = StringHandler.ArrowUpIcon;
+  readonly Title = StringHandler.ProjectTitle;
+  readonly ButtonTitle = StringHandler.ProjectButtonTitle;
+
   projects: Project[] = [
     {
-      title: 'E-Commerce API',
-      description:
-        'RESTful API built with ASP.NET Core for a full-featured e-commerce platform with authentication, payment processing, and inventory management.',
-      tech: ['ASP.NET Core', 'Entity Framework', 'SQL Server', 'Azure'],
-      github: 'https://github.com/carpenteri1/ecommerce-api',
+      title: StringHandler.ProjectGridlyTitle,
+      description: StringHandler.ProjectDescriptionGridly,
+      tech: [
+        StringHandler.SkillTagDotNet, 
+        StringHandler.SkillTagAngular, 
+        StringHandler.SkillTagHTML, 
+        StringHandler.SkillTagCSS, 
+        StringHandler.SkillTagNPM,
+        StringHandler.SkillTagBootStrap,
+        StringHandler.SkillTagYaml,
+        StringHandler.SkillTagTypeScript,
+        StringHandler.SkillTagCSharp,
+        StringHandler.SkillTagAspNet,
+        StringHandler.SkillTagGulp,
+        StringHandler.SkillTagSQL,
+        StringHandler.SkillTagSQLite,
+        StringHandler.SkillTagApi,
+        StringHandler.SkillTagMemoryCashing,
+        StringHandler.SkillTagJson,
+        StringHandler.SkillTagMediaR
+      ],
+      github: StringHandler.GitHubLinkGridly,
     },
     {
-      title: 'Task Management System',
-      description:
-        'Full-stack task management application with real-time updates using SignalR and Blazor for the frontend.',
-      tech: ['Blazor', 'SignalR', '.NET 8', 'PostgreSQL'],
-      github: 'https://github.com/carpenteri1/task-manager',
+      title: StringHandler.ProjectPortfolioTitle,
+      description: StringHandler.ProjectDescriptionPortolio,
+      tech: [
+        StringHandler.SkillTagTypeScript, 
+        StringHandler.SkillTagAngular, 
+        StringHandler.SkillTagHTML, 
+        StringHandler.SkillTagCSS, 
+        StringHandler.SkillTagNPM,
+        StringHandler.SkillTagBootStrap,
+        StringHandler.SkillTagYaml],
+      github: StringHandler.GitHubLinkPortfolio,
     },
     {
-      title: 'Microservices Architecture',
-      description:
-        'Distributed microservices system with Docker containers, API Gateway, and event-driven communication.',
-      tech: ['Microservices', 'Docker', 'RabbitMQ', 'Azure'],
-      github: 'https://github.com/carpenteri1/microservices-demo',
+      title: StringHandler.ProjectJukeBoxTitle,
+      description: StringHandler.ProjectDescriptionJukeBox,
+      tech: [
+        StringHandler.SkillTagDotNet,
+        StringHandler.SkillTagSwagger,
+        StringHandler.SkillTagMediaR,
+        StringHandler.SkillTagDapper,
+        StringHandler.SkillTagMemoryCashing,
+        StringHandler.SkillTagApi,
+        StringHandler.SkillTagJson,
+        StringHandler.SkillTagCSharp,
+        StringHandler.SkillTagSQL,
+        StringHandler.SkillTagSQLite,
+        StringHandler.SkillTagPoppin
+      ],
+      github: StringHandler.GitHubLinkJukeBox,
     },
   ];
 }

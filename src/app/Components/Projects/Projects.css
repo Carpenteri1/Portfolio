@@ -29,6 +29,13 @@
   border-radius: 10px;
 }
 
+.btn:nth-child(1):hover{
+  color: #f0f2f4;
+}
+.btn:nth-child(2):hover{
+  color: #f0f2f4;
+}
+
 h3{
   color:#f0f2f4;
 }

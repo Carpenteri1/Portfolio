@@ -2,29 +2,26 @@
   <div class="container">
     <div class="row align-items-center justify-content-between text-center text-md-start border-bottom border-top p-5">
       <div class="col-md-6 mb-3 mb-md-0">
-        <h3 class="fw-bold mb-1">Niclas Timle</h3>
-        <p class="mb-0">.NET Developer</p>
+        <h3 class="fw-bold mb-1">{{Title}}</h3>
+        <p class="mb-0">{{Description}}</p>
       </div>
       <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
-        <a href="https://github.com/carpenteri1" target="_blank" rel="noopener noreferrer"
-           class="d-flex align-items-center justify-content-center rounded-circle bg-secondary text-white"
-           style="width:40px; height:40px;">
-          <i class="bi bi-github"></i>
+        <a href={{GitHubPageLink}} target="_blank"
+           class="d-flex align-items-center justify-content-center rounded-circle bg-secondary text-white max-icon-size">
+          <i class={{GitHubIcon}}></i>
         </a>
-        <a href="https://linkedin.com/in/niclas-timle/" target="_blank" rel="noopener noreferrer"
-           class="d-flex align-items-center justify-content-center rounded-circle bg-secondary text-white"
-           style="width:40px; height:40px;">
-          <i class="bi bi-linkedin"></i>
+        <a href={{LinkedInPageLink}} target="_blank"
+           class="d-flex align-items-center justify-content-center rounded-circle bg-secondary text-white max-icon-size">
+          <i class={{LinkedInIcon}}></i>
         </a>
-        <a href="mailto:niclastimle@icloud.com"
-           class="d-flex align-items-center justify-content-center rounded-circle bg-secondary text-white"
-           style="width:40px; height:40px;">
-          <i class="bi bi-envelope"></i>
+        <a href={{EmailLink}}
+           class="d-flex align-items-center justify-content-center rounded-circle bg-secondary text-white max-icon-size">
+          <i class={{EmailIcon}}></i>
         </a>
       </div>
     </div>
     <div class="pt-4 text-center small">
-      <p>© {{ currentYear }} Niclas Timle. All rights reserved.</p>
+      <p>{{rightsReserved}}</p>
     </div>
   </div>
 </footer>

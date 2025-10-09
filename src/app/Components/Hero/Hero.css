@@ -3,5 +3,32 @@
 }
 
 .mx-auto{
-    max-width: 600px;   
+    max-width: 400px;  
+}
+
+/* Blinking cursor styles */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+a:hover{
+    background-color: #8b42f0;
+    border: 1px solid #29303d;
+    color: #f0f2f4;
+}
+
+.blinking-cursor {
+    animation: blink 2s infinite;
+    color: #8b42f0;
+    font-size: 18px;
+}
+
+.none-blinking-cursor {
+    color: #8b42f0;
+    font-size: 18px;
 }

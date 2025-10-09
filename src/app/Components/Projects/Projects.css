@@ -1,0 +1,52 @@
+.gradient-text {
+  background: linear-gradient(90deg, var(--bs-primary), var(--bs-info));
+  -webkit-background-clip: text;
+  background-clip: text;  
+  color: transparent;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid #29303d;
+  animation: fade-in-up 0.5s ease both;
+  background-color: #181d25;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
+  border:1px solid #8b42f0;
+}
+
+.btn:nth-child(1){
+  background-color: #8b42f0;
+  border:none;
+  border-radius: 10px;
+}
+.btn:nth-child(2){
+  background-color: #0f1319;
+  border: 1px solid #29303d;
+  border-radius: 10px;
+}
+
+.btn:nth-child(1):hover{
+  color: #f0f2f4;
+}
+.btn:nth-child(2):hover{
+  color: #f0f2f4;
+}
+
+h3{
+  color:#f0f2f4;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

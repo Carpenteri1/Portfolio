@@ -1,12 +1,24 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
 html,body{
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;  
-  background-color: #313d4b;
-  border-bottom: solid 1px #b29600;
+  background-color: #101319;
 }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1,h2,h3{
+    color: #8b42f0;
+}
+
+p{
+    color:#8f96a3;
+}
+
+.btn{
+    border:1px solid #dcdfe5;
+    color:#f0f2f4;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}

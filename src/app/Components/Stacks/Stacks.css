@@ -26,3 +26,20 @@
     transform: translateY(0);
   }
 }
+@media (max-width:400px) {
+  #stacks{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:350px) {
+  #stacks{
+    font-size: 8px;
+  }
+}
+
+@media (max-width:280px) {
+  #stacks{
+    font-size: 6px;
+  }
+}

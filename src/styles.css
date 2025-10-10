@@ -22,3 +22,7 @@ p{
 .min-vh-90 {
   min-height: 90vh;
 }
+
+.mt-6{
+  margin-top: 6em;
+}

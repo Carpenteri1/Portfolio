@@ -22,7 +22,7 @@ export class StringHandler {
     static readonly SkillTagHTML: string = "HTML";
     static readonly SkillTagTypeScript: string = "TypeScript";
     static readonly SkillTagDotNet: string = ".NET";
-    static readonly SkillTagAspNet: string = "Asp.Net";
+    static readonly SkillTagAspNet: string = "Asp.NET";
     static readonly SkillTagBootStrap: string = "Bootstrap";
     static readonly SkillTagNPM: string = "NPM";
     static readonly SkillTagJavascript: string = "Javascript";
@@ -48,7 +48,8 @@ export class StringHandler {
     static readonly SkillTagPostgreSQL: string = "PostgreSQL";
     static readonly SkillTagOctopus: string = "Octopus";
     static readonly SkillTagKibana: string = "Kibana";
-    static readonly SkillTagMysql: string = "Mysql";
+    static readonly SkillTagMysql: string = "MySQL";
+    static readonly SkillTagMariaDB: string = "MariaDB";
     static readonly SkillTagTeamCity: string = "TeamCity";
     static readonly SkillTagGithub: string = "Github";
     static readonly SkillTagGitlab: string = "Gitlab";
@@ -57,6 +58,7 @@ export class StringHandler {
     static readonly SkillTagFedora: string = "Fedora";
     static readonly SkillTagRedHat: string = "RedHat";
     static readonly SkillTagMac: string = "Mac";
+    static readonly SkillTagJFrog: string = "JFrog";
 
     //Icons
     static readonly GitHubIcon: string = "bi bi-github";

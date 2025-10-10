@@ -8,16 +8,16 @@
 </section>
 
 
-<section id="stacks" class="min-vh-90 mt-5 mb-5"> <!--TODO Remove class if enable second section-->
+<section id="stacks" class="mt-5 mb-5">
   <div class="container">
-    <!--<h3 class="text-center fw-bold mb-5 display-7 ">
-      {{FrontEndTitle}}
-    </h3>-->
+    <h3 class="text-center fw-bold mb-5 display-7 ">
+      Framework
+    </h3>
 
-    <div class="row g-3 g-md-4">
+    <div class="row g-3 g-md-3">
       <div
-        class="col-6 col-md-4 col-lg-3"
-        *ngFor="let skill of skills; let i = index">
+        class="col-2 col-md-3 col-lg-3"
+        *ngFor="let skill of frameworkSkills; let i = index">
         <div
           class="card text-center p-4 skill-card"
           [style.animation-delay]="(i * 50) + 'ms'">
@@ -28,16 +28,16 @@
   </div>
 </section>
 
-<!--<section id="stacks" class="min-vh-90 mt-5">
+<section id="stacks" class="mt-5">
   <div class="container">
     <h3 class="text-center fw-bold mb-5 display-7">
-      {{BackendTitle}}
+      Languages
     </h3>
 
     <div class="row g-3 g-md-4">
       <div
-        class="col-6 col-md-4 col-lg-3"
-        *ngFor="let skill of skills; let i = index">
+        class="col-6 col-md-4 col-lg-3 item"
+        *ngFor="let skill of languagesSkills; let i = index">
         <div
           class="card text-center p-4 skill-card"
           [style.animation-delay]="(i * 50) + 'ms'">
@@ -46,4 +46,44 @@
       </div>
     </div>
   </div>
-</section>-->
+</section>
+
+<section id="stacks" class="mt-5">
+  <div class="container">
+    <h3 class="text-center fw-bold mb-5 display-7">
+      Database
+    </h3>
+
+    <div class="row g-3 g-md-4">
+      <div
+        class="col-6 col-md-4 col-lg-3"
+        *ngFor="let skill of databaseSkills; let i = index">
+        <div
+          class="card text-center p-4 skill-card"
+          [style.animation-delay]="(i * 50) + 'ms'">
+          <p class="fw-semibold mb-0">{{ skill }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stacks" class="mt-5 min-vh-90">
+  <div class="container">
+    <h3 class="text-center fw-bold mb-5 display-7">
+      Devops
+    </h3>
+
+    <div class="row g-3 g-md-4">
+      <div
+        class="col-6 col-md-4 col-lg-3"
+        *ngFor="let skill of devopsSkills; let i = index">
+        <div
+          class="card text-center p-4 skill-card"
+          [style.animation-delay]="(i * 50) + 'ms'">
+          <p class="fw-semibold mb-0">{{ skill }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

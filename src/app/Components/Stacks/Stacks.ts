@@ -16,42 +16,47 @@ export class StacksComponent{
   readonly FrontEndTitle = StringHandler.FrontEndTitle;
   readonly TechnologiesTitle = StringHandler.TechnologiesTitle;
 
-  skills: string[] = [
+  frameworkSkills: string[] = [
     StringHandler.SkillTagDotNet,
-    StringHandler.SkillTagCSharp,
     StringHandler.SkillTagAspNet,
-    StringHandler.SkillTagEntityFrameWork,
-    StringHandler.SkillTagSQL,
-    StringHandler.SkillTagApi,
+    StringHandler.SkillTagVue,
+    StringHandler.SkillTagAngular,
+    StringHandler.SkillTagBootStrap,
     StringHandler.SkillTagBlazer,
     StringHandler.SkillTagMVC,
-    StringHandler.SkillTagGit,
-    StringHandler.SkillTagVue,
-    StringHandler.SkillTagDocker,
-    StringHandler.SkillTagBootStrap,
+    StringHandler.SkillTagEntityFrameWork
+  ];
+
+    languagesSkills: string[] = [
+    StringHandler.SkillTagCSharp,
     StringHandler.SkillTagTypeScript,
-    StringHandler.SkillTagCSS,
-    StringHandler.SkillTagHTML,
     StringHandler.SkillTagJavascript,
+    StringHandler.SkillTagHTML,
+    StringHandler.SkillTagCSS,
+    StringHandler.SkillTagShell,
+    StringHandler.SkillTagJson,
+    StringHandler.SkillTagYaml,
+    StringHandler.SkillTagGulp,
+    StringHandler.SkillTagSQL
+  ];
+
+
+  databaseSkills: string[] = [
     StringHandler.SkillTagPostgreSQL,
     StringHandler.SkillTagMysql,
-    StringHandler.SkillTagAngular,
-    StringHandler.SkillTagKibana,
-    StringHandler.SkillTagOctopus,
-    StringHandler.SkillTagDapper,
-    StringHandler.SkillTagDevops,
-    StringHandler.SkillTagKibana,
-    StringHandler.SkillTagGithub,
-    StringHandler.SkillTagGitlab,
-    StringHandler.SkillTagCoPilot,
-    StringHandler.SkillTagRedHat,
-    StringHandler.SkillTagFedora,
-    StringHandler.SkillTagUbuntu,
-    StringHandler.SkillTagMac,
-    StringHandler.SkillTagYaml,
-    StringHandler.SkillTagSwagger,
     StringHandler.SkillTagSQLite,
-    StringHandler.SkillTagNPM,
-    StringHandler.SkillTagGulp
+    StringHandler.SkillTagMariaDB
   ];
+
+    devopsSkills: string[] = [
+      StringHandler.SkillTagGit,
+      StringHandler.SkillTagGithub,
+      StringHandler.SkillTagGitlab,
+      StringHandler.SkillTagTeamCity,
+      StringHandler.SkillTagOctopus,
+      StringHandler.SkillTagKibana,
+      StringHandler.SkillTagNPM,
+      StringHandler.SkillTagJFrog
+  ];
+
 }

@@ -37,7 +37,7 @@ export class StringHandler {
     static readonly SkillTagDapper: string = "Dapper";
     static readonly SkillTagMediaR: string = "MediaR";
     static readonly SkillTagPoppin: string = "Poppin";
-    static readonly SkillTagEntityFrameWork: string = "Entity Framework";
+    static readonly SkillTagEntityFrameWork: string = "EF Framework";
     static readonly SkillTagGit: string = "Git";
     static readonly SkillTagDevops: string = "Devops";
     static readonly SkillTagVue: string = "Vue.js 2.7";
@@ -59,6 +59,12 @@ export class StringHandler {
     static readonly SkillTagRedHat: string = "RedHat";
     static readonly SkillTagMac: string = "Mac";
     static readonly SkillTagJFrog: string = "JFrog";
+    static readonly SkillTagWebAPI: string = "Web API";
+    static readonly SkillTagRedisMemoryCashing: string = "Redis cashing";
+    static readonly SkillTagSeriLog: string = "SeriLog";
+    static readonly SkillTagXUnit: string = "XUnit";
+    static readonly SkillTagNUnit: string = "NUnit";
+    static readonly SkillTagMoq: string = "Moq";
 
     //Icons
     static readonly GitHubIcon: string = "bi bi-github";
@@ -95,8 +101,11 @@ export class StringHandler {
 
     //#region Stacks
     static readonly TechnologiesTitle: string = 'Technologies';
-    static readonly FrontEndTitle: string = 'Frontend';
-    static readonly BackEndTitle: string = 'Backend';
+    static readonly FrameworksTitle: string = 'Frameworks';
+    static readonly LanguagesTitle: string = 'Languages';
+    static readonly DatabasesTitle: string = 'Databases';
+    static readonly DevopsTitle: string = 'Devops';
+    static readonly LibsTitle: string = 'Libraries';
     //end region
 
     //#region footer

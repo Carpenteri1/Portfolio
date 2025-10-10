@@ -12,9 +12,12 @@ import { StringHandler } from "src/app/Utility/StringCollections";
 })
 
 export class StacksComponent{
-  readonly BackendTitle = StringHandler.BackEndTitle;
-  readonly FrontEndTitle = StringHandler.FrontEndTitle;
+  readonly FrameworkTitle = StringHandler.FrameworksTitle;
+  readonly LanguagesTitle = StringHandler.LanguagesTitle;
+  readonly DatabasesTitle = StringHandler.DatabasesTitle;
+  readonly DevopsTitle = StringHandler.DevopsTitle;
   readonly TechnologiesTitle = StringHandler.TechnologiesTitle;
+  readonly LibrariesTitles = StringHandler.LibsTitle;
 
   frameworkSkills: string[] = [
     StringHandler.SkillTagDotNet,
@@ -22,9 +25,10 @@ export class StacksComponent{
     StringHandler.SkillTagVue,
     StringHandler.SkillTagAngular,
     StringHandler.SkillTagBootStrap,
+    StringHandler.SkillTagEntityFrameWork,
     StringHandler.SkillTagBlazer,
     StringHandler.SkillTagMVC,
-    StringHandler.SkillTagEntityFrameWork
+    StringHandler.SkillTagWebAPI
   ];
 
     languagesSkills: string[] = [
@@ -39,7 +43,6 @@ export class StacksComponent{
     StringHandler.SkillTagGulp,
     StringHandler.SkillTagSQL
   ];
-
 
   databaseSkills: string[] = [
     StringHandler.SkillTagPostgreSQL,
@@ -57,6 +60,17 @@ export class StacksComponent{
       StringHandler.SkillTagKibana,
       StringHandler.SkillTagNPM,
       StringHandler.SkillTagJFrog
+  ];
+
+      libsSkills: string[] = [
+      StringHandler.SkillTagDapper,
+      StringHandler.SkillTagMediaR,
+      StringHandler.SkillTagSwagger,
+      StringHandler.SkillTagRedisMemoryCashing,
+      StringHandler.SkillTagSeriLog,
+      StringHandler.SkillTagNUnit,
+      StringHandler.SkillTagXUnit,
+      StringHandler.SkillTagMoq
   ];
 
 }

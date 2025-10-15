@@ -9,12 +9,14 @@ export class StringHandler {
     static readonly ProjectGridlyTitle: string = 'Gridly';
     static readonly ProjectPortfolioTitle: string = 'Portfolio';
     static readonly ProjectJukeBoxTitle: string = 'Jukebox';
-   
+    static readonly ProjectAiLlamaChatTitle: string = 'AiLlamaChat';
+
     //Description
     static readonly ProjectDescriptionPortolio: string = 'Personal portfolio built with TypeScript and Angular. The goal of this project was to explore new technologies beyond my usual .NET and to take advantage of the benefits offered by Angular';
     static readonly ProjectDescriptionGridly: string = 'Gridly is a self-contained application that implements a lightweight, minimal grid system tailored for modern web. Users can run Gridly on supported systems without requiring installing .NET or Angular Topics';
     static readonly ProjectDescriptionJukeBox: string = '.NET API that fetches music data from external APIs and stores it in a local system. It acts as a backend service for aggregating and managing artist, album, cover and short description information about the artist';
-    
+    static readonly ProjectDescriptionAiLlamaChat: string = 'AiLlamaChat is a self-contained dotnet console application running on the LlamaSharp library. AiLlamaChat is fully local so it wont go online like other LLMM.';
+
     //Tags
     static readonly SkillTagAngular: string = "Angular";
     static readonly SkillTagCSharp: string = "C#";
@@ -40,6 +42,7 @@ export class StringHandler {
     static readonly SkillTagEntityFrameWork: string = "EF Framework";
     static readonly SkillTagGit: string = "Git";
     static readonly SkillTagDevops: string = "Devops";
+    static readonly SkillTagLlamaSharpLib: string = "LlamaSharp";
     static readonly SkillTagVue: string = "Vue.js 2.7";
     static readonly SkillTagMVC: string = "MVC";
     static readonly SkillTagBlazer: string = "Blazer";
@@ -76,6 +79,7 @@ export class StringHandler {
     static readonly GitHubLinkPortfolio: string = "https://github.com/Carpenteri1/Portfolio";
     static readonly GitHubLinkGridly: string = "https://github.com/Carpenteri1/Gridly";
     static readonly GitHubLinkJukeBox: string = "https://github.com/Carpenteri1/JukeBox";
+    static readonly GitHubLinkAiLlamaChatBox: string = "https://github.com/Carpenteri1/AiLLamaChat";
     static readonly GitHubPageLink: string = "https://github.com/carpenteri1";
     static readonly LinkedInPageLink: string = "https://linkedin.com/in/niclas-timle/";
     static readonly EmailLink: string = "mailto:niclastimle@icloud.com";

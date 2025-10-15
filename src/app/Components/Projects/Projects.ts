@@ -27,10 +27,10 @@ export class ProjectsComponent {
       title: StringHandler.ProjectGridlyTitle,
       description: StringHandler.ProjectDescriptionGridly,
       tech: [
-        StringHandler.SkillTagDotNet, 
-        StringHandler.SkillTagAngular, 
-        StringHandler.SkillTagHTML, 
-        StringHandler.SkillTagCSS, 
+        StringHandler.SkillTagDotNet,
+        StringHandler.SkillTagAngular,
+        StringHandler.SkillTagHTML,
+        StringHandler.SkillTagCSS,
         StringHandler.SkillTagNPM,
         StringHandler.SkillTagBootStrap,
         StringHandler.SkillTagYaml,
@@ -51,10 +51,10 @@ export class ProjectsComponent {
       title: StringHandler.ProjectPortfolioTitle,
       description: StringHandler.ProjectDescriptionPortolio,
       tech: [
-        StringHandler.SkillTagTypeScript, 
-        StringHandler.SkillTagAngular, 
-        StringHandler.SkillTagHTML, 
-        StringHandler.SkillTagCSS, 
+        StringHandler.SkillTagTypeScript,
+        StringHandler.SkillTagAngular,
+        StringHandler.SkillTagHTML,
+        StringHandler.SkillTagCSS,
         StringHandler.SkillTagNPM,
         StringHandler.SkillTagBootStrap,
         StringHandler.SkillTagYaml],
@@ -77,6 +77,16 @@ export class ProjectsComponent {
         StringHandler.SkillTagPoppin
       ],
       github: StringHandler.GitHubLinkJukeBox,
+    },
+    {
+      title: StringHandler.ProjectAiLlamaChatTitle,
+      description: StringHandler.ProjectDescriptionAiLlamaChat,
+      tech: [
+        StringHandler.SkillTagDotNet,
+        StringHandler.SkillTagCSharp,
+        StringHandler.SkillTagLlamaSharpLib,
+      ],
+      github: StringHandler.GitHubLinkAiLlamaChatBox,
     },
   ];
 }

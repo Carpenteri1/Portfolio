@@ -1,8 +1,5 @@
-.gradient-text {
-  background: linear-gradient(90deg, var(--bs-primary), var(--bs-info));
-  -webkit-background-clip: text;
-  background-clip: text;  
-  color: transparent;
+.container{
+  max-width: 1140px;
 }
 
 .project-card {
@@ -10,16 +7,17 @@
   border: 1px solid #29303d;
   animation: fade-in-up 0.5s ease both;
   background-color: #181d25;
+  min-height: 350px;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
-  border:1px solid #8b42f0;
+  border-image: linear-gradient(135deg, #0d6efd, #6610f2) 1;
 }
 
 .btn:nth-child(1){
-  background-color: #8b42f0;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
   border:none;
   border-radius: 10px;
 }

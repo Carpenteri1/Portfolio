@@ -2,7 +2,11 @@
     height: 40px;
     width: 40px;
 }
-
+.bg-secondary{
+  background-color: #101319 !important;
+  border:1px solid white !important;
+}
 .bg-secondary:hover{
-    background-color: #8b42f0 !important;
+  border:none !Important;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
 }

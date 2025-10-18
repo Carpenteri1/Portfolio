@@ -26,3 +26,11 @@ p{
 .mt-6{
   margin-top: 6em;
 }
+
+.gradient-text {
+  background-image: linear-gradient(50turn, #0d6efd, #6610f2);
+  -webkit-background-clip: text;  /* for WebKit */
+  background-clip: text;          /* other browsers */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

@@ -13,7 +13,7 @@
 .skill-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.08);
-  border-color: #8b42f0;
+  border-image: linear-gradient(135deg, #0d6efd, #6610f2) 1;
 }
 
 @keyframes fade-in-up {

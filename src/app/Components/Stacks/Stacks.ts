@@ -21,73 +21,77 @@ export class StacksComponent{
     MapSkillGroupData({
       Title: StringHandler.FrameworksTitle,
       Stacks: [
-        MapStackModelData({Title: StringHandler.SkillTagDotNet,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagAspNet,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagVue,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagAngular,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagBootStrap,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagEntityFrameWork,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagBlazer,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagMVC,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagWebAPI,Level: 0})
+        MapStackModelData({Title: StringHandler.SkillTagDotNet,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagAspNet,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagVue,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagAngular,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagBootStrap,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagEntityFrameWork,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagBlazer,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagMVC,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagWebAPI,Level: 4})
       ]}),
     MapSkillGroupData({
       Title: StringHandler.LanguagesTitle,
       Stacks: [
-        MapStackModelData({Title: StringHandler.SkillTagCSharp,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagTypeScript,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagJavascript,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagHTML,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagCSS,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagShell,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagJson,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagYaml,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagGulp,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagSQL,Level: 0})
+        MapStackModelData({Title: StringHandler.SkillTagCSharp,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagTypeScript,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagJavascript,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagHTML,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagCSS,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagShell,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagJson,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagYaml,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagGulp,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagSQL,Level: 3})
       ]}),
     MapSkillGroupData({
       Title: StringHandler.DatabasesTitle,
       Stacks: [
-        MapStackModelData({Title: StringHandler.SkillTagPostgreSQL,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagMysql,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagSQLite,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagMariaDB,Level: 0})
+        MapStackModelData({Title: StringHandler.SkillTagPostgreSQL,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagMysql,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagSQLite,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagMariaDB,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillSSMS,Level: 2})
       ]}),
     MapSkillGroupData({
       Title: StringHandler.DevopsTitle,
       Stacks: [
-        MapStackModelData({Title: StringHandler.SkillTagGit,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagGithub,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagGitlab,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagAzure,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagTeamCity,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagOctopus,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagKibana,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagNPM,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagGulp,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagJFrog,Level: 0})
+        MapStackModelData({Title: StringHandler.SkillTagGit,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagGithub,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagGitlab,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagAzure,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagTeamCity,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagOctopus,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagKibana,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagNPM,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagJFrog,Level: 2})
       ]}),
     MapSkillGroupData({
       Title: StringHandler.LibsTitle,
       Stacks: [
-        MapStackModelData({Title: StringHandler.SkillTagDapper,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagMediaR,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagSwagger,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagRedisMemoryCashing,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagSeriLog,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagNUnit,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagXUnit,Level: 0}),
-        MapStackModelData({Title: StringHandler.SkillTagMoq,Level: 0})
+        MapStackModelData({Title: StringHandler.SkillTagDapper,Level: 4}),
+        MapStackModelData({Title: StringHandler.SkillTagMediaR,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagSwagger,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagRedisMemoryCashing,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagSeriLog,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagNUnit,Level: 2}),
+        MapStackModelData({Title: StringHandler.SkillTagXUnit,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagMoq,Level: 1})
       ]}),
   ];
 
   getSquareColor(level: number): string {
     if(level >= 4)
-      return '.bg-success';
-    if(level < 4 && 2)
-      return '.bg-warning';
+      return 'bg-success';
+    if(level > 2)
+      return 'bg-warning';
+    
+    return 'bg-danger';
+  }
 
-    return '.bg-danger'
+  getDotsArray(level: number): number[] {
+    return Array.from({ length: level }, (_, i) => i + 1);
   }
 
 }

@@ -53,9 +53,11 @@ export class StringHandler {
     static readonly SkillTagKibana: string = "Kibana";
     static readonly SkillTagMysql: string = "MySQL";
     static readonly SkillTagMariaDB: string = "MariaDB";
+    static readonly SkillSSMS: string = "SSMS";
     static readonly SkillTagTeamCity: string = "TeamCity";
     static readonly SkillTagGithub: string = "Github";
     static readonly SkillTagGitlab: string = "Gitlab";
+    static readonly SkillTagAzure: string = "Azure";
     static readonly SkillTagCoPilot: string = "Co-pilot";
     static readonly SkillTagUbuntu: string = "Ubuntu";
     static readonly SkillTagFedora: string = "Fedora";

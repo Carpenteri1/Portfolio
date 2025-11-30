@@ -4,32 +4,29 @@
 
 .skill-card {
   cursor: default;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  animation: fade-in-up 0.4s ease both;
   background-color: #181d25;
   border: 1px solid #29303d;
+  border-radius: 10px;
 }
 
-.skill-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.08);
-  border-image: linear-gradient(135deg, #0d6efd, #6610f2) 1;
+.skill-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@media (max-width:400px) {
-  #stacks{
-    font-size: 12px;
-  }
+.skill-card:hover::before {
+  opacity: 1;
 }
 
 @media (max-width:350px) {

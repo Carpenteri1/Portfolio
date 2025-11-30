@@ -6,7 +6,6 @@
   cursor: default;
   background-color: #181d25;
   border: 1px solid #29303d;
-  border-radius: 10px;
 }
 
 .skill-card::before {

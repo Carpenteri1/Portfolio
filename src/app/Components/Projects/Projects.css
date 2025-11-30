@@ -6,7 +6,6 @@
   border: 1px solid #29303d;
   background-color: #181d25;
   min-height: 350px;
-  border-radius: 10px;
 }
 
 .project-card::before {

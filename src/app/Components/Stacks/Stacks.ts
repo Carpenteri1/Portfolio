@@ -24,7 +24,7 @@ export class StacksComponent{
         MapStackModelData({Title: StringHandler.SkillTagDotNet,Level: 4}),
         MapStackModelData({Title: StringHandler.SkillTagAspNet,Level: 4}),
         MapStackModelData({Title: StringHandler.SkillTagVue,Level: 3}),
-        MapStackModelData({Title: StringHandler.SkillTagAngular,Level: 3}),
+        MapStackModelData({Title: StringHandler.SkillTagAngular,Level: 2}),
         MapStackModelData({Title: StringHandler.SkillTagBootStrap,Level: 4}),
         MapStackModelData({Title: StringHandler.SkillTagEntityFrameWork,Level: 3}),
         MapStackModelData({Title: StringHandler.SkillTagBlazer,Level: 2}),

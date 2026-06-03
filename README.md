@@ -4,6 +4,7 @@
 [![Dependabot Updates](https://github.com/Carpenteri1/Portfolio/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/dependabot/dependabot-updates)
 [![Deployed](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/build_execute_deploy.yml)<br>
 [![pages-build-deployment](https://github.com/Carpenteri1/Portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Carpenteri1/Portfolio/actions/workflows/pages/pages-build-deployment)
+[![Azure Static Web Apps CI/CD](https://github.com/Carpenteri1/Portfolio/actions/workflows/azure_deploy.yml/badge.svg?branch=master)](https://github.com/Carpenteri1/Portfolio/actions/workflows/azure_deploy.yml)
 
 ### Description
 

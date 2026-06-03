@@ -17,7 +17,7 @@
               "base": "dist/portfolio"
             },
             "index": "src/index.html",
-            "baseHref": "/Portfolio/",
+            "baseHref": "./",
             "polyfills": [
               "zone.js"
             ],
